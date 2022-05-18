@@ -1,0 +1,3082 @@
+  STEPHEN OKPIAIFOH
+STUDENT ID: @00643629
+
+
+
+
+CREATING TABLEs USING THE CREATE_INSERT STATEMENT CALLED peru_table,india_table,Vietnam_table,ethiopia_table
+USE [adb_coursework]
+GO
+/******Creating database Object:  Table [dbo].[peru_table]    Script Date: 31/03/2022 8:27:29 PM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[peru_table](
+	[childid] [nvarchar](50) NULL,
+	[yc] [float] NULL,
+	[round] [float] NULL,
+	[inround] [float] NULL,
+	[panel12345] [float] NULL,
+	[deceased] [float] NULL,
+	[dint] [date] NULL,
+	[placeid] [nvarchar](50) NULL,
+	[clustid] [float] NULL,
+	[typesite] [float] NULL,
+	[region] [float] NULL,
+	[childloc] [float] NULL,
+	[chsex] [float] NULL,
+	[chlang] [float] NULL,
+	[chethnic] [float] NULL,
+	[chldrel] [float] NULL,
+	[agemon] [float] NULL,
+	[marrcohab] [float] NULL,
+	[marrcohab_age] [float] NULL,
+	[birth] [float] NULL,
+	[birth_age] [float] NULL,
+	[chweight] [float] NULL,
+	[chheight] [float] NULL,
+	[bmi] [float] NULL,
+	[zwfa] [float] NULL,
+	[zhfa] [float] NULL,
+	[zbfa] [float] NULL,
+	[zwfl] [float] NULL,
+	[fwfl] [float] NULL,
+	[fhfa] [float] NULL,
+	[fwfa] [float] NULL,
+	[fbfa] [float] NULL,
+	[underweight] [float] NULL,
+	[stunting] [float] NULL,
+	[thinness] [float] NULL,
+	[bwght] [float] NULL,
+	[bwdoc] [float] NULL,
+	[numante] [float] NULL,
+	[delivery] [float] NULL,
+	[tetanus] [float] NULL,
+	[bcg] [float] NULL,
+	[measles] [float] NULL,
+	[polio] [float] NULL,
+	[dpt] [float] NULL,
+	[hib] [float] NULL,
+	[chmightdie] [float] NULL,
+	[chillness] [float] NULL,
+	[chinjury] [float] NULL,
+	[chhprob] [float] NULL,
+	[chdisability] [float] NULL,
+	[chdisscale] [float] NULL,
+	[chsmoke] [float] NULL,
+	[chalcohol] [float] NULL,
+	[chrephealth1] [float] NULL,
+	[chrephealth2] [float] NULL,
+	[chrephealth3] [float] NULL,
+	[chrephealth4] [float] NULL,
+	[chhrel] [float] NULL,
+	[chhealth] [float] NULL,
+	[cladder] [float] NULL,
+	[hsleep] [float] NULL,
+	[hcare] [float] NULL,
+	[hchore] [float] NULL,
+	[htask] [float] NULL,
+	[hwork] [float] NULL,
+	[hschool] [float] NULL,
+	[hstudy] [float] NULL,
+	[hplay] [float] NULL,
+	[commwork] [float] NULL,
+	[commsch] [float] NULL,
+	[preprim] [float] NULL,
+	[agegr1] [float] NULL,
+	[enrol] [float] NULL,
+	[engrade] [float] NULL,
+	[entype] [float] NULL,
+	[timesch] [float] NULL,
+	[levlwrit] [float] NULL,
+	[levlread] [float] NULL,
+	[literate] [float] NULL,
+	[careid] [float] NULL,
+	[caredu] [float] NULL,
+	[carehead] [float] NULL,
+	[careage] [float] NULL,
+	[caresex] [float] NULL,
+	[carerel] [float] NULL,
+	[carecantread] [float] NULL,
+	[careladder] [float] NULL,
+	[careldr4yrs] [float] NULL,
+	[dadid] [float] NULL,
+	[dadedu] [float] NULL,
+	[dadlive] [float] NULL,
+	[dadage] [float] NULL,
+	[dadcantread] [float] NULL,
+	[dadyrdied] [float] NULL,
+	[momid] [float] NULL,
+	[momedu] [float] NULL,
+	[momlive] [float] NULL,
+	[momage] [float] NULL,
+	[momcantread] [float] NULL,
+	[momyrdied] [float] NULL,
+	[headid] [float] NULL,
+	[headedudu] [float] NULL,
+	[headage] [float] NULL,
+	[headsex] [float] NULL,
+	[headrel] [float] NULL,
+	[hhsize] [float] NULL,
+	[male05] [float] NULL,
+	[male612] [float] NULL,
+	[male1317] [float] NULL,
+	[male1860] [float] NULL,
+	[male61] [float] NULL,
+	[female05] [float] NULL,
+	[female612] [float] NULL,
+	[female1317] [float] NULL,
+	[female1860] [float] NULL,
+	[female61] [float] NULL,
+	[wi] [float] NULL,
+	[hq] [float] NULL,
+	[sv] [float] NULL,
+	[cd] [float] NULL,
+	[drwaterq] [float] NULL,
+	[toiletq] [float] NULL,
+	[elecq] [float] NULL,
+	[cookingq] [float] NULL,
+	[aniany] [float] NULL,
+	[animilk] [float] NULL,
+	[anidrau] [float] NULL,
+	[anirumi] [float] NULL,
+	[anispec] [float] NULL,
+	[anicowm] [float] NULL,
+	[anicowt] [float] NULL,
+	[anioxen] [float] NULL,
+	[anidonk] [float] NULL,
+	[anishee] [float] NULL,
+	[anigoat] [float] NULL,
+	[anipigs] [float] NULL,
+	[anipoul] [float] NULL,
+	[anirabb] [float] NULL,
+	[anillam] [float] NULL,
+	[aniguin] [float] NULL,
+	[anisnai] [float] NULL,
+	[anibeeh] [float] NULL,
+	[anifish] [float] NULL,
+	[anishri] [float] NULL,
+	[anifshr] [float] NULL,
+	[aniothr] [float] NULL,
+	[ownlandhse] [float] NULL,
+	[ownhouse] [float] NULL,
+	[juntos] [float] NULL,
+	[bonograt] [float] NULL,
+	[sisgrat_yl] [float] NULL,
+	[minsa_yl] [float] NULL,
+	[insur_yl] [float] NULL,
+	[beca_yl] [float] NULL,
+	[projoven_yl] [float] NULL,
+	[credit] [float] NULL,
+	[foodsec] [float] NULL,
+	[shcrime1] [float] NULL,
+	[shcrime2] [float] NULL,
+	[shcrime3] [float] NULL,
+	[shcrime4] [float] NULL,
+	[shcrime5] [float] NULL,
+	[shcrime6] [float] NULL,
+	[shcrime8] [float] NULL,
+	[shregul1] [float] NULL,
+	[shregul2] [float] NULL,
+	[shregul4] [float] NULL,
+	[shregul5] [float] NULL,
+	[shregul6] [float] NULL,
+	[shecon1] [float] NULL,
+	[shecon2] [float] NULL,
+	[shecon3] [float] NULL,
+	[shecon4] [float] NULL,
+	[shecon5] [float] NULL,
+	[shecon6] [float] NULL,
+	[shecon7] [float] NULL,
+	[shecon8] [float] NULL,
+	[shecon9] [float] NULL,
+	[shecon10] [float] NULL,
+	[shecon11] [float] NULL,
+	[shecon12] [float] NULL,
+	[shecon14] [float] NULL,
+	[shenv1] [float] NULL,
+	[shenv2] [float] NULL,
+	[shenv3] [float] NULL,
+	[shenv4] [float] NULL,
+	[shenv5] [float] NULL,
+	[shenv6] [float] NULL,
+	[shenv7] [float] NULL,
+	[shenv8] [float] NULL,
+	[shenv9] [float] NULL,
+	[shenv10] [float] NULL,
+	[shenv11] [float] NULL,
+	[shenv12] [float] NULL,
+	[shhouse1] [float] NULL,
+	[shhouse2] [float] NULL,
+	[shhouse3] [float] NULL,
+	[shfam1] [float] NULL,
+	[shfam2] [float] NULL,
+	[shfam3] [float] NULL,
+	[shfam4] [float] NULL,
+	[shfam5] [float] NULL,
+	[shfam6] [float] NULL,
+	[shfam7] [float] NULL,
+	[shfam8] [float] NULL,
+	[shfam9] [float] NULL,
+	[shfam10] [float] NULL,
+	[shfam12] [float] NULL,
+	[shfam13] [float] NULL,
+	[shfam14] [float] NULL,
+	[shfam15] [float] NULL,
+	[shfam16] [float] NULL,
+	[shfam17] [float] NULL,
+	[shfam18] [float] NULL,
+	[shother] [float] NULL
+) ON [PRIMARY]
+GO
+
+USE [adb_coursework]
+GO
+/****** Creating database Object:  Table [dbo].[india_table]    Script Date: 01/04/2022 8:45:25 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[india_table](
+	[childid] [nvarchar](50) NULL,
+	[yc] [float] NULL,
+	[round] [float] NULL,
+	[inround] [float] NULL,
+	[panel12345] [float] NULL,
+	[deceased] [float] NULL,
+	[dint] [date] NULL,
+	[clustid] [float] NULL,
+	[commid] [nvarchar](50) NULL,
+	[region] [float] NULL,
+	[typesite] [float] NULL,
+	[childloc] [float] NULL,
+	[chsex] [float] NULL,
+	[chlang] [float] NULL,
+	[chethnic] [float] NULL,
+	[chldrel] [float] NULL,
+	[agemon] [float] NULL,
+	[marrcohab] [float] NULL,
+	[marrcohab_age] [float] NULL,
+	[birth] [float] NULL,
+	[birth_age] [float] NULL,
+	[chweight] [float] NULL,
+	[chheight] [float] NULL,
+	[bmi] [float] NULL,
+	[zwfa] [float] NULL,
+	[zhfa] [float] NULL,
+	[zbfa] [float] NULL,
+	[zwfl] [float] NULL,
+	[fwfl] [float] NULL,
+	[fhfa] [float] NULL,
+	[fwfa] [float] NULL,
+	[fbfa] [float] NULL,
+	[underweight] [float] NULL,
+	[stunting] [float] NULL,
+	[thinness] [float] NULL,
+	[bwght] [float] NULL,
+	[bwdoc] [float] NULL,
+	[numante] [float] NULL,
+	[delivery] [float] NULL,
+	[tetanus] [float] NULL,
+	[bcg] [float] NULL,
+	[measles] [float] NULL,
+	[polio] [float] NULL,
+	[dpt] [float] NULL,
+	[hib] [float] NULL,
+	[chmightdie] [float] NULL,
+	[chillness] [float] NULL,
+	[chinjury] [float] NULL,
+	[chhprob] [float] NULL,
+	[chdisability] [float] NULL,
+	[chdisscale] [float] NULL,
+	[chsmoke] [float] NULL,
+	[chalcohol] [float] NULL,
+	[chrephealth1] [float] NULL,
+	[chrephealth2] [float] NULL,
+	[chrephealth3] [float] NULL,
+	[chrephealth4] [float] NULL,
+	[chhrel] [float] NULL,
+	[chhealth] [float] NULL,
+	[cladder] [float] NULL,
+	[hsleep] [float] NULL,
+	[hcare] [float] NULL,
+	[hchore] [float] NULL,
+	[htask] [float] NULL,
+	[hwork] [float] NULL,
+	[hschool] [float] NULL,
+	[hstudy] [float] NULL,
+	[hplay] [float] NULL,
+	[commwork] [float] NULL,
+	[commsch] [float] NULL,
+	[preprim] [float] NULL,
+	[agegr1] [float] NULL,
+	[enrol] [float] NULL,
+	[engrade] [float] NULL,
+	[entype] [float] NULL,
+	[hghgrade] [float] NULL,
+	[timesch] [float] NULL,
+	[levlread] [float] NULL,
+	[levlwrit] [float] NULL,
+	[literate] [float] NULL,
+	[careid] [float] NULL,
+	[caredu] [float] NULL,
+	[carehead] [float] NULL,
+	[careage] [float] NULL,
+	[caresex] [float] NULL,
+	[carerel] [float] NULL,
+	[carecantread] [float] NULL,
+	[careladder] [float] NULL,
+	[careldr4yrs] [float] NULL,
+	[dadid] [float] NULL,
+	[dadedu] [float] NULL,
+	[dadlive] [float] NULL,
+	[dadage] [float] NULL,
+	[dadcantread] [float] NULL,
+	[dadyrdied] [float] NULL,
+	[momid] [float] NULL,
+	[momedu] [float] NULL,
+	[momlive] [float] NULL,
+	[momage] [float] NULL,
+	[momcantread] [float] NULL,
+	[momyrdied] [float] NULL,
+	[headid] [float] NULL,
+	[headedu] [float] NULL,
+	[headage] [float] NULL,
+	[headsex] [float] NULL,
+	[headrel] [float] NULL,
+	[hhsize] [float] NULL,
+	[male05] [float] NULL,
+	[male612] [float] NULL,
+	[male1317] [float] NULL,
+	[male1860] [float] NULL,
+	[male61] [float] NULL,
+	[female05] [float] NULL,
+	[female612] [float] NULL,
+	[female1317] [float] NULL,
+	[female1860] [float] NULL,
+	[female61] [float] NULL,
+	[wi] [float] NULL,
+	[hq] [float] NULL,
+	[sv] [float] NULL,
+	[cd] [float] NULL,
+	[drwaterq] [float] NULL,
+	[toiletq] [float] NULL,
+	[elecq] [float] NULL,
+	[cookingq] [float] NULL,
+	[aniany] [float] NULL,
+	[animilk] [float] NULL,
+	[anidrau] [float] NULL,
+	[anirumi] [float] NULL,
+	[anicowm] [float] NULL,
+	[anicowt] [float] NULL,
+	[anicalv] [float] NULL,
+	[anibufm] [float] NULL,
+	[anibuft] [float] NULL,
+	[anibull] [float] NULL,
+	[anihebu] [float] NULL,
+	[anidonk] [float] NULL,
+	[anishee] [float] NULL,
+	[anigoat] [float] NULL,
+	[anipigs] [float] NULL,
+	[anipoul] [float] NULL,
+	[anirabb] [float] NULL,
+	[anispec] [float] NULL,
+	[aniheif] [float] NULL,
+	[aniybul] [float] NULL,
+	[anibeeh] [float] NULL,
+	[anifish] [float] NULL,
+	[anishri] [float] NULL,
+	[anifshr] [float] NULL,
+	[aniothr] [float] NULL,
+	[ownlandhse] [float] NULL,
+	[ownhouse] [float] NULL,
+	[pds] [float] NULL,
+	[nregs] [float] NULL,
+	[nregs_work] [float] NULL,
+	[nregs_allow] [float] NULL,
+	[rajiv] [float] NULL,
+	[sabla] [float] NULL,
+	[sabla_yl] [float] NULL,
+	[ikp] [float] NULL,
+	[ikp_child] [float] NULL,
+	[credit] [float] NULL,
+	[foodsec] [float] NULL,
+	[shcrime1] [float] NULL,
+	[shcrime2] [float] NULL,
+	[shcrime3] [float] NULL,
+	[shcrime4] [float] NULL,
+	[shcrime5] [float] NULL,
+	[shcrime6] [float] NULL,
+	[shcrime7] [float] NULL,
+	[shcrime8] [float] NULL,
+	[shregul1] [float] NULL,
+	[shregul2] [float] NULL,
+	[shregul3] [float] NULL,
+	[shregul4] [float] NULL,
+	[shregul5] [float] NULL,
+	[shecon1] [float] NULL,
+	[shecon2] [float] NULL,
+	[shecon3] [float] NULL,
+	[shecon4] [float] NULL,
+	[shecon5] [float] NULL,
+	[shecon6] [float] NULL,
+	[shecon7] [float] NULL,
+	[shecon8] [float] NULL,
+	[shecon9] [float] NULL,
+	[shecon10] [float] NULL,
+	[shecon11] [float] NULL,
+	[shecon12] [float] NULL,
+	[shecon13] [float] NULL,
+	[shecon14] [float] NULL,
+	[shenv1] [float] NULL,
+	[shenv2] [float] NULL,
+	[shenv3] [float] NULL,
+	[shenv4] [float] NULL,
+	[shenv5] [float] NULL,
+	[shenv6] [float] NULL,
+	[shenv7] [float] NULL,
+	[shenv8] [float] NULL,
+	[shenv9] [float] NULL,
+	[shhouse1] [float] NULL,
+	[shhouse2] [float] NULL,
+	[shhouse3] [float] NULL,
+	[shfam1] [float] NULL,
+	[shfam2] [float] NULL,
+	[shfam3] [float] NULL,
+	[shfam4] [float] NULL,
+	[shfam5] [float] NULL,
+	[shfam6] [float] NULL,
+	[shfam7] [float] NULL,
+	[shfam8] [float] NULL,
+	[shfam9] [float] NULL,
+	[shfam10] [float] NULL,
+	[shfam11] [float] NULL,
+	[shfam12] [float] NULL,
+	[shfam13] [float] NULL,
+	[shfam14] [float] NULL,
+	[shfam18] [float] NULL,
+	[shother] [float] NULL
+) ON [PRIMARY]
+GO
+
+USE [adb_coursework]
+GO
+/****Creating database Object:  Table [dbo].[vietnam_table]    Script Date: 01/04/2022 11:27:57 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[vietnam_table](
+	[childid] [nvarchar](50) NULL,
+	[yc] [float] NULL,
+	[round] [float] NULL,
+	[inround] [float] NULL,
+	[panel12345] [float] NULL,
+	[deceased] [float] NULL,
+	[dint] [date] NULL,
+	[commid] [nvarchar](50) NULL,
+	[clustid] [float] NULL,
+	[typesite] [float] NULL,
+	[region] [float] NULL,
+	[childloc] [float] NULL,
+	[chsex] [float] NULL,
+	[chlang] [float] NULL,
+	[chethnic] [float] NULL,
+	[chldrel] [float] NULL,
+	[agemon] [float] NULL,
+	[marrcohab] [float] NULL,
+	[marrcohab_age] [float] NULL,
+	[birth] [float] NULL,
+	[birth_age] [float] NULL,
+	[chweight] [float] NULL,
+	[chheight] [float] NULL,
+	[bmi] [float] NULL,
+	[zwfa] [float] NULL,
+	[zhfa] [float] NULL,
+	[zbfa] [float] NULL,
+	[zwfl] [float] NULL,
+	[fwfl] [float] NULL,
+	[fhfa] [float] NULL,
+	[fwfa] [float] NULL,
+	[fbfa] [float] NULL,
+	[underweight] [float] NULL,
+	[stunting] [float] NULL,
+	[thinness] [float] NULL,
+	[bwght] [float] NULL,
+	[bwdoc] [float] NULL,
+	[numante] [float] NULL,
+	[delivery] [float] NULL,
+	[tetanus] [float] NULL,
+	[bcg] [float] NULL,
+	[measles] [float] NULL,
+	[dpt] [float] NULL,
+	[polio] [float] NULL,
+	[hib] [float] NULL,
+	[chmightdie] [float] NULL,
+	[chillness] [float] NULL,
+	[chinjury] [float] NULL,
+	[chhprob] [float] NULL,
+	[chdisability] [float] NULL,
+	[chdisscale] [float] NULL,
+	[chsmoke] [float] NULL,
+	[chalcohol] [float] NULL,
+	[chrephealth1] [float] NULL,
+	[chrephealth2] [float] NULL,
+	[chrephealth3] [float] NULL,
+	[chrephealth4] [float] NULL,
+	[chhrel] [float] NULL,
+	[chhealth] [float] NULL,
+	[cladder] [float] NULL,
+	[hsleep] [float] NULL,
+	[hcare] [float] NULL,
+	[hchore] [float] NULL,
+	[htask] [float] NULL,
+	[hwork] [float] NULL,
+	[hschool] [float] NULL,
+	[hstudy] [float] NULL,
+	[hplay] [float] NULL,
+	[commwork] [float] NULL,
+	[commsch] [float] NULL,
+	[preprim] [float] NULL,
+	[agegr1] [float] NULL,
+	[enrol] [float] NULL,
+	[engrade] [float] NULL,
+	[entype] [float] NULL,
+	[hghgrade] [float] NULL,
+	[timesch] [float] NULL,
+	[levlread] [float] NULL,
+	[levlwrit] [float] NULL,
+	[literate] [float] NULL,
+	[careid] [float] NULL,
+	[caredu] [float] NULL,
+	[carehead] [float] NULL,
+	[careage] [float] NULL,
+	[caresex] [float] NULL,
+	[carerel] [float] NULL,
+	[carecantread] [float] NULL,
+	[careladder] [float] NULL,
+	[careldr4yrs] [float] NULL,
+	[dadid] [float] NULL,
+	[dadedu] [float] NULL,
+	[dadlive] [float] NULL,
+	[dadage] [float] NULL,
+	[dadcantread] [float] NULL,
+	[dadyrdied] [float] NULL,
+	[momid] [float] NULL,
+	[momedu] [float] NULL,
+	[momlive] [float] NULL,
+	[momage] [float] NULL,
+	[momcantread] [float] NULL,
+	[momyrdied] [float] NULL,
+	[headid] [float] NULL,
+	[headedu] [float] NULL,
+	[headage] [float] NULL,
+	[headsex] [float] NULL,
+	[headrel] [float] NULL,
+	[hhsize] [float] NULL,
+	[male05] [float] NULL,
+	[male612] [float] NULL,
+	[male1317] [float] NULL,
+	[male1860] [float] NULL,
+	[male61] [float] NULL,
+	[female05] [float] NULL,
+	[female612] [float] NULL,
+	[female1317] [float] NULL,
+	[female1860] [float] NULL,
+	[female61] [float] NULL,
+	[wi_new] [float] NULL,
+	[hq_new] [float] NULL,
+	[sv_new] [float] NULL,
+	[cd_new] [float] NULL,
+	[drwaterq_new] [float] NULL,
+	[toiletq_new] [float] NULL,
+	[elecq_new] [float] NULL,
+	[cookingq_new] [float] NULL,
+	[aniany] [float] NULL,
+	[animilk] [float] NULL,
+	[anidrau] [float] NULL,
+	[anirumi] [float] NULL,
+	[anicowm] [float] NULL,
+	[anicowt] [float] NULL,
+	[anicalv] [float] NULL,
+	[anibufm] [float] NULL,
+	[anibuft] [float] NULL,
+	[anibull] [float] NULL,
+	[anihebu] [float] NULL,
+	[anidonk] [float] NULL,
+	[anishee] [float] NULL,
+	[anigoat] [float] NULL,
+	[anipigs] [float] NULL,
+	[anipoul] [float] NULL,
+	[anirabb] [float] NULL,
+	[anispec] [float] NULL,
+	[aniothr] [float] NULL,
+	[ownlandhse] [float] NULL,
+	[ownhouse] [float] NULL,
+	[molisa06] [float] NULL,
+	[molisa09] [float] NULL,
+	[molisa10] [float] NULL,
+	[molisa11] [float] NULL,
+	[molisa12] [float] NULL,
+	[molisa13] [float] NULL,
+	[molisa14] [float] NULL,
+	[molisa15] [float] NULL,
+	[molisa16] [float] NULL,
+	[credit] [float] NULL,
+	[foodsec] [float] NULL,
+	[shcrime1] [float] NULL,
+	[shcrime2] [float] NULL,
+	[shcrime3] [float] NULL,
+	[shcrime4] [float] NULL,
+	[shcrime5] [float] NULL,
+	[shcrime6] [float] NULL,
+	[shcrime7] [float] NULL,
+	[shcrime8] [float] NULL,
+	[shregul1] [float] NULL,
+	[shregul2] [float] NULL,
+	[shregul3] [float] NULL,
+	[shregul4] [float] NULL,
+	[shregul5] [float] NULL,
+	[shecon1] [float] NULL,
+	[shecon2] [float] NULL,
+	[shecon3] [float] NULL,
+	[shecon4] [float] NULL,
+	[shecon5] [float] NULL,
+	[shecon6] [float] NULL,
+	[shecon7] [float] NULL,
+	[shecon8] [float] NULL,
+	[shecon9] [float] NULL,
+	[shecon10] [float] NULL,
+	[shecon11] [float] NULL,
+	[shecon12] [float] NULL,
+	[shecon13] [float] NULL,
+	[shecon14] [float] NULL,
+	[shenv1] [float] NULL,
+	[shenv2] [float] NULL,
+	[shenv3] [float] NULL,
+	[shenv4] [float] NULL,
+	[shenv5] [float] NULL,
+	[shenv6] [float] NULL,
+	[shenv7] [float] NULL,
+	[shenv8] [float] NULL,
+	[shenv9] [float] NULL,
+	[shhouse1] [float] NULL,
+	[shhouse2] [float] NULL,
+	[shhouse3] [float] NULL,
+	[shfam1] [float] NULL,
+	[shfam2] [float] NULL,
+	[shfam3] [float] NULL,
+	[shfam4] [float] NULL,
+	[shfam5] [float] NULL,
+	[shfam6] [float] NULL,
+	[shfam7] [float] NULL,
+	[shfam8] [float] NULL,
+	[shfam9] [float] NULL,
+	[shfam10] [float] NULL,
+	[shfam11] [float] NULL,
+	[shfam12] [float] NULL,
+	[shfam13] [float] NULL,
+	[shfam14] [float] NULL,
+	[shfam18] [float] NULL,
+	[shother] [float] NULL,
+	[shenv13] [float] NULL
+) ON [PRIMARY]
+GO
+
+USE [adb_coursework]
+GO
+/**** Creating database Object:  Table [dbo].[ethiopia_table]    Script Date: 01/04/2022 8:42:07 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[ethiopia_table](
+	[childid] [nvarchar](50) NULL,
+	[yc] [float] NULL,
+	[round] [float] NULL,
+	[inround] [float] NULL,
+	[panel] [float] NULL,
+	[deceased] [float] NULL,
+	[dint] [datetime2](7) NULL,
+	[commid] [nvarchar](50) NULL,
+	[clustid] [float] NULL,
+	[region] [float] NULL,
+	[typesite] [float] NULL,
+	[childloc] [float] NULL,
+	[chsex] [float] NULL,
+	[chlang] [float] NULL,
+	[chethnic] [float] NULL,
+	[chldrel] [float] NULL,
+	[agemon] [numeric](18, 0) NULL,
+	[marrcohab] [float] NULL,
+	[marrcohab_age] [float] NULL,
+	[birth] [float] NULL,
+	[birth_age] [float] NULL,
+	[chweight] [float] NULL,
+	[chheight] [float] NULL,
+	[bmi] [float] NULL,
+	[zwfa] [float] NULL,
+	[zhfa] [float] NULL,
+	[zbfa] [float] NULL,
+	[zwfl] [float] NULL,
+	[fwfl] [float] NULL,
+	[fhfa] [float] NULL,
+	[fwfa] [float] NULL,
+	[fbfa] [float] NULL,
+	[underweight] [float] NULL,
+	[stunting] [float] NULL,
+	[thinness] [float] NULL,
+	[bwght] [float] NULL,
+	[bwdoc] [float] NULL,
+	[numante] [float] NULL,
+	[delivery] [float] NULL,
+	[tetanus] [float] NULL,
+	[bcg] [float] NULL,
+	[measles] [float] NULL,
+	[dpt] [float] NULL,
+	[polio] [float] NULL,
+	[hib] [float] NULL,
+	[chmightdie] [float] NULL,
+	[chillness] [float] NULL,
+	[chinjury] [float] NULL,
+	[chhprob] [float] NULL,
+	[chdisability] [float] NULL,
+	[chdisscale] [float] NULL,
+	[chsmoke] [float] NULL,
+	[chalcohol] [float] NULL,
+	[chrephealth1] [float] NULL,
+	[chrephealth2] [float] NULL,
+	[chrephealth3] [float] NULL,
+	[chrephealth4] [float] NULL,
+	[chhrel] [float] NULL,
+	[chhealth] [float] NULL,
+	[cladder] [float] NULL,
+	[hsleep] [float] NULL,
+	[hcare] [float] NULL,
+	[hchore] [float] NULL,
+	[htask] [float] NULL,
+	[hwork] [float] NULL,
+	[hschool] [float] NULL,
+	[hstudy] [float] NULL,
+	[hplay] [float] NULL,
+	[commwork] [float] NULL,
+	[commsch] [float] NULL,
+	[preprim] [float] NULL,
+	[agegr1] [float] NULL,
+	[enrol] [float] NULL,
+	[engrade] [float] NULL,
+	[entype] [float] NULL,
+	[hghgrade] [float] NULL,
+	[timesch] [float] NULL,
+	[levlread] [float] NULL,
+	[levlwrit] [float] NULL,
+	[literate] [float] NULL,
+	[careid] [float] NULL,
+	[caredu] [float] NULL,
+	[carehead] [float] NULL,
+	[careage] [float] NULL,
+	[caresex] [float] NULL,
+	[carerel] [float] NULL,
+	[carecantread] [float] NULL,
+	[careladder] [float] NULL,
+	[careldr4yrs] [float] NULL,
+	[dadid] [float] NULL,
+	[dadedu] [float] NULL,
+	[dadlive] [float] NULL,
+	[dadage] [float] NULL,
+	[dadcantread] [float] NULL,
+	[dadyrdied] [float] NULL,
+	[momid] [float] NULL,
+	[momedu] [float] NULL,
+	[momlive] [float] NULL,
+	[momage] [float] NULL,
+	[momcantread] [float] NULL,
+	[momyrdied] [float] NULL,
+	[headid] [float] NULL,
+	[headedu] [float] NULL,
+	[headage] [float] NULL,
+	[headsex] [float] NULL,
+	[headrel] [float] NULL,
+	[hhsize] [float] NULL,
+	[male05] [float] NULL,
+	[male612] [float] NULL,
+	[male1317] [float] NULL,
+	[male1860] [float] NULL,
+	[male61] [float] NULL,
+	[female05] [float] NULL,
+	[female612] [float] NULL,
+	[female1317] [float] NULL,
+	[female1860] [float] NULL,
+	[female61] [float] NULL,
+	[wi_new] [float] NULL,
+	[hq_new] [float] NULL,
+	[sv_new] [float] NULL,
+	[cd_new] [float] NULL,
+	[drwaterq_new] [float] NULL,
+	[toiletq_new] [float] NULL,
+	[elecq_new] [float] NULL,
+	[cookingq_new] [float] NULL,
+	[aniany] [float] NULL,
+	[animilk] [float] NULL,
+	[anidrau] [float] NULL,
+	[anirumi] [float] NULL,
+	[anispec] [float] NULL,
+	[anicowm] [float] NULL,
+	[anicowt] [float] NULL,
+	[anicalv] [float] NULL,
+	[anibufm] [float] NULL,
+	[anibuft] [float] NULL,
+	[aniheif] [float] NULL,
+	[anibull] [float] NULL,
+	[anihebu] [float] NULL,
+	[anidonk] [float] NULL,
+	[aniybul] [float] NULL,
+	[anioxen] [float] NULL,
+	[anicaml] [float] NULL,
+	[anishee] [float] NULL,
+	[anigoat] [float] NULL,
+	[anipigs] [float] NULL,
+	[anipoul] [float] NULL,
+	[anirabb] [float] NULL,
+	[anibeeh] [float] NULL,
+	[aniothr] [float] NULL,
+	[ownlandhse] [float] NULL,
+	[ownhouse] [float] NULL,
+	[psnp_pw] [float] NULL,
+	[psnp_ds] [float] NULL,
+	[othprog] [float] NULL,
+	[hep] [float] NULL,
+	[resettled] [float] NULL,
+	[eap] [float] NULL,
+	[foodsec] [float] NULL,
+	[credit] [float] NULL,
+	[shcrime1] [float] NULL,
+	[shcrime2] [float] NULL,
+	[shcrime3] [float] NULL,
+	[shcrime4] [float] NULL,
+	[shcrime5] [float] NULL,
+	[shcrime6] [float] NULL,
+	[shcrime7] [float] NULL,
+	[shcrime8] [float] NULL,
+	[shregul1] [float] NULL,
+	[shregul2] [float] NULL,
+	[shregul3] [float] NULL,
+	[shregul4] [float] NULL,
+	[shregul5] [float] NULL,
+	[shecon1] [float] NULL,
+	[shecon2] [float] NULL,
+	[shecon3] [float] NULL,
+	[shecon4] [float] NULL,
+	[shecon5] [float] NULL,
+	[shecon6] [float] NULL,
+	[shecon7] [float] NULL,
+	[shecon8] [float] NULL,
+	[shecon9] [float] NULL,
+	[shecon10] [float] NULL,
+	[shecon11] [float] NULL,
+	[shecon12] [float] NULL,
+	[shecon13] [float] NULL,
+	[shecon14] [float] NULL,
+	[shenv1] [float] NULL,
+	[shenv2] [float] NULL,
+	[shenv3] [float] NULL,
+	[shenv4] [float] NULL,
+	[shenv5] [float] NULL,
+	[shenv6] [float] NULL,
+	[shenv7] [float] NULL,
+	[shenv8] [float] NULL,
+	[shenv9] [float] NULL,
+	[shhouse1] [float] NULL,
+	[shhouse2] [float] NULL,
+	[shhouse3] [float] NULL,
+	[shfam1] [float] NULL,
+	[shfam2] [float] NULL,
+	[shfam3] [float] NULL,
+	[shfam4] [float] NULL,
+	[shfam5] [float] NULL,
+	[shfam6] [float] NULL,
+	[shfam7] [float] NULL,
+	[shfam8] [float] NULL,
+	[shfam9] [float] NULL,
+	[shfam10] [float] NULL,
+	[shfam11] [float] NULL,
+	[shfam12] [float] NULL,
+	[shfam13] [float] NULL,
+	[shfam14] [float] NULL,
+	[shfam18] [float] NULL,
+	[shother] [float] NULL
+) ON [PRIMARY]
+
+CREATING IDENTIFIED TABLES USING CREATE STATEMENT in question 3 WITH ALTER FUNCTION TO ADD EXTRA COLUMN AS FOREIGN KEY BY REFERENCING THE PARENT TABLE CALLED childidentification table.
+/*** Normalizing table***/
+/** creating table child Identification as childidentification **/
+
+create table dbo.childidentification(
+childid nvarchar(15) not null,
+roundid tinyint not null,
+clusterid tinyint null,
+commid nvarchar(15) null,
+typesite tinyint null,
+region tinyint null,
+dint date null,
+yc bit null,
+chloc bit null,
+inbound_hh bit null,
+inround_ch bit null,
+panel bit null,
+deceased bit null,
+constraint pk_childid primary key clustered(
+childid asc,
+roundid asc))
+
+/*** create table child biological parent feature as childbiological_feature and altering table to add foreign key referencing the childidentification table ***/
+
+create table dbo.childbiological_feature(
+childid nvarchar(15) not null,
+roundid tinyint not null,
+dadid tinyint null,
+dadage smallint null,
+dadalive tinyint null,
+dadydied tinyint null,
+dadcantread bit null,
+dadedu tinyint null,
+momid tinyint null,
+momage smallint null,
+momalive tinyint null,
+momyrdied tinyint null,
+momcantread bit null,
+momedu tinyint null)
+
+alter table dbo.childbiological_feature with check add constraint fk_bio
+foreign key(childid,roundid) references dbo.childidentification(childid,roundid)
+alter table childbiological_feature check constraint fk_bio
+
+/*** create table childbirth immunization called child_immunization_info, altering table to add foreign key referencing the childidentification table ***/
+
+create table dbo.child_immunization_info(
+childid nvarchar(15) not null,
+roundid tinyint not null,
+bwght int null,
+bwdoc bit null,
+numanta tinyint null,
+tetanus bit null,
+delivery bit null,
+bcg bit null,
+measles bit null,
+polio bit null,
+dpt bit null,
+hib bit null)
+alter table dbo.child_immunization_info with check add constraint fk_immunization
+foreign key(childid,roundid) references dbo.childidentification(childid,roundid)
+alter table dbo.child_immunization_info check constraint fk_immunization
+
+/*** creating table child education and naming it child_edu_info, altering table to add foreign key referencing the childidentification table ***/
+
+create table dbo.child_edu_info(
+childid nvarchar(15) not null,
+roundid tinyint not null,
+preprim bit null,
+agegrl smallint null,
+enrol smallint null,
+engrade smallint null,
+entype smallint null,
+hghgrade smallint null,
+timesch smallint null)
+alter table dbo.child_edu_info with check add constraint fk_edu 
+foreign key(childid,roundid) references dbo.childidentification(childid,roundid)
+alter table dbo.child_edu_info check constraint fk_edu
+
+/*** create table household Wealth index and sub-indices as household_index altering table to add foreign key referencing the childidentification table ***/
+
+create table dbo.houshold_index(
+childid nvarchar(15) not null,
+roundid tinyint not null,
+wi decimal(25,20) null,
+hq decimal(25,20) null,
+sv decimal(5,3) null,
+cd decimal(4,2) null,
+elecq bit null,
+toiletq bit null,
+drwaterq bit null,
+cookingq bit null)
+alter table dbo.houshold_index with check add constraint fk_index foreign key(childid,roundid)
+references childidentification(childid,roundid) alter table dbo.houshold_index check constraint fk_index
+
+/*** create table Child household Property and ownership as household_ownership and altering table to add foreign key referencing the childidentification table ***/
+
+create table dbo.household_ownership(
+childid nvarchar(15) not null,
+roundid tinyint not null,
+ownlandhouse bit null,
+ownhouse bit null)
+alter table dbo.household_ownership with check add constraint fk_own foreign key(childid,roundid)
+references childidentification(childid,roundid) alter table dbo.household_ownership check constraint fk_own
+
+/*** creating table Household credit, food security as household_credit_food and altering table to add foreign key referencing the childidentification table ***/
+
+create table Household_credit_food(
+childid nvarchar(15) not null,
+roundid tinyint not null,
+credit bit null,
+foodsec tinyint null)
+alter table dbo.Household_credit_food with check add constraint fk_food foreign key(childid,roundid)
+references childidentification(childid,roundid) alter table dbo.Household_credit_food check constraint fk_food
+
+
+/*** creating table Child time use as child_timeuse and altering table to add foreign key referencing the childidentification table ***/
+
+create table dbo.child_timeuse(
+childid nvarchar(15) not null,
+roundid tinyint not null,
+hsleep int null,
+hcare int null,
+hchore int null,
+htask int null,
+hwork int null,
+hschool int null,
+hstudy int null,
+hplay int null,
+commwork int null,
+commsch int null)
+alter table dbo.child_timeuse with check add constraint fk_use foreign key(childid,roundid)
+references childidentification(childid,roundid) 
+alter table dbo.child_timeuse check constraint fk_use
+
+/*** create table Child Subjective well being as child_wellbeing and altering table to add foreign key referencing the childidentification table ***/
+
+create table dbo.child_wellbeing(
+childid nvarchar(15) not null,
+roundid tinyint not null,
+chhrell tinyint null,
+chhealth tinyint null,
+cladder tinyint null)
+alter table dbo.child_wellbeing with check add constraint fk_well foreign key(childid,roundid)
+references dbo.childidentification(childid,roundid)
+alter table dbo.child_wellbeing check constraint fk_well
+
+/*** creating table Child Literature level as child_liter and altering table to add foreign key referencing the childidentification table ***/
+
+create table dbo.child_liter(
+childid nvarchar(15) not null,
+roundid tinyint not null,
+levlread tinyint null,
+levlwrite tinyint null,
+literate bit null)
+alter table dbo.child_liter with check add constraint fk_lit foreign key(childid,roundid)
+references dbo.childidentification(childid,roundid)
+alter table dbo.child_liter check constraint fk_lit
+
+
+/*** creating table Child General Feature as child_xtics and altering table to add foreign key referencing the childidentification table ***/
+
+create table dbo.child_xtics(
+childid nvarchar(15) not null,
+roundid tinyint not null,
+chsex tinyint null,
+chlang tinyint null,
+chethnic tinyint null,
+chldrel tinyint null,
+agemon smallint null,
+marrcohab bit null,
+marrcohab_age tinyint null,
+birth bit null,
+birth_age tinyint null)
+alter table dbo.child_xtics with check add constraint fk_feat foreign key(childid,roundid)
+references dbo.childidentification(childid,roundid)
+alter table dbo.child_xtics check constraint fk_feat
+
+
+/*** creating table childs anthropometric information as child_anthro_info and altering table to add foreign key referencing the childidentification table ***/
+
+create table child_anthro_info(
+childid nvarchar(15) not null,
+roundid tinyint not null,
+chweight  decimal (25,20) null,
+chheight decimal(25,20) null,
+bmi decimal(25,20) null,
+zwfa decimal (25,20) null,
+zhfa decimal(25,20) null,
+zbfa decimal(25,20) null,
+zwf1 decimal (25,20) null,
+fwfa tinyint null,
+fhfa tinyint null,
+fbfa tinyint null,
+fwf1 tinyint null,
+underweight tinyint null,
+stunting tinyint null,
+thinness tinyint null)
+alter table dbo.child_anthro_info with check add constraint fk_anthro foreign key(childid,roundid)
+references dbo.childidentification(childid,roundid)
+alter table dbo.child_anthro_info check constraint fk_anthro
+
+T-SQL STATEMENTS FOR TABLES Task 1
+
+--- inserting data from india,peru,ethopia and Vietnam table into childidentification table---
+
+insert into dbo.childidentification(
+childid, roundid, clusterid, commid, typesite,region,
+dint, yc, chloc, inround_ch, panel, deceased)
+select cast(childid as nvarchar(15)),
+cast (round as tinyint),
+cast(clustid as tinyint),
+cast(commid as nvarchar(15)),
+cast(typesite as tinyint),
+cast(region as tinyint),
+cast(dint as date),
+cast (yc as bit),
+cast(childloc as bit),
+cast(inround as bit),
+cast(panel12345 as bit),
+cast(deceased as bit) from dbo.india_table
+
+insert into dbo.childidentification(
+childid, roundid, clusterid, commid, typesite,region,
+dint, yc, chloc, inround_ch, panel, deceased)
+select cast(childid as nvarchar(15)),
+cast (round as tinyint),
+cast(clustid as tinyint),
+cast(placeid as nvarchar(15)),
+cast(typesite as tinyint),
+cast(region as tinyint),
+cast(dint as date),
+cast (yc as bit),
+cast(childloc as bit),
+cast(inround as bit),
+cast(panel12345 as bit),
+cast(deceased as bit) from dbo.peru_table
+
+insert into dbo.childidentification(
+childid, roundid, clusterid, commid, typesite,region,
+dint, yc, chloc, inround_ch, panel, deceased)
+select cast(childid as nvarchar(15)),
+cast (round as tinyint),
+cast(clustid as tinyint),
+cast(commid as nvarchar(15)),
+cast(typesite as tinyint),
+cast(region as tinyint),
+cast(dint as date),
+cast (yc as bit),
+cast(childloc as bit),
+cast(inround as bit),
+cast(panel as bit),
+cast(deceased as bit) from dbo.ethiopia_table
+
+
+insert into dbo.childidentification(
+childid, roundid, clusterid, commid, typesite,region,
+dint, yc, chloc, inround_ch, panel, deceased)
+select cast(childid as nvarchar(15)),
+cast (round as tinyint),
+cast(clustid as tinyint),
+cast(commid as nvarchar(15)),
+cast(typesite as tinyint),
+cast(region as tinyint),
+cast(dint as date),
+cast (yc as bit),
+cast(childloc as bit),
+cast(inround as bit),
+cast(panel12345 as bit),
+cast(deceased as bit) from dbo.vietnam_table
+
+insert into dbo.child_xtics
+(childid, roundid, chsex, chlang, chethnic, chldrel, agemon, marrcohab, marrcohab_age, birth, birth_age)
+select cast(childid as nvarchar(15)),
+cast(round as tinyint),
+cast(chsex as tinyint),
+cast(chlang as tinyint),
+cast(chethnic as tinyint),
+cast(chldrel as tinyint),
+cast(agemon as smallint),
+cast (marrcohab as bit),
+cast (marrcohab_age as tinyint),
+cast(birth as bit),
+cast(birth_age as tinyint) from dbo.india_table
+
+insert into dbo.child_xtics
+(childid, roundid, chsex, chlang, chethnic, chldrel, agemon, marrcohab, marrcohab_age, birth, birth_age)
+select cast(childid as nvarchar(15)),
+cast(round as tinyint),
+cast(chsex as tinyint),
+cast(chlang as tinyint),
+cast(chethnic as tinyint),
+cast(chldrel as tinyint),
+cast(agemon as smallint),
+cast (marrcohab as bit),
+cast (marrcohab_age as tinyint),
+cast(birth as bit),
+cast(birth_age as tinyint) from dbo.peru_table
+
+insert into dbo.child_xtics
+(childid, roundid, chsex, chlang, chethnic, chldrel, agemon, marrcohab, marrcohab_age, birth, birth_age)
+select cast(childid as nvarchar(15)),
+cast(round as tinyint),
+cast(chsex as tinyint),
+cast(chlang as tinyint),
+cast(chethnic as tinyint),
+cast(chldrel as tinyint),
+cast(agemon as smallint),
+cast (marrcohab as bit),
+cast (marrcohab_age as tinyint),
+cast(birth as bit),
+cast(birth_age as tinyint) from dbo.vietnam_table
+
+insert into dbo.child_xtics
+(childid, roundid, chsex, chlang, chethnic, chldrel, agemon, marrcohab, marrcohab_age, birth, birth_age)
+select cast(childid as nvarchar(15)),
+cast(round as tinyint),
+cast(chsex as tinyint),
+cast(chlang as tinyint),
+cast(chethnic as tinyint),
+cast(chldrel as tinyint),
+cast(agemon as smallint),
+cast (marrcohab as bit),
+cast (marrcohab_age as tinyint),
+cast(birth as bit),
+cast(birth_age as tinyint) from dbo.ethiopia_table
+
+/** inserting values from peru,ethiopia,india and vietnam table into child_liter table **/
+
+insert into dbo.child_liter
+(childid, roundid, levlread, levlwrit, literate)
+select cast(childid as nvarchar(15)),
+cast(round as tinyint),
+cast(levlread as tinyint),
+cast(levlwrit as tinyint),
+cast(literate as bit) from dbo.ethiopia_table
+
+insert into dbo.child_liter
+(childid, roundid, levlread, levlwrit, literate)
+select cast(childid as nvarchar(15)),
+cast(round as tinyint),
+cast(levlread as tinyint),
+cast(levlwrit as tinyint),
+cast(literate as bit) from dbo.peru_table
+
+insert into dbo.child_liter
+(childid, roundid, levlread, levlwrit, literate)
+select cast(childid as nvarchar(15)),
+cast(round as tinyint),
+cast(levlread as tinyint),
+cast(levlwrit as tinyint),
+cast(literate as bit) from dbo.vietnam_table
+
+insert into dbo.child_liter
+(childid, roundid, levlread, levlwrit, literate)
+select cast(childid as nvarchar(15)),
+cast(round as tinyint),
+cast(levlread as tinyint),
+cast(levlwrit as tinyint),
+cast(literate as bit) from dbo.india_table
+
+-- inserting data from peru,india,ethiopia table and vietnam into table child_timeuse table---
+
+insert into dbo.child_timeuse
+(childid, roundid, hsleep, hcare,hchore, htask, hwork, hschool, hstudy, hplay, commwork, commsch)
+select cast(childid as nvarchar(15)),
+cast(round as tinyint),
+cast(hsleep as int),
+cast(hcare as int),
+cast(hchore as int),
+cast (htask as int),
+cast(hwork as int),
+cast(hschool as int),
+cast(hstudy as int),
+cast(hplay as int),
+cast(commwork as int),
+cast(commsch as int) from dbo.ethiopia_table
+
+insert into dbo.child_timeuse
+(childid, roundid, hsleep, hcare,hchore, htask, hwork, hschool, hstudy, hplay, commwork, commsch)
+select cast(childid as nvarchar(15)),
+cast(round as tinyint),
+cast(hsleep as int),
+cast(hcare as int),
+cast(hchore as int),
+cast (htask as int),
+cast(hwork as int),
+cast(hschool as int),
+cast(hstudy as int),
+cast(hplay as int),
+cast(commwork as int),
+cast(commsch as int) from dbo.peru_table
+
+insert into dbo.child_timeuse
+(childid, roundid, hsleep, hcare,hchore, htask, hwork, hschool, hstudy, hplay, commwork, commsch)
+select cast(childid as nvarchar(15)),
+cast(round as tinyint),
+cast(hsleep as int),
+cast(hcare as int),
+cast(hchore as int),
+cast (htask as int),
+cast(hwork as int),
+cast(hschool as int),
+cast(hstudy as int),
+cast(hplay as int),
+cast(commwork as int),
+cast(commsch as int) from dbo.vietnam_table
+
+
+insert into dbo.child_timeuse
+(childid, roundid, hsleep, hcare,hchore, htask, hwork, hschool, hstudy, hplay, commwork, commsch)
+select cast(childid as nvarchar(15)),
+cast(round as tinyint),
+cast(hsleep as int),
+cast(hcare as int),
+cast(hchore as int),
+cast (htask as int),
+cast(hwork as int),
+cast(hschool as int),
+cast(hstudy as int),
+cast(hplay as int),
+cast(commwork as int),
+cast(commsch as int) from dbo.vietnam_table
+
+--- insert values from peru,india,vietnam and ethiopia table into Household_credit_food table ---
+
+insert into dbo.Household_credit_food
+(childid, roundid, credit, foodsec)
+select cast(childid as nvarchar(15)),
+cast(round as tinyint),
+cast(credit as bit),
+cast(foodsec as tinyint) from dbo.ethiopia_table
+
+insert into dbo.Household_credit_food
+(childid, roundid, credit, foodsec)
+select cast(childid as nvarchar(15)),
+cast(round as tinyint),
+cast(credit as bit),
+cast(foodsec as tinyint) from dbo.peru_table
+
+insert into dbo.Household_credit_food
+(childid, roundid, credit, foodsec)
+select cast(childid as nvarchar(15)),
+cast(round as tinyint),
+cast(credit as bit),
+cast(foodsec as tinyint) from dbo.vietnam_table
+
+insert into dbo.Household_credit_food
+(childid, roundid, credit, foodsec)
+select cast(childid as nvarchar(15)),
+cast(round as tinyint),
+cast(credit as bit),
+cast(foodsec as tinyint) from dbo.india_table
+
+
+---insert values from peru,vietnam,ethiopia and india table into household_ownership table---
+
+insert into dbo.household_ownership
+(childid, roundid, ownlandhse, ownhouse)
+select cast(childid as nvarchar(15)),
+cast(round as tinyint),
+cast(ownlandhse as bit),
+cast(ownhouse as bit) from dbo.ethiopia_table
+
+insert into dbo.household_ownership
+(childid, roundid, ownlandhse, ownhouse)
+select cast(childid as nvarchar(15)),
+cast(round as tinyint),
+cast(ownlandhse as bit),
+cast(ownhouse as bit) from dbo.peru_table
+
+insert into dbo.household_ownership
+(childid, roundid, ownlandhse, ownhouse)
+select cast(childid as nvarchar(15)),
+cast(round as tinyint),
+cast(ownlandhse as bit),
+cast(ownhouse as bit) from dbo.vietnam_table
+
+insert into dbo.household_ownership
+(childid, roundid, ownlandhse, ownhouse)
+select cast(childid as nvarchar(15)),
+cast(round as tinyint),
+cast(ownlandhse as bit),
+cast(ownhouse as bit) from dbo.india_table
+
+
+--inserting values peru,vietnam,ethiopia and india table into household_index table---
+
+insert into dbo.houshold_index
+(childid, roundid, wi, hq, sv, cd, elecq, toiletq, drwaterq, cookingq)
+select cast(childid as nvarchar(15)),
+cast(round as tinyint),
+cast (wi_new as decimal(25,20)),
+cast(hq_new as decimal(25,20)),
+cast(sv_new as decimal(5,3)),
+cast(cd_new as decimal(4,2)),
+cast(elecq_new as bit),
+cast(toiletq_new as bit),
+cast(drwaterq_new as bit),
+cast(cookingq_new as bit) from dbo.ethiopia_table
+
+insert into dbo.houshold_index
+(childid, roundid, wi, hq, sv, cd, elecq, toiletq, drwaterq, cookingq)
+select cast(childid as nvarchar(15)),
+cast(round as tinyint),
+cast (wi as decimal(25,20)),
+cast(hq as decimal(25,20)),
+cast(sv as decimal(5,3)),
+cast(cd as decimal(4,2)),
+cast(elecq as bit),
+cast(toiletq as bit),
+cast(drwaterq as bit),
+cast(cookingq as bit) from dbo.peru_table
+
+insert into dbo.houshold_index
+(childid, roundid, wi, hq, sv, cd, elecq, toiletq, drwaterq, cookingq)
+select cast(childid as nvarchar(15)),
+cast(round as tinyint),
+cast (wi_new as decimal(25,20)),
+cast(hq_new as decimal(25,20)),
+cast(sv_new as decimal(5,3)),
+cast(cd_new as decimal(4,2)),
+cast(elecq_new as bit),
+cast(toiletq_new as bit),
+cast(drwaterq_new as bit),
+cast(cookingq_new as bit) from dbo.vietnam_table
+
+insert into dbo.houshold_index
+(childid, roundid, wi, hq, sv, cd, elecq, toiletq, drwaterq, cookingq)
+select cast(childid as nvarchar(15)),
+cast(round as tinyint),
+cast (wi as decimal(25,20)),
+cast(hq as decimal(25,20)),
+cast(sv as decimal(5,3)),
+cast(cd as decimal(4,2)),
+cast(elecq as bit),
+cast(toiletq as bit),
+cast(drwaterq as bit),
+cast(cookingq as bit) from dbo.india_table
+
+
+---inserting values from peru,ethiopia,vietnam and india table into childbiological_feature table---
+
+insert into dbo.childbiological_feature
+(childid, roundid, dadid, dadage, dadalive, dadydied, dadcantread, dadedu, momid, momage,momalive,momyrdied,
+momcantread,momedu)
+select cast(childid as nvarchar(15)),
+cast(round as tinyint),
+cast(dadid as tinyint),
+cast (dadage as smallint),
+cast(dadlive as tinyint),
+cast(dadyrdied as tinyint),
+cast(dadcantread as bit),
+cast(dadedu as tinyint),
+cast(momid as tinyint),
+cast(momage as smallint),
+cast(momlive as tinyint),
+cast(momyrdied as tinyint),
+cast(momcantread as bit),
+cast(momedu as tinyint) from dbo.peru_table
+
+insert into dbo.childbiological_feature
+(childid, roundid, dadid, dadage, dadalive, dadydied, dadcantread, dadedu, momid, momage,momalive,momyrdied,
+momcantread,momedu)
+select cast(childid as nvarchar(15)),
+cast(round as tinyint),
+cast(dadid as tinyint),
+cast (dadage as smallint),
+cast(dadlive as tinyint),
+cast(dadyrdied as tinyint),
+cast(dadcantread as bit),
+cast(dadedu as tinyint),
+cast(momid as tinyint),
+cast(momage as smallint),
+cast(momlive as tinyint),
+cast(momyrdied as tinyint),
+cast(momcantread as bit),
+cast(momedu as tinyint) from dbo.india_table
+
+insert into dbo.childbiological_feature
+(childid, roundid, dadid, dadage, dadalive, dadydied, dadcantread, dadedu, momid, momage,momalive,momyrdied,
+momcantread,momedu)
+select cast(childid as nvarchar(15)),
+cast(round as tinyint),
+cast(dadid as tinyint),
+cast (dadage as smallint),
+cast(dadlive as tinyint),
+cast(dadyrdied as tinyint),
+cast(dadcantread as bit),
+cast(dadedu as tinyint),
+cast(momid as tinyint),
+cast(momage as smallint),
+cast(momlive as tinyint),
+cast(momyrdied as tinyint),
+cast(momcantread as bit),
+cast(momedu as tinyint) from dbo.vietnam_table
+
+insert into dbo.childbiological_feature
+(childid, roundid, dadid, dadage, dadalive, dadydied, dadcantread, dadedu, momid, momage,momalive,momyrdied,
+momcantread,momedu)
+select cast(childid as nvarchar(15)),
+cast(round as tinyint),
+cast(dadid as tinyint),
+cast (dadage as smallint),
+cast(dadlive as tinyint),
+cast(dadyrdied as tinyint),
+cast(dadcantread as bit),
+cast(dadedu as tinyint),
+cast(momid as tinyint),
+cast(momage as smallint),
+cast(momlive as tinyint),
+cast(momyrdied as tinyint),
+cast(momcantread as bit),
+cast(momedu as tinyint) from dbo.ethiopia_table
+
+
+T-SQLS STATEMENTS FOR SUMMARY REPORTS
+
+REPORT 1
+
+/** Report to measure the child reading abilities in various regions in ethiopia and typesite(urban and Rural) 
+from child identification tableand child literature table in round 3
+using where to filter ,groupby and orderby **/
+
+select count(*) as "total children",
+case chid.typesite
+when 1 then 'urban'
+when 2 then 'rural'
+else 'unknown' end as 'type of residence',
+case chid.region
+when 1 then ' Tigray'
+when 3 then 'Amhara'
+when 5 then 'Somali'
+when 12 then 'Gambela'
+else 'unknown region' end as 'area',
+case lit.levlread
+when 1 then 'child cannot read anything'
+when 2 then 'child can read letters'
+when 3 then 'child can read words'
+else 'child can read sentence' end as 'reading abilities'
+from dbo.childidentification  as chid join dbo.child_liter as lit with (updlock)
+on chid.childid = lit.childid
+where chid.region in(1,3,5,12) and lit.levlread is not null
+and chid.roundid = 3
+group by chid.typesite,chid.region,lit.levlread
+order by [total children]
+
+REPORT 2
+
+/** Report to measure food situation and credit level in peru taking some regions and Area of residence,
+(urban/rural) into consideration,joining childidentification and household_credit_food table in roundid 4 **/
+
+
+ select count(*) as 'number of children',
+ case chid.typesite
+ when 1 then 'urban'
+ when 2 then 'rural'
+ else 'not known'  end as 'Area of Residence',
+ case chid.region
+ when 32 then 'Sierra'
+ when 33 then 'Selva'
+ when 31 then 'Costa'
+ else 'no region' end as 'region of Residence',
+ case cf.credit
+ when 0 then 'no'
+ when 1 then 'yes' end as 'credit level',
+ case cf.foodsec
+ when 1 then 'we always eat enough of what we want'
+ when 2 then 'we eat enough but not always what we would like'
+ when 3 then 'we sometimes do not eat enough'
+ when 4 then 'we frequently do not eat enough' end as 'food situation'
+ from dbo.childidentification as chid join dbo.Household_credit_food as cf with (updlock)
+ on chid.childid = cf.childid
+ where chid.region in (32,33,31) and  cf.foodsec is not null and cf.credit is not null
+ and chid.roundid = 4
+ group by chid .typesite,chid.region,cf.credit,cf.foodsec
+ order by  [number of children]
+
+
+REPORT 3
+
+/** Report to measure food situation and credit level in india taking some regions and Area of residence,
+(urban/rural) into consideration,joining childidentification and household_credit_food table in roundid 4 
+using where to filter roundid, region,coloumns that are null,then group by the non-aggregated columns and finally
+order by number of children**/
+
+  select count(*) as 'number of children',
+ case chid.typesite
+ when 1 then 'urban'
+ when 2 then 'rural'
+ else 'not known'  end as 'Area of Residence',
+ case chid.region
+ when 24 then 'Others'
+ when 23 then 'Telangana' end as 'region of residence',
+ case cf.credit
+ when 0 then 'no'
+ when 1 then 'yes' end as 'credit level',
+ case cf.foodsec
+ when 1 then 'we always eat enough of what we want'
+ when 2 then 'we eat enough but not always what we would like'
+ when 3 then 'we sometimes do not eat enough'
+ when 4 then 'we frequently do not eat enough' end as 'food situation'
+ from dbo.childidentification as chid join dbo.Household_credit_food as cf with (updlock)
+ on chid.childid = cf.childid
+ where chid.region in (24,23) and  cf.foodsec is not null and cf.credit is not null
+ and chid.roundid = 4
+ group by chid .typesite,chid.region,cf.credit,cf.foodsec
+ order by  [number of children]
+
+REPORT 4
+
+  /** Report to measure food situation and credit level in Vietnam taking some regions and Area of residence,
+(urban/rural) into consideration,joining childidentification and household_credit_food table in roundid 4 
+using where to filter roundid, region,coloumns that are null,then group by the non-aggregated columns and finally
+order by number of children**/
+
+  select count(*) as 'number of children',
+ case chid.typesite
+ when 1 then 'urban'
+ when 2 then 'rural'
+ else 'not known'  end as 'Area of Residence',
+ case chid.region
+ when 51 then 'Northern Uplands'
+ when 52 then 'Red River Delta'
+ when 55 then ' Highlands'
+ when 56 then 'South Eastern' end as 'region of residence',
+ case cf.credit
+ when 0 then 'no'
+ when 1 then 'yes' end as 'credit level',
+ case cf.foodsec
+ when 1 then 'we always eat enough of what we want'
+ when 2 then 'we eat enough but not always what we would like'
+ when 3 then 'we sometimes do not eat enough'
+ when 4 then 'we frequently do not eat enough' end as 'food situation'
+ from dbo.childidentification as chid join dbo.Household_credit_food as cf with (updlock)
+ on chid.childid = cf.childid
+ where chid.region in (51,52,55,56) and  cf.foodsec is not null and cf.credit is not null
+ and chid.roundid = 4
+ group by chid .typesite,chid.region,cf.credit,cf.foodsec
+ order by  [number of children]
+
+REPORT 5
+
+/** Comparing in general the house hold land owners in vietnam and ethiopia  table with ,residence type
+  in round 1-5 using where to filter,group by where necessary respectively **/
+
+  select COUNT(*) as 'number of household',
+  case ownlandhse
+  when 0 then 'no'
+  when 1 then 'yes' end as 'household owns land'
+  from dbo.vietnam_table (updlock)
+  where ownlandhse in (0,1) 
+  group by ownlandhse
+
+  select COUNT(*) as 'number of household',
+  case ownlandhse
+  when 0 then 'no'
+  when 1 then 'yes' end as 'household owns land'
+  from dbo.ethiopia_table (updlock)
+  where ownlandhse in (0,1)
+  group by ownlandhse
+
+
+T-SQL FOR STORED PROCEDURE
+
+--- Creating Stored Procedure from Vietnam table-----
+ ---Trigger if the the Access to electricity is no and ownhouse is yes-----
+
+ create procedure identification_ownhouse
+as
+ select childid,
+ case ownhouse
+ when 0 then 'no'
+ when 1 then 'yes' end as 'ownhouse group',
+ case elecq_new
+ when 0 then 'no'
+ when 1 then 'yes' end as 'Access to electricity',
+ case region
+ when 57 then 'Mekong River Delta'
+ when 56 then 'South Eastern' end as 'Region of residence'
+ from dbo.vietnam_table
+ where region = 57
+
+
+T-SQLS STATEMENT FOR VIEWS
+
+---Creating a View called child_zscore_information from india_table considering region of residence,
+ ---childsex and zscore measurement---
+
+ create view dbo.child_zscore_information
+ as(
+ select round(SUM(zwfa),2) as 'total weight zscore',round(SUM(zhfa),2) as 'total height zscore',
+ round(SUM(zbfa),2) as 'BMI-for-age z-score',
+ round(SUM(zwfl),2) as 'Weight-for-length/height z-score',
+ case chsex
+ when 1 then 'male'
+ when 2 then 'female' end as 'gender',
+ case region
+ when 23 then 'Telangana' end as 'region of residence'
+ from india_table
+ group by chsex, region)
+
+
+---creating a view called child_immunization_list from india_table condsidering region of residence in india
+ ---Area of residence abd grouping by all the columns specified---
+
+ create view child_immunization_list
+ as(
+ select bcg,tetanus,measles,polio,dpt,hib,
+ case region
+ when 24 then 'Others'
+ when 23 then 'Telangana' end as 'region of residemce',
+ case typesite
+ when 1 then 'urban'
+ when 2 then 'rural' end as 'Area of residence'
+ from india_table
+ group by bcg,tetanus,measles,polio,dpt,hib,region,typesite)
+ 
+
+ 
+
+TASK 2 T-SQL STATEMENTS
+
+
+USE [adb.coursework]
+GO
+/****** creating database Object:  Table [dbo].[vietnamwave_1] with create and insert statement   Script Date: 04/19/2022 2:58:35 PM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[vietnamwave_1](
+	[UNIQUEID] [nvarchar](50) NOT NULL,
+	[SCHOOLID] [int] NULL,
+	[CLASSID] [int] NULL,
+	[STUDENTID] [int] NULL,
+	[YLCHILDID] [nvarchar](50) NULL,
+	[PROVINCE] [float] NULL,
+	[DISTRICTCODE] [float] NULL,
+	[LOCALITY] [float] NULL,
+	[GENDER] [float] NULL,
+	[AGE] [int] NULL,
+	[ETHNICITY] [float] NULL,
+	[ABSENT_DAYS] [float] NULL,
+	[MOM_READ] [float] NULL,
+	[MOM_EDUC] [float] NULL,
+	[DAD_READ] [float] NULL,
+	[DAD_EDUC] [float] NULL,
+	[STDYLCHD] [float] NULL,
+	[STDCMPLT] [float] NULL,
+	[STDDINT] [nvarchar](50) NULL,
+	[STDLIV] [float] NULL,
+	[STDLNGHM] [float] NULL,
+	[STDMEAL] [float] NULL,
+	[STDHLTH1] [float] NULL,
+	[STDHLTH2] [float] NULL,
+	[STDHLTH3] [float] NULL,
+	[STDHLTH4] [float] NULL,
+	[STDHLTH5] [float] NULL,
+	[STDHLTH6] [float] NULL,
+	[STDHLTH0] [float] NULL,
+	[STPPLHM] [float] NULL,
+	[STSIBOLD] [float] NULL,
+	[STSIBYNG] [float] NULL,
+	[STNMBOOK] [float] NULL,
+	[STPLSTDY] [float] NULL,
+	[STHVMTEL] [float] NULL,
+	[STHVRADO] [float] NULL,
+	[STHVTELE] [float] NULL,
+	[STHVBIKE] [float] NULL,
+	[STHVMTBK] [float] NULL,
+	[STHVDESK] [float] NULL,
+	[STHVCHR] [float] NULL,
+	[STHVLAMP] [float] NULL,
+	[STHVEFAN] [float] NULL,
+	[STHVAIRC] [float] NULL,
+	[STHVCAR] [float] NULL,
+	[STHVCOMP] [float] NULL,
+	[STHVINTR] [float] NULL,
+	[STHVFRDG] [float] NULL,
+	[STHVMCRO] [float] NULL,
+	[STHVDVD] [float] NULL,
+	[STHVCBLE] [float] NULL,
+	[STTMSCH] [float] NULL,
+	[STEATLNC] [float] NULL,
+	[STPAYLNC] [float] NULL,
+	[STRPTCL1] [float] NULL,
+	[STRPTCL6] [float] NULL,
+	[STRPTCL10] [float] NULL,
+	[STTLTSCH] [float] NULL,
+	[STAGEENG] [float] NULL,
+	[STITMOW1] [float] NULL,
+	[STITMOW2] [float] NULL,
+	[STITMOW3] [float] NULL,
+	[STITMOW4] [float] NULL,
+	[STITMOW5] [float] NULL,
+	[STITMOW6] [float] NULL,
+	[STITMOW7] [float] NULL,
+	[STITMOW8] [float] NULL,
+	[STBRWBK] [float] NULL,
+	[STREADFN] [float] NULL,
+	[STREADCH] [float] NULL,
+	[STREADLR] [float] NULL,
+	[STPLHLRD] [float] NULL,
+	[STPLHL01] [float] NULL,
+	[STPLHL02] [float] NULL,
+	[STPLHL03] [float] NULL,
+	[STPLHL04] [float] NULL,
+	[STPLHL05] [float] NULL,
+	[STPLHL06] [float] NULL,
+	[STPLHL07] [float] NULL,
+	[STSPEN01] [float] NULL,
+	[STSPEN02] [float] NULL,
+	[STSPEN03] [float] NULL,
+	[STSPEN04] [float] NULL,
+	[STSPEN05] [float] NULL,
+	[STATEN01] [float] NULL,
+	[STATEN02] [float] NULL,
+	[STATEN03] [float] NULL,
+	[STATEN04] [float] NULL,
+	[STNONSCL] [float] NULL,
+	[STGR1001] [float] NULL,
+	[STGR1002] [float] NULL,
+	[STGR1003] [float] NULL,
+	[STGR1004] [float] NULL,
+	[STGR1005] [float] NULL,
+	[STGR1006] [float] NULL,
+	[STGR1007] [float] NULL,
+	[STGR1008] [float] NULL,
+	[STGR1009] [float] NULL,
+	[STGR1011] [float] NULL,
+	[STHGHGRD] [float] NULL,
+	[ENG_TEST] [nvarchar](50) NULL,
+	[ENG_ITEM1] [float] NULL,
+	[ENG_ITEM2] [float] NULL,
+	[ENG_ITEM3] [float] NULL,
+	[ENG_ITEM4] [float] NULL,
+	[ENG_ITEM5] [float] NULL,
+	[ENG_ITEM6] [float] NULL,
+	[ENG_ITEM7] [float] NULL,
+	[ENG_ITEM8] [float] NULL,
+	[ENG_ITEM9] [float] NULL,
+	[ENG_ITEM10] [float] NULL,
+	[ENG_ITEM11] [float] NULL,
+	[ENG_ITEM12] [float] NULL,
+	[ENG_ITEM13] [float] NULL,
+	[ENG_ITEM14] [float] NULL,
+	[ENG_ITEM15] [float] NULL,
+	[ENG_ITEM16] [float] NULL,
+	[ENG_ITEM17] [float] NULL,
+	[ENG_ITEM18] [float] NULL,
+	[ENG_ITEM19] [float] NULL,
+	[ENG_ITEM20] [float] NULL,
+	[ENG_ITEM21] [float] NULL,
+	[ENG_ITEM22] [float] NULL,
+	[ENG_ITEM23] [float] NULL,
+	[ENG_ITEM24] [float] NULL,
+	[ENG_ITEM25] [float] NULL,
+	[ENG_ITEM26] [float] NULL,
+	[ENG_ITEM27] [float] NULL,
+	[ENG_ITEM28] [float] NULL,
+	[ENG_ITEM29] [float] NULL,
+	[ENG_ITEM30] [float] NULL,
+	[ENG_ITEM31] [float] NULL,
+	[ENG_ITEM32] [float] NULL,
+	[ENG_ITEM33] [float] NULL,
+	[ENG_ITEM34] [float] NULL,
+	[ENG_ITEM35] [float] NULL,
+	[ENG_ITEM36] [float] NULL,
+	[ENG_ITEM37] [float] NULL,
+	[ENG_ITEM38] [float] NULL,
+	[ENG_ITEM39] [float] NULL,
+	[ENG_ITEM40] [float] NULL,
+	[ENG_RAWSCORE] [float] NULL,
+	[MATH_TEST] [nvarchar](50) NULL,
+	[MATH_ITEM1] [float] NULL,
+	[MATH_ITEM2] [float] NULL,
+	[MATH_ITEM3] [float] NULL,
+	[MATH_ITEM4] [float] NULL,
+	[MATH_ITEM5] [float] NULL,
+	[MATH_ITEM6] [float] NULL,
+	[MATH_ITEM7] [float] NULL,
+	[MATH_ITEM8] [float] NULL,
+	[MATH_ITEM9] [float] NULL,
+	[MATH_ITEM10] [float] NULL,
+	[MATH_ITEM11] [float] NULL,
+	[MATH_ITEM12] [float] NULL,
+	[MATH_ITEM13] [float] NULL,
+	[MATH_ITEM14] [float] NULL,
+	[MATH_ITEM15] [float] NULL,
+	[MATH_ITEM16] [float] NULL,
+	[MATH_ITEM17] [float] NULL,
+	[MATH_ITEM18] [float] NULL,
+	[MATH_ITEM19] [float] NULL,
+	[MATH_ITEM20] [float] NULL,
+	[MATH_ITEM21] [float] NULL,
+	[MATH_ITEM22] [float] NULL,
+	[MATH_ITEM23] [float] NULL,
+	[MATH_ITEM24] [float] NULL,
+	[MATH_ITEM25] [float] NULL,
+	[MATH_ITEM26] [float] NULL,
+	[MATH_ITEM27] [float] NULL,
+	[MATH_ITEM28] [float] NULL,
+	[MATH_ITEM29] [float] NULL,
+	[MATH_ITEM30] [float] NULL,
+	[MATH_ITEM31] [float] NULL,
+	[MATH_ITEM32] [float] NULL,
+	[MATH_ITEM33] [float] NULL,
+	[MATH_ITEM34] [float] NULL,
+	[MATH_ITEM35] [float] NULL,
+	[MATH_ITEM36] [float] NULL,
+	[MATH_ITEM37] [float] NULL,
+	[MATH_ITEM38] [float] NULL,
+	[MATH_ITEM39] [float] NULL,
+	[MATH_ITEM40] [float] NULL,
+	[MATH_RAWSCORE] [float] NULL,
+	[GRLENRL] [float] NULL,
+	[BOYENRL] [float] NULL,
+	[TTLENRL] [float] NULL,
+	[TGRLENRL] [float] NULL,
+	[TBOYENRL] [float] NULL,
+	[TTTLENRL] [float] NULL,
+	[ATDTMSY] [float] NULL,
+	[ATDDFSY] [float] NULL,
+	[TGMTHENG] [float] NULL,
+	[SCALLCT] [float] NULL,
+	[GRPABLTY] [float] NULL,
+	[CLSORD1] [float] NULL,
+	[CLSORD2] [float] NULL,
+	[SCAVLB1] [float] NULL,
+	[SCAVLB2] [float] NULL,
+	[SCAVLB3] [float] NULL,
+	[SCAVLB4] [float] NULL,
+	[SCAVLB5] [float] NULL,
+	[SCAVLB6] [float] NULL,
+	[SCAVLB7] [float] NULL,
+	[SCAVLB8] [float] NULL,
+	[SCAVLB9] [float] NULL,
+	[SCAVLB10] [float] NULL,
+	[SCPRDDAY] [float] NULL,
+	[SCLNONPR] [float] NULL,
+	[SCMNMTIN] [float] NULL,
+	[SCMNENIN] [float] NULL,
+	[SCTXTMTH] [float] NULL,
+	[SCTXTENG] [float] NULL,
+	[NUMG10CLS] [float] NULL,
+	[HTNTCMP] [float] NULL,
+	[HTDINT] [date] NULL,
+	[HTAGE] [float] NULL,
+	[HTSEX] [float] NULL,
+	[HTETHGRP] [float] NULL,
+	[HTRELGN] [float] NULL,
+	[HTMTHTNG] [float] NULL,
+	[HTFRMPRV] [float] NULL,
+	[HTCURRLE] [float] NULL,
+	[HTYRSHT] [float] NULL,
+	[HTLVLEDC] [float] NULL,
+	[HTLVLTCH] [float] NULL,
+	[HTEXCTCH] [float] NULL,
+	[HTTYPSCH] [float] NULL,
+	[HTLWSGRD] [float] NULL,
+	[HTHGHGRD] [float] NULL,
+	[HTNMSTEN] [float] NULL,
+	[HTNMETST] [float] NULL,
+	[HTYREST] [float] NULL,
+	[HTP135CM] [float] NULL,
+	[HTPRDIST] [float] NULL,
+	[HTBOARD] [float] NULL,
+	[HTSCHAVL] [float] NULL,
+	[HTMRNSTR] [nvarchar](50) NULL,
+	[HTMRNEND] [nvarchar](50) NULL,
+	[HTAFTSTR] [nvarchar](50) NULL,
+	[HTAFTEND] [nvarchar](50) NULL,
+	[HTREGTCH] [float] NULL,
+	[HTNONCMP] [float] NULL,
+	[HTEXTCUR] [float] NULL,
+	[HTNOACT] [float] NULL,
+	[HTNOCMCH] [float] NULL,
+	[HTNOCMCL] [float] NULL,
+	[HTRQNMST] [float] NULL,
+	[HTCENMST] [float] NULL,
+	[HTPTNMST] [float] NULL,
+	[HTRQMATH] [float] NULL,
+	[HTRQENG] [float] NULL,
+	[HTTCHAPP] [float] NULL,
+	[HTREWTC1] [float] NULL,
+	[HTREWTC2] [float] NULL,
+	[HTREWTC4] [float] NULL,
+	[HTREWTC5] [float] NULL,
+	[HTREWTC6] [float] NULL,
+	[HTREWTC7] [float] NULL,
+	[HTREWTC8] [float] NULL,
+	[HTDISTC1] [float] NULL,
+	[HTDISTC2] [float] NULL,
+	[HTDISTC3] [float] NULL,
+	[HTDISTC4] [float] NULL,
+	[HTDISTC6] [float] NULL,
+	[HTDISTC7] [float] NULL,
+	[HTDISTC8] [float] NULL,
+	[HTDISTC0] [float] NULL,
+	[HTGNADMN] [float] NULL,
+	[HTACRARE] [float] NULL,
+	[HTACRAETH] [float] NULL,
+	[HTACRAGND] [float] NULL,
+	[HTACRAPAY] [float] NULL,
+	[HTACRAEXM] [float] NULL,
+	[HTACRAOTH] [float] NULL,
+	[HTACRAALL] [float] NULL,
+	[HTAMPAID1] [float] NULL,
+	[HTEXM011] [float] NULL,
+	[HTEXM021] [float] NULL,
+	[HTEXM031] [float] NULL,
+	[HTEXM041] [float] NULL,
+	[HTEXM051] [float] NULL,
+	[HTEXM061] [float] NULL,
+	[HTEXM001] [float] NULL,
+	[HTAMPAID2] [float] NULL,
+	[HTEXM012] [float] NULL,
+	[HTEXM022] [float] NULL,
+	[HTEXM032] [float] NULL,
+	[HTEXM042] [float] NULL,
+	[HTEXM052] [float] NULL,
+	[HTEXM062] [float] NULL,
+	[HTEXM002] [tinyint] NULL,
+	[HTAMPAID3] [tinyint] NULL,
+	[HTEXM013] [tinyint] NULL,
+	[HTEXM023] [tinyint] NULL,
+	[HTEXM033] [tinyint] NULL,
+	[HTEXM043] [tinyint] NULL,
+	[HTEXM053] [tinyint] NULL,
+	[HTEXM063] [tinyint] NULL,
+	[HTEXM003] [tinyint] NULL,
+	[HTAMPAID4] [tinyint] NULL,
+	[HTEXM014] [tinyint] NULL,
+	[HTEXM024] [tinyint] NULL,
+	[HTEXM034] [tinyint] NULL,
+	[HTEXM044] [tinyint] NULL,
+	[HTEXM054] [float] NULL,
+	[HTEXM064] [float] NULL,
+	[HTEXM004] [float] NULL,
+	[HTAMPAID5] [float] NULL,
+	[HTEXM015] [float] NULL,
+	[HTEXM025] [float] NULL,
+	[HTEXM035] [float] NULL,
+	[HTEXM045] [float] NULL,
+	[HTEXM055] [float] NULL,
+	[HTEXM065] [float] NULL,
+	[HTEXM005] [float] NULL,
+	[HTAMPAID6] [float] NULL,
+	[HTEXM016] [float] NULL,
+	[HTEXM026] [float] NULL,
+	[HTEXM036] [float] NULL,
+	[HTEXM046] [float] NULL,
+	[HTEXM056] [float] NULL,
+	[HTEXM066] [float] NULL,
+	[HTEXM006] [float] NULL,
+	[HTAMPAID7] [float] NULL,
+	[HTEXM017] [float] NULL,
+	[HTEXM027] [float] NULL,
+	[HTEXM037] [float] NULL,
+	[HTEXM047] [float] NULL,
+	[HTEXM057] [float] NULL,
+	[HTEXM067] [float] NULL,
+	[HTEXM007] [float] NULL,
+	[HTAMPAID8] [float] NULL,
+	[HTEXM018] [float] NULL,
+	[HTEXM028] [float] NULL,
+	[HTEXM038] [float] NULL,
+	[HTEXM048] [float] NULL,
+	[HTEXM058] [float] NULL,
+	[HTEXM068] [float] NULL,
+	[HTEXM008] [float] NULL,
+	[HTAMPAID9] [float] NULL,
+	[HTEXM019] [float] NULL,
+	[HTEXM029] [float] NULL,
+	[HTEXM039] [float] NULL,
+	[HTEXM049] [float] NULL,
+	[HTEXM059] [float] NULL,
+	[HTEXM069] [float] NULL,
+	[HTEXM009] [float] NULL,
+	[HTAMPAID10] [float] NULL,
+	[HTEXM0110] [float] NULL,
+	[HTEXM0210] [float] NULL,
+	[HTEXM0310] [float] NULL,
+	[HTEXM0410] [float] NULL,
+	[HTEXM0510] [float] NULL,
+	[HTEXM0610] [float] NULL,
+	[HTEXM0010] [float] NULL,
+	[HTAMPAID11] [float] NULL,
+	[HTEXM0111] [float] NULL,
+	[HTEXM0211] [float] NULL,
+	[HTEXM0311] [float] NULL,
+	[HTEXM0411] [float] NULL,
+	[HTEXM0511] [float] NULL,
+	[HTEXM0611] [float] NULL,
+	[HTEXM0011] [float] NULL,
+	[HTAMPAID12] [float] NULL,
+	[HTEXM0112] [float] NULL,
+	[HTEXM0212] [float] NULL,
+	[HTEXM0312] [float] NULL,
+	[HTEXM0412] [float] NULL,
+	[HTEXM0512] [float] NULL,
+	[HTEXM0612] [float] NULL,
+	[HTEXM0012] [float] NULL,
+	[HTENGR10] [float] NULL,
+	[HTENBY10] [float] NULL,
+	[HTTLGR10] [float] NULL,
+	[HTTLBY10] [float] NULL,
+	[HTENGR11] [float] NULL,
+	[HTENBY11] [float] NULL,
+	[HTTLGR11] [float] NULL,
+	[HTTLBY11] [float] NULL,
+	[HTENGR12] [float] NULL,
+	[HTENBY12] [float] NULL,
+	[HTTLGR12] [float] NULL,
+	[HTTLBY12] [float] NULL,
+	[HTNMCL10] [float] NULL,
+	[HTNMCL11] [float] NULL,
+	[HTNMCL12] [float] NULL,
+	[HTALLC10] [float] NULL,
+	[HTPRTEXP] [float] NULL,
+	[HTENTOT10] [float] NULL,
+	[SCHFAC01A] [float] NULL,
+	[SCHFAC01B] [float] NULL,
+	[SCHFAC02] [float] NULL,
+	[SCHFAC03] [float] NULL,
+	[SCHFAC04] [float] NULL,
+	[SCHFAC05] [float] NULL,
+	[SCHFAC06] [float] NULL,
+	[SCHFAC07] [float] NULL,
+	[SCHFAC08] [float] NULL,
+	[SCHFAC09] [float] NULL,
+	[SCHFAC10] [float] NULL,
+	[SCHFAC11] [float] NULL,
+	[SCHFAC12] [float] NULL,
+	[SCHFAC13] [float] NULL,
+	[SCHFAC14] [float] NULL,
+	[WEIGHT] [float] NULL,
+ CONSTRAINT [PK_vietnam_wave_1] PRIMARY KEY CLUSTERED 
+(
+	[UNIQUEID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+INSERT [dbo].[vietnamwave_1] ([UNIQUEID], [SCHOOLID], [CLASSID], [STUDENTID], [YLCHILDID], [PROVINCE], [DISTRICTCODE], [LOCALITY], [GENDER], [AGE], [ETHNICITY], [ABSENT_DAYS], [MOM_READ], [MOM_EDUC], [DAD_READ], [DAD_EDUC], [STDYLCHD], [STDCMPLT], [STDDINT], [STDLIV], [STDLNGHM], [STDMEAL], [STDHLTH1], [STDHLTH2], [STDHLTH3], [STDHLTH4], [STDHLTH5], [STDHLTH6], [STDHLTH0], [STPPLHM], [STSIBOLD], [STSIBYNG], [STNMBOOK], [STPLSTDY], [STHVMTEL], [STHVRADO], [STHVTELE], [STHVBIKE], [STHVMTBK], [STHVDESK], [STHVCHR], [STHVLAMP], [STHVEFAN], [STHVAIRC], [STHVCAR], [STHVCOMP], [STHVINTR], [STHVFRDG], [STHVMCRO], [STHVDVD], [STHVCBLE], [STTMSCH], [STEATLNC], [STPAYLNC], [STRPTCL1], [STRPTCL6], [STRPTCL10], [STTLTSCH], [STAGEENG], [STITMOW1], [STITMOW2], [STITMOW3], [STITMOW4], [STITMOW5], [STITMOW6], [STITMOW7], [STITMOW8], [STBRWBK], [STREADFN], [STREADCH], [STREADLR], [STPLHLRD], [STPLHL01], [STPLHL02], [STPLHL03], [STPLHL04], [STPLHL05], [STPLHL06], [STPLHL07], [STSPEN01], [STSPEN02], [STSPEN03], [STSPEN04], [STSPEN05], [STATEN01], [STATEN02], [STATEN03], [STATEN04], [STNONSCL], [STGR1001], [STGR1002], [STGR1003], [STGR1004], [STGR1005], [STGR1006], [STGR1007], [STGR1008], [STGR1009], [STGR1011], [STHGHGRD], [ENG_TEST], [ENG_ITEM1], [ENG_ITEM2], [ENG_ITEM3], [ENG_ITEM4], [ENG_ITEM5], [ENG_ITEM6], [ENG_ITEM7], [ENG_ITEM8], [ENG_ITEM9], [ENG_ITEM10], [ENG_ITEM11], [ENG_ITEM12], [ENG_ITEM13], [ENG_ITEM14], [ENG_ITEM15], [ENG_ITEM16], [ENG_ITEM17], [ENG_ITEM18], [ENG_ITEM19], [ENG_ITEM20], [ENG_ITEM21], [ENG_ITEM22], [ENG_ITEM23], [ENG_ITEM24], [ENG_ITEM25], [ENG_ITEM26], [ENG_ITEM27], [ENG_ITEM28], [ENG_ITEM29], [ENG_ITEM30], [ENG_ITEM31], [ENG_ITEM32], [ENG_ITEM33], [ENG_ITEM34], [ENG_ITEM35], [ENG_ITEM36], [ENG_ITEM37], [ENG_ITEM38], [ENG_ITEM39], [ENG_ITEM40], [ENG_RAWSCORE], [MATH_TEST], [MATH_ITEM1], [MATH_ITEM2], [MATH_ITEM3], [MATH_ITEM4], [MATH_ITEM5], [MATH_ITEM6], [MATH_ITEM7], [MATH_ITEM8], [MATH_ITEM9], [MATH_ITEM10], [MATH_ITEM11], [MATH_ITEM12], [MATH_ITEM13], [MATH_ITEM14], [MATH_ITEM15], [MATH_ITEM16], [MATH_ITEM17], [MATH_ITEM18], [MATH_ITEM19], [MATH_ITEM20], [MATH_ITEM21], [MATH_ITEM22], [MATH_ITEM23], [MATH_ITEM24], [MATH_ITEM25], [MATH_ITEM26], [MATH_ITEM27], [MATH_ITEM28], [MATH_ITEM29], [MATH_ITEM30], [MATH_ITEM31], [MATH_ITEM32], [MATH_ITEM33], [MATH_ITEM34], [MATH_ITEM35], [MATH_ITEM36], [MATH_ITEM37], [MATH_ITEM38], [MATH_ITEM39], [MATH_ITEM40], [MATH_RAWSCORE], [GRLENRL], [BOYENRL], [TTLENRL], [TGRLENRL], [TBOYENRL], [TTTLENRL], [ATDTMSY], [ATDDFSY], [TGMTHENG], [SCALLCT], [GRPABLTY], [CLSORD1], [CLSORD2], [SCAVLB1], [SCAVLB2], [SCAVLB3], [SCAVLB4], [SCAVLB5], [SCAVLB6], [SCAVLB7], [SCAVLB8], [SCAVLB9], [SCAVLB10], [SCPRDDAY], [SCLNONPR], [SCMNMTIN], [SCMNENIN], [SCTXTMTH], [SCTXTENG], [NUMG10CLS], [HTNTCMP], [HTDINT], [HTAGE], [HTSEX], [HTETHGRP], [HTRELGN], [HTMTHTNG], [HTFRMPRV], [HTCURRLE], [HTYRSHT], [HTLVLEDC], [HTLVLTCH], [HTEXCTCH], [HTTYPSCH], [HTLWSGRD], [HTHGHGRD], [HTNMSTEN], [HTNMETST], [HTYREST], [HTP135CM], [HTPRDIST], [HTBOARD], [HTSCHAVL], [HTMRNSTR], [HTMRNEND], [HTAFTSTR], [HTAFTEND], [HTREGTCH], [HTNONCMP], [HTEXTCUR], [HTNOACT], [HTNOCMCH], [HTNOCMCL], [HTRQNMST], [HTCENMST], [HTPTNMST], [HTRQMATH], [HTRQENG], [HTTCHAPP], [HTREWTC1], [HTREWTC2], [HTREWTC4], [HTREWTC5], [HTREWTC6], [HTREWTC7], [HTREWTC8], [HTDISTC1], [HTDISTC2], [HTDISTC3], [HTDISTC4], [HTDISTC6], [HTDISTC7], [HTDISTC8], [HTDISTC0], [HTGNADMN], [HTACRARE], [HTACRAETH], [HTACRAGND], [HTACRAPAY], [HTACRAEXM], [HTACRAOTH], [HTACRAALL], [HTAMPAID1], [HTEXM011], [HTEXM021], [HTEXM031], [HTEXM041], [HTEXM051], [HTEXM061], [HTEXM001], [HTAMPAID2], [HTEXM012], [HTEXM022], [HTEXM032], [HTEXM042], [HTEXM052], [HTEXM062], [HTEXM002], [HTAMPAID3], [HTEXM013], [HTEXM023], [HTEXM033], [HTEXM043], [HTEXM053], [HTEXM063], [HTEXM003], [HTAMPAID4], [HTEXM014], [HTEXM024], [HTEXM034], [HTEXM044], [HTEXM054], [HTEXM064], [HTEXM004], [HTAMPAID5], [HTEXM015], [HTEXM025], [HTEXM035], [HTEXM045], [HTEXM055], [HTEXM065], [HTEXM005], [HTAMPAID6], [HTEXM016], [HTEXM026], [HTEXM036], [HTEXM046], [HTEXM056], [HTEXM066], [HTEXM006], [HTAMPAID7], [HTEXM017], [HTEXM027], [HTEXM037], [HTEXM047], [HTEXM057], [HTEXM067], [HTEXM007], [HTAMPAID8], [HTEXM018], [HTEXM028], [HTEXM038], [HTEXM048], [HTEXM058], [HTEXM068], [HTEXM008], [HTAMPAID9], [HTEXM019], [HTEXM029], [HTEXM039], [HTEXM049], [HTEXM059], [HTEXM069], [HTEXM009], [HTAMPAID10], [HTEXM0110], [HTEXM0210], [HTEXM0310], [HTEXM0410], [HTEXM0510], [HTEXM0610], [HTEXM0010], [HTAMPAID11], [HTEXM0111], [HTEXM0211], [HTEXM0311], [HTEXM0411], [HTEXM0511], [HTEXM0611], [HTEXM0011], [HTAMPAID12], [HTEXM0112], [HTEXM0212], [HTEXM0312], [HTEXM0412], [HTEXM0512], [HTEXM0612], [HTEXM0012], [HTENGR10], [HTENBY10], [HTTLGR10], [HTTLBY10], [HTENGR11], [HTENBY11], [HTTLGR11], [HTTLBY11], [HTENGR12], [HTENBY12], [HTTLGR12], [HTTLBY12], [HTNMCL10], [HTNMCL11], [HTNMCL12], [HTALLC10], [HTPRTEXP], [HTENTOT10], [SCHFAC01A], [SCHFAC01B], [SCHFAC02], [SCHFAC03], [SCHFAC04], [SCHFAC05], [SCHFAC06], [SCHFAC07], [SCHFAC08], [SCHFAC09], [SCHFAC10], [SCHFAC11], [SCHFAC12], [SCHFAC13], [SCHFAC14], [WEIGHT]) VALUES (N'VN1203101', 1203, 1, 1, N'VN040055', 5, 1, 1, 2, 16, 1, 0, 1, 6, 1, 6, 1, NULL, N'15/9/2016', 1, 2, 3, 0, 0, 1, 0, 0, 0, 0, 4, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 25, 0, 0, 0, 0, 0, 1, 3, 1, 1, 0, 0, 1, 1, 0, 1, 0, 3, 3, 3, 1, 2, 4, 1, 2, 1, 1, 2, 0, 0, 1, 0, 1, 2, 0, 0, 0, 2, 2, 2, 2, 3, 1, 4, 4, 4, 4, 4, 8, N'Yes', 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 0, 26, N'Yes', 1, 1, 1, 0, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 26, 17, 18, 35, 16, 16, 32, 3, 3, 1, 7, NULL, NULL, NULL, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 5, 45, 4, 4, 1, 1, 3, NULL, CAST(N'2016-09-15' AS Date), 56, 1, 1, 0, 1, 0, 2, 3, 4, 4, 1, 1, 6, 12, NULL, NULL, 2014, 0, 0, 0, 2, N'7H00', N'11H00', N'12:45', N'17:00', 0, 0, 1, 0, 0, 0, 16, 13, 6, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 432, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 457, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 58, 50, 58, 42, 36, 41, 36, 31, 35, 31, 34, 3, 2, 2, 7, 3, 108, 11, 1, 0, 1, 1, 1, 34, 1, 0, 0, 1, 1, 8, 1, 1, 1)
+GO
+INSERT [dbo].[vietnamwave_1] ([UNIQUEID], [SCHOOLID], [CLASSID], [STUDENTID], [YLCHILDID], [PROVINCE], [DISTRICTCODE], [LOCALITY], [GENDER], [AGE], [ETHNICITY], [ABSENT_DAYS], [MOM_READ], [MOM_EDUC], [DAD_READ], [DAD_EDUC], [STDYLCHD], [STDCMPLT], [STDDINT], [STDLIV], [STDLNGHM], [STDMEAL], [STDHLTH1], [STDHLTH2], [STDHLTH3], [STDHLTH4], [STDHLTH5], [STDHLTH6], [STDHLTH0], [STPPLHM], [STSIBOLD], [STSIBYNG], [STNMBOOK], [STPLSTDY], [STHVMTEL], [STHVRADO], [STHVTELE], [STHVBIKE], [STHVMTBK], [STHVDESK], [STHVCHR], [STHVLAMP], [STHVEFAN], [STHVAIRC], [STHVCAR], [STHVCOMP], [STHVINTR], [STHVFRDG], [STHVMCRO], [STHVDVD], [STHVCBLE], [STTMSCH], [STEATLNC], [STPAYLNC], [STRPTCL1], [STRPTCL6], [STRPTCL10], [STTLTSCH], [STAGEENG], [STITMOW1], [STITMOW2], [STITMOW3], [STITMOW4], [STITMOW5], [STITMOW6], [STITMOW7], [STITMOW8], [STBRWBK], [STREADFN], [STREADCH], [STREADLR], [STPLHLRD], [STPLHL01], [STPLHL02], [STPLHL03], [STPLHL04], [STPLHL05], [STPLHL06], [STPLHL07], [STSPEN01], [STSPEN02], [STSPEN03], [STSPEN04], [STSPEN05], [STATEN01], [STATEN02], [STATEN03], [STATEN04], [STNONSCL], [STGR1001], [STGR1002], [STGR1003], [STGR1004], [STGR1005], [STGR1006], [STGR1007], [STGR1008], [STGR1009], [STGR1011], [STHGHGRD], [ENG_TEST], [ENG_ITEM1], [ENG_ITEM2], [ENG_ITEM3], [ENG_ITEM4], [ENG_ITEM5], [ENG_ITEM6], [ENG_ITEM7], [ENG_ITEM8], [ENG_ITEM9], [ENG_ITEM10], [ENG_ITEM11], [ENG_ITEM12], [ENG_ITEM13], [ENG_ITEM14], [ENG_ITEM15], [ENG_ITEM16], [ENG_ITEM17], [ENG_ITEM18], [ENG_ITEM19], [ENG_ITEM20], [ENG_ITEM21], [ENG_ITEM22], [ENG_ITEM23], [ENG_ITEM24], [ENG_ITEM25], [ENG_ITEM26], [ENG_ITEM27], [ENG_ITEM28], [ENG_ITEM29], [ENG_ITEM30], [ENG_ITEM31], [ENG_ITEM32], [ENG_ITEM33], [ENG_ITEM34], [ENG_ITEM35], [ENG_ITEM36], [ENG_ITEM37], [ENG_ITEM38], [ENG_ITEM39], [ENG_ITEM40], [ENG_RAWSCORE], [MATH_TEST], [MATH_ITEM1], [MATH_ITEM2], [MATH_ITEM3], [MATH_ITEM4], [MATH_ITEM5], [MATH_ITEM6], [MATH_ITEM7], [MATH_ITEM8], [MATH_ITEM9], [MATH_ITEM10], [MATH_ITEM11], [MATH_ITEM12], [MATH_ITEM13], [MATH_ITEM14], [MATH_ITEM15], [MATH_ITEM16], [MATH_ITEM17], [MATH_ITEM18], [MATH_ITEM19], [MATH_ITEM20], [MATH_ITEM21], [MATH_ITEM22], [MATH_ITEM23], [MATH_ITEM24], [MATH_ITEM25], [MATH_ITEM26], [MATH_ITEM27], [MATH_ITEM28], [MATH_ITEM29], [MATH_ITEM30], [MATH_ITEM31], [MATH_ITEM32], [MATH_ITEM33], [MATH_ITEM34], [MATH_ITEM35], [MATH_ITEM36], [MATH_ITEM37], [MATH_ITEM38], [MATH_ITEM39], [MATH_ITEM40], [MATH_RAWSCORE], [GRLENRL], [BOYENRL], [TTLENRL], [TGRLENRL], [TBOYENRL], [TTTLENRL], [ATDTMSY], [ATDDFSY], [TGMTHENG], [SCALLCT], [GRPABLTY], [CLSORD1], [CLSORD2], [SCAVLB1], [SCAVLB2], [SCAVLB3], [SCAVLB4], [SCAVLB5], [SCAVLB6], [SCAVLB7], [SCAVLB8], [SCAVLB9], [SCAVLB10], [SCPRDDAY], [SCLNONPR], [SCMNMTIN], [SCMNENIN], [SCTXTMTH], [SCTXTENG], [NUMG10CLS], [HTNTCMP], [HTDINT], [HTAGE], [HTSEX], [HTETHGRP], [HTRELGN], [HTMTHTNG], [HTFRMPRV], [HTCURRLE], [HTYRSHT], [HTLVLEDC], [HTLVLTCH], [HTEXCTCH], [HTTYPSCH], [HTLWSGRD], [HTHGHGRD], [HTNMSTEN], [HTNMETST], [HTYREST], [HTP135CM], [HTPRDIST], [HTBOARD], [HTSCHAVL], [HTMRNSTR], [HTMRNEND], [HTAFTSTR], [HTAFTEND], [HTREGTCH], [HTNONCMP], [HTEXTCUR], [HTNOACT], [HTNOCMCH], [HTNOCMCL], [HTRQNMST], [HTCENMST], [HTPTNMST], [HTRQMATH], [HTRQENG], [HTTCHAPP], [HTREWTC1], [HTREWTC2], [HTREWTC4], [HTREWTC5], [HTREWTC6], [HTREWTC7], [HTREWTC8], [HTDISTC1], [HTDISTC2], [HTDISTC3], [HTDISTC4], [HTDISTC6], [HTDISTC7], [HTDISTC8], [HTDISTC0], [HTGNADMN], [HTACRARE], [HTACRAETH], [HTACRAGND], [HTACRAPAY], [HTACRAEXM], [HTACRAOTH], [HTACRAALL], [HTAMPAID1], [HTEXM011], [HTEXM021], [HTEXM031], [HTEXM041], [HTEXM051], [HTEXM061], [HTEXM001], [HTAMPAID2], [HTEXM012], [HTEXM022], [HTEXM032], [HTEXM042], [HTEXM052], [HTEXM062], [HTEXM002], [HTAMPAID3], [HTEXM013], [HTEXM023], [HTEXM033], [HTEXM043], [HTEXM053], [HTEXM063], [HTEXM003], [HTAMPAID4], [HTEXM014], [HTEXM024], [HTEXM034], [HTEXM044], [HTEXM054], [HTEXM064], [HTEXM004], [HTAMPAID5], [HTEXM015], [HTEXM025], [HTEXM035], [HTEXM045], [HTEXM055], [HTEXM065], [HTEXM005], [HTAMPAID6], [HTEXM016], [HTEXM026], [HTEXM036], [HTEXM046], [HTEXM056], [HTEXM066], [HTEXM006], [HTAMPAID7], [HTEXM017], [HTEXM027], [HTEXM037], [HTEXM047], [HTEXM057], [HTEXM067], [HTEXM007], [HTAMPAID8], [HTEXM018], [HTEXM028], [HTEXM038], [HTEXM048], [HTEXM058], [HTEXM068], [HTEXM008], [HTAMPAID9], [HTEXM019], [HTEXM029], [HTEXM039], [HTEXM049], [HTEXM059], [HTEXM069], [HTEXM009], [HTAMPAID10], [HTEXM0110], [HTEXM0210], [HTEXM0310], [HTEXM0410], [HTEXM0510], [HTEXM0610], [HTEXM0010], [HTAMPAID11], [HTEXM0111], [HTEXM0211], [HTEXM0311], [HTEXM0411], [HTEXM0511], [HTEXM0611], [HTEXM0011], [HTAMPAID12], [HTEXM0112], [HTEXM0212], [HTEXM0312], [HTEXM0412], [HTEXM0512], [HTEXM0612], [HTEXM0012], [HTENGR10], [HTENBY10], [HTTLGR10], [HTTLBY10], [HTENGR11], [HTENBY11], [HTTLGR11], [HTTLBY11], [HTENGR12], [HTENBY12], [HTTLGR12], [HTTLBY12], [HTNMCL10], [HTNMCL11], [HTNMCL12], [HTALLC10], [HTPRTEXP], [HTENTOT10], [SCHFAC01A], [SCHFAC01B], [SCHFAC02], [SCHFAC03], [SCHFAC04], [SCHFAC05], [SCHFAC06], [SCHFAC07], [SCHFAC08], [SCHFAC09], [SCHFAC10], [SCHFAC11], [SCHFAC12], [SCHFAC13], [SCHFAC14], [WEIGHT]) VALUES (N'VN1203102', 1203, 1, 2, N'VN040043', 5, 1, 1, 1, 15, 1, 0, 1, 2, 1, 2, 1, NULL, N'15/9/2016', 1, 2, 3, 0, 0, 0, 0, 0, 0, 1, 3, 0, 1, 2, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 10, 0, 0, 0, 0, 0, 1, 3, 1, 1, 0, 0, 1, 1, 0, 1, 0, 3, 4, 4, 2, 4, 4, 2, 3, 2, 1, 3, 1, 0, 1, 1, 1, 1, 1, 2, 1, 3, 2, 2, 2, 3, 2, 4, 3, 4, 3, 1, 5, N'Yes', 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 28, N'Yes', 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 29, 17, 18, 35, 16, 16, 32, 3, 3, 1, 7, NULL, NULL, NULL, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 5, 45, 4, 4, 1, 1, 3, NULL, CAST(N'2016-09-15' AS Date), 56, 1, 1, 0, 1, 0, 2, 3, 4, 4, 1, 1, 6, 12, NULL, NULL, 2014, 0, 0, 0, 2, N'7H00', N'11H00', N'12:45', N'17:00', 0, 0, 1, 0, 0, 0, 16, 13, 6, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 432, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 457, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 58, 50, 58, 42, 36, 41, 36, 31, 35, 31, 34, 3, 2, 2, 7, 3, 108, 11, 1, 0, 1, 1, 1, 34, 1, 0, 0, 1, 1, 8, 1, 1, 1)
+GO
+
+
+USE [adb_coursework]
+GO
+/****** create database Object:  Table [dbo].[vietnamwave_2] with create and insert statement   Script Date: 4/19/2022 7:16:59 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[vietnamwave_2](
+	[UNIQUEID] [varchar](50) NULL,
+	[SCHOOLID] [varchar](50) NULL,
+	[CLASSID] [varchar](50) NULL,
+	[STUDENTID] [varchar](50) NULL,
+	[STNTCMP] [varchar](50) NULL,
+	[STDINT] [varchar](50) NULL,
+	[STMTHWRK] [varchar](50) NULL,
+	[STMWRKCH] [varchar](50) NULL,
+	[STMWRKCM] [varchar](50) NULL,
+	[STETHWRK] [varchar](50) NULL,
+	[STEWRKCH] [varchar](50) NULL,
+	[STEWRKCM] [varchar](50) NULL,
+	[STTMMWRK] [varchar](50) NULL,
+	[STTMEWRK] [varchar](50) NULL,
+	[STCMPHME] [varchar](50) NULL,
+	[STCMPSCH] [varchar](50) NULL,
+	[STCMPOTH] [varchar](50) NULL,
+	[STLTESCH] [varchar](50) NULL,
+	[STMSSDAY] [varchar](50) NULL,
+	[STMSSCLS] [varchar](50) NULL,
+	[STRSNMS1] [varchar](50) NULL,
+	[STRSNMS2] [varchar](50) NULL,
+	[STRSNMS3] [varchar](50) NULL,
+	[STRSNMS4] [varchar](50) NULL,
+	[STRSNMS5] [varchar](50) NULL,
+	[STRSNMS6] [varchar](50) NULL,
+	[STRSNMS7] [varchar](50) NULL,
+	[STRSNMS8] [varchar](50) NULL,
+	[STRSNMS9] [varchar](50) NULL,
+	[STRSNMS0] [varchar](50) NULL,
+	[STADDMT] [varchar](50) NULL,
+	[STADDEN] [varchar](50) NULL,
+	[STADDOT] [varchar](50) NULL,
+	[STEXSCMT] [varchar](50) NULL,
+	[STEXSCEN] [varchar](50) NULL,
+	[STEXSCOT] [varchar](50) NULL,
+	[STPRVMT] [varchar](50) NULL,
+	[STPRVEN] [varchar](50) NULL,
+	[STPRVOT] [varchar](50) NULL,
+	[STEXOTMT] [varchar](50) NULL,
+	[STEXOTEN] [varchar](50) NULL,
+	[STEXOTOT] [varchar](50) NULL,
+	[STFEEL18A] [varchar](50) NULL,
+	[STFEEL18B] [varchar](50) NULL,
+	[STFEEL18C] [varchar](50) NULL,
+	[STFEEL18D] [varchar](50) NULL,
+	[STFEEL18E] [varchar](50) NULL,
+	[STFEEL18F] [varchar](50) NULL,
+	[STFEEL18G] [varchar](50) NULL,
+	[STFEEL18H] [varchar](50) NULL,
+	[STFEEL18I] [varchar](50) NULL,
+	[STFEEL18J] [varchar](50) NULL,
+	[STFEEL18K] [varchar](50) NULL,
+	[STFEEL18L] [varchar](50) NULL,
+	[STFEEL19A] [varchar](50) NULL,
+	[STFEEL19B] [varchar](50) NULL,
+	[STFEEL19C] [varchar](50) NULL,
+	[STFEEL19D] [varchar](50) NULL,
+	[STFEEL19E] [varchar](50) NULL,
+	[STFEEL19F] [varchar](50) NULL,
+	[STFEEL19G] [varchar](50) NULL,
+	[STFEEL19H] [varchar](50) NULL,
+	[STFEEL19I] [varchar](50) NULL,
+	[STFEEL20A] [varchar](50) NULL,
+	[STFEEL20B] [varchar](50) NULL,
+	[STFEEL20C] [varchar](50) NULL,
+	[STFEEL20D] [varchar](50) NULL,
+	[STFEEL20E] [varchar](50) NULL,
+	[STFEEL20F] [varchar](50) NULL,
+	[STFEEL20G] [varchar](50) NULL,
+	[STFEEL20H] [varchar](50) NULL,
+	[STFEEL20I] [varchar](50) NULL,
+	[STFEEL20J] [varchar](50) NULL,
+	[STFEEL20K] [varchar](50) NULL,
+	[STFEEL20L] [varchar](50) NULL,
+	[STFEEL20M] [varchar](50) NULL,
+	[STFEEL20N] [varchar](50) NULL,
+	[STFEEL20O] [varchar](50) NULL,
+	[STFEEL21A] [varchar](50) NULL,
+	[STFEEL21B] [varchar](50) NULL,
+	[STFEEL21C] [varchar](50) NULL,
+	[STFEEL21D] [varchar](50) NULL,
+	[STFEEL21E] [varchar](50) NULL,
+	[STFEEL21F] [varchar](50) NULL,
+	[STFEEL21G] [varchar](50) NULL,
+	[STFEEL21H] [varchar](50) NULL,
+	[STFEEL21I] [varchar](50) NULL,
+	[STFEEL21J] [varchar](50) NULL,
+	[STFEEL22A] [varchar](50) NULL,
+	[STFEEL22B] [varchar](50) NULL,
+	[STFEEL22C] [varchar](50) NULL,
+	[STFEEL22D] [varchar](50) NULL,
+	[STFEEL22E] [varchar](50) NULL,
+	[STFEEL22F] [varchar](50) NULL,
+	[STFEEL22G] [varchar](50) NULL,
+	[STFEEL22H] [varchar](50) NULL,
+	[STFEEL23A] [varchar](50) NULL,
+	[STFEEL23B] [varchar](50) NULL,
+	[STFEEL23C] [varchar](50) NULL,
+	[STFEEL23D] [varchar](50) NULL,
+	[STFEEL23E] [varchar](50) NULL,
+	[STFEEL23F] [varchar](50) NULL,
+	[STFEEL23G] [varchar](50) NULL,
+	[STFEEL23H] [varchar](50) NULL,
+	[STFEEL24A] [varchar](50) NULL,
+	[STFEEL24B] [varchar](50) NULL,
+	[STFEEL24C] [varchar](50) NULL,
+	[STFEEL24D] [varchar](50) NULL,
+	[STFEEL24E] [varchar](50) NULL,
+	[STFEEL25A] [varchar](50) NULL,
+	[STFEEL25B] [varchar](50) NULL,
+	[STFEEL25C] [varchar](50) NULL,
+	[STFEEL25D] [varchar](50) NULL,
+	[STFEEL25E] [varchar](50) NULL,
+	[STFEEL26A] [varchar](50) NULL,
+	[STFEEL26B] [varchar](50) NULL,
+	[STFEEL26C] [varchar](50) NULL,
+	[STFEEL26D] [varchar](50) NULL,
+	[STFEEL26E] [varchar](50) NULL,
+	[STFEEL26F] [varchar](50) NULL,
+	[STFEEL26G] [varchar](50) NULL,
+	[STFEEL26H] [varchar](50) NULL,
+	[STFEEL26I] [varchar](50) NULL,
+	[STFEEL27] [varchar](50) NULL,
+	[STFEEL28] [varchar](50) NULL,
+	[STFEEL29] [varchar](50) NULL,
+	[STFEEL30] [varchar](50) NULL,
+	[STFEEL31] [varchar](50) NULL,
+	[STFEEL32] [varchar](50) NULL,
+	[STFEEL33] [varchar](50) NULL,
+	[STFEEL34] [varchar](50) NULL,
+	[STFEEL35] [varchar](50) NULL,
+	[STFEEL36] [varchar](50) NULL,
+	[STFEEL37] [varchar](50) NULL,
+	[STFEEL38] [varchar](50) NULL,
+	[STFEEL39] [varchar](50) NULL,
+	[STFEEL40] [varchar](50) NULL,
+	[STFEEL41] [varchar](50) NULL,
+	[STFEEL42] [varchar](50) NULL,
+	[STFEEL43] [varchar](50) NULL,
+	[STFEEL44] [varchar](50) NULL,
+	[STFEEL45] [varchar](50) NULL,
+	[STFEEL46] [varchar](50) NULL,
+	[STFEEL47] [varchar](50) NULL,
+	[STFEEL48] [varchar](50) NULL,
+	[STFEEL49] [varchar](50) NULL,
+	[STFEEL50] [varchar](50) NULL,
+	[STFEEL51] [varchar](50) NULL,
+	[STFEEL52] [varchar](50) NULL,
+	[STFEEL53] [varchar](50) NULL,
+	[STFEEL54] [varchar](50) NULL,
+	[STFEEL55] [varchar](50) NULL,
+	[STFEEL56] [varchar](50) NULL,
+	[STFEEL57] [varchar](50) NULL,
+	[STFEEL58] [varchar](50) NULL,
+	[STFEEL59] [varchar](50) NULL,
+	[STFEEL60] [varchar](50) NULL,
+	[STFEEL61] [varchar](50) NULL,
+	[STFEEL62] [varchar](50) NULL,
+	[STFEEL63] [varchar](50) NULL,
+	[STFEEL64] [varchar](50) NULL,
+	[STFEEL65] [varchar](50) NULL,
+	[STFEEL66] [varchar](50) NULL,
+	[STFEEL67] [varchar](50) NULL,
+	[STFEEL68] [varchar](50) NULL,
+	[STFEEL69] [varchar](50) NULL,
+	[STFEEL70] [varchar](50) NULL,
+	[STFEEL71] [varchar](50) NULL,
+	[STFEEL72] [varchar](50) NULL,
+	[STFEEL73] [varchar](50) NULL,
+	[STFEEL74] [varchar](50) NULL,
+	[STFEEL75] [varchar](50) NULL,
+	[STFEEL76] [varchar](50) NULL,
+	[STFEEL77] [varchar](50) NULL,
+	[STFEEL78] [varchar](50) NULL,
+	[STFEEL79] [varchar](50) NULL,
+	[STFEEL80] [varchar](50) NULL,
+	[STFEEL81] [varchar](50) NULL,
+	[STFEEL82] [varchar](50) NULL,
+	[STFEEL83] [varchar](50) NULL,
+	[STFEEL84] [varchar](50) NULL,
+	[STFEEL85] [varchar](50) NULL,
+	[STFEEL86] [varchar](50) NULL,
+	[STFEEL87] [varchar](50) NULL,
+	[STFEEL88] [varchar](50) NULL,
+	[STFEEL89] [varchar](50) NULL,
+	[STFEEL90] [varchar](50) NULL,
+	[STFEEL91] [varchar](50) NULL,
+	[STFEEL92] [varchar](50) NULL,
+	[ENG_TEST] [varchar](50) NULL,
+	[ENG_ITEM1] [varchar](50) NULL,
+	[ENG_ITEM2] [varchar](50) NULL,
+	[ENG_ITEM3] [varchar](50) NULL,
+	[ENG_ITEM4] [varchar](50) NULL,
+	[ENG_ITEM5] [varchar](50) NULL,
+	[ENG_ITEM6] [varchar](50) NULL,
+	[ENG_ITEM7] [varchar](50) NULL,
+	[ENG_ITEM8] [varchar](50) NULL,
+	[ENG_ITEM9] [varchar](50) NULL,
+	[ENG_ITEM10] [varchar](50) NULL,
+	[ENG_ITEM11] [varchar](50) NULL,
+	[ENG_ITEM12] [varchar](50) NULL,
+	[ENG_ITEM13] [varchar](50) NULL,
+	[ENG_ITEM14] [varchar](50) NULL,
+	[ENG_ITEM15] [varchar](50) NULL,
+	[ENG_ITEM16] [varchar](50) NULL,
+	[ENG_ITEM17] [varchar](50) NULL,
+	[ENG_ITEM18] [varchar](50) NULL,
+	[ENG_ITEM19] [varchar](50) NULL,
+	[ENG_ITEM20] [varchar](50) NULL,
+	[ENG_ITEM21] [varchar](50) NULL,
+	[ENG_ITEM22] [varchar](50) NULL,
+	[ENG_ITEM23] [varchar](50) NULL,
+	[ENG_ITEM24] [varchar](50) NULL,
+	[ENG_ITEM25] [varchar](50) NULL,
+	[ENG_ITEM26] [varchar](50) NULL,
+	[ENG_ITEM27] [varchar](50) NULL,
+	[ENG_ITEM28] [varchar](50) NULL,
+	[ENG_ITEM29] [varchar](50) NULL,
+	[ENG_ITEM30] [varchar](50) NULL,
+	[ENG_ITEM31] [varchar](50) NULL,
+	[ENG_ITEM32] [varchar](50) NULL,
+	[ENG_ITEM33] [varchar](50) NULL,
+	[ENG_ITEM34] [varchar](50) NULL,
+	[ENG_ITEM35] [varchar](50) NULL,
+	[ENG_ITEM36] [varchar](50) NULL,
+	[ENG_ITEM37] [varchar](50) NULL,
+	[ENG_ITEM38] [varchar](50) NULL,
+	[ENG_ITEM39] [varchar](50) NULL,
+	[ENG_ITEM40] [varchar](50) NULL,
+	[ENG_RAWSCORE] [varchar](50) NULL,
+	[MATH_TEST] [varchar](50) NULL,
+	[MATH_ITEM1] [varchar](50) NULL,
+	[MATH_ITEM2] [varchar](50) NULL,
+	[MATH_ITEM3] [varchar](50) NULL,
+	[MATH_ITEM4] [varchar](50) NULL,
+	[MATH_ITEM5] [varchar](50) NULL,
+	[MATH_ITEM6] [varchar](50) NULL,
+	[MATH_ITEM7] [varchar](50) NULL,
+	[MATH_ITEM8] [varchar](50) NULL,
+	[MATH_ITEM9] [varchar](50) NULL,
+	[MATH_ITEM10] [varchar](50) NULL,
+	[MATH_ITEM11] [varchar](50) NULL,
+	[MATH_ITEM12] [varchar](50) NULL,
+	[MATH_ITEM13] [varchar](50) NULL,
+	[MATH_ITEM14] [varchar](50) NULL,
+	[MATH_ITEM15] [varchar](50) NULL,
+	[MATH_ITEM16] [varchar](50) NULL,
+	[MATH_ITEM17] [varchar](50) NULL,
+	[MATH_ITEM18] [varchar](50) NULL,
+	[MATH_ITEM19] [varchar](50) NULL,
+	[MATH_ITEM20] [varchar](50) NULL,
+	[MATH_ITEM21] [varchar](50) NULL,
+	[MATH_ITEM22] [varchar](50) NULL,
+	[MATH_ITEM23] [varchar](50) NULL,
+	[MATH_ITEM24] [varchar](50) NULL,
+	[MATH_ITEM25] [varchar](50) NULL,
+	[MATH_ITEM26] [varchar](50) NULL,
+	[MATH_ITEM27] [varchar](50) NULL,
+	[MATH_ITEM28] [varchar](50) NULL,
+	[MATH_ITEM29] [varchar](50) NULL,
+	[MATH_ITEM30] [varchar](50) NULL,
+	[MATH_ITEM31] [varchar](50) NULL,
+	[MATH_ITEM32] [varchar](50) NULL,
+	[MATH_ITEM33] [varchar](50) NULL,
+	[MATH_ITEM34] [varchar](50) NULL,
+	[MATH_ITEM35] [varchar](50) NULL,
+	[MATH_ITEM36] [varchar](50) NULL,
+	[MATH_ITEM37] [varchar](50) NULL,
+	[MATH_ITEM38] [varchar](50) NULL,
+	[MATH_ITEM39] [varchar](50) NULL,
+	[MATH_ITEM40] [varchar](50) NULL,
+	[MATH_RAWSCORE] [varchar](50) NULL,
+	[TS_TEST] [varchar](50) NULL,
+	[TS_ITEM1] [varchar](50) NULL,
+	[TS_ITEM2] [varchar](50) NULL,
+	[TS_ITEM3A] [varchar](50) NULL,
+	[TS_ITEM3B] [varchar](50) NULL,
+	[TS_ITEM3C] [varchar](50) NULL,
+	[TS_ITEM3D] [varchar](50) NULL,
+	[TS_ITEM3E] [varchar](50) NULL,
+	[TS_ITEM3F] [varchar](50) NULL,
+	[TS_ITEM3] [varchar](50) NULL,
+	[TS_ITEM4] [varchar](50) NULL,
+	[TS_ITEM5] [varchar](50) NULL,
+	[TS_ITEM6] [varchar](50) NULL,
+	[TS_ITEM7] [varchar](50) NULL,
+	[TS_ITEM8A] [varchar](50) NULL,
+	[TS_ITEM8B] [varchar](50) NULL,
+	[TS_ITEM8C] [varchar](50) NULL,
+	[TS_ITEM8] [varchar](50) NULL,
+	[TS_ITEM9] [varchar](50) NULL,
+	[TS_ITEM10] [varchar](50) NULL,
+	[TS_ITEM11] [varchar](50) NULL,
+	[TS_ITEM12] [varchar](50) NULL,
+	[TS_ITEM11_12] [varchar](50) NULL,
+	[TS_ITEM13] [varchar](50) NULL,
+	[TS_ITEM14] [varchar](50) NULL,
+	[TS_ITEM15] [varchar](50) NULL,
+	[TS_ITEM16] [varchar](50) NULL,
+	[TS_ITEM17] [varchar](50) NULL,
+	[TS_ITEM18] [varchar](50) NULL,
+	[TS_ITEM19] [varchar](50) NULL,
+	[TS_ITEM20] [varchar](50) NULL,
+	[TS_ITEM21] [varchar](50) NULL,
+	[TS_ITEM22] [varchar](50) NULL,
+	[TS_ITEM23] [varchar](50) NULL,
+	[HTSTFCMP] [varchar](50) NULL,
+	[HTNTCMP] [varchar](50) NULL,
+	[HTDINT] [varchar](50) NULL,
+	[HTDEVPLN] [varchar](50) NULL,
+	[HTPTA] [varchar](50) NULL,
+	[HTPTAMT] [varchar](50) NULL,
+	[HTEDOVS] [varchar](50) NULL,
+	[HTSTDDRP] [varchar](50) NULL,
+	[HTCHDLBR] [varchar](50) NULL,
+	[HTFLSINF] [varchar](50) NULL,
+	[HTTCHRET] [varchar](50) NULL,
+	[HTRCHATT] [varchar](50) NULL,
+	[HTENVEVT] [varchar](50) NULL,
+	[HTHIRPRN] [varchar](50) NULL,
+	[HTHIRTCH] [varchar](50) NULL,
+	[HTHIRBOET] [varchar](50) NULL,
+	[HTHIRDOET] [varchar](50) NULL,
+	[HTHIRMOET] [varchar](50) NULL,
+	[HTHIRMOTH] [varchar](50) NULL,
+	[HTFIRPRN] [varchar](50) NULL,
+	[HTFIRTCH] [varchar](50) NULL,
+	[HTFIRBOET] [varchar](50) NULL,
+	[HTFIRDOET] [varchar](50) NULL,
+	[HTFIRMOET] [varchar](50) NULL,
+	[HTFIRMOTH] [varchar](50) NULL,
+	[HTESTPRN] [varchar](50) NULL,
+	[HTESTTCH] [varchar](50) NULL,
+	[HTESTBOET] [varchar](50) NULL,
+	[HTESTDOET] [varchar](50) NULL,
+	[HTESTMOET] [varchar](50) NULL,
+	[HTESTMOTH] [varchar](50) NULL,
+	[HTDETPRN] [varchar](50) NULL,
+	[HTDETTCH] [varchar](50) NULL,
+	[HTDETBOET] [varchar](50) NULL,
+	[HTDETDOET] [varchar](50) NULL,
+	[HTDETMOET] [varchar](50) NULL,
+	[HTDETMOTH] [varchar](50) NULL,
+	[HTBUGPRN] [varchar](50) NULL,
+	[HTBUGTCH] [varchar](50) NULL,
+	[HTBUGBOET] [varchar](50) NULL,
+	[HTBUGDOET] [varchar](50) NULL,
+	[HTBUGMOET] [varchar](50) NULL,
+	[HTBUGMOTH] [varchar](50) NULL,
+	[HTBALPRN] [varchar](50) NULL,
+	[HTBALTCH] [varchar](50) NULL,
+	[HTBALBOET] [varchar](50) NULL,
+	[HTBALDOET] [varchar](50) NULL,
+	[HTBALMOET] [varchar](50) NULL,
+	[HTBALMOTH] [varchar](50) NULL,
+	[HTSASPRN] [varchar](50) NULL,
+	[HTSASTCH] [varchar](50) NULL,
+	[HTSASBOET] [varchar](50) NULL,
+	[HTSASDOET] [varchar](50) NULL,
+	[HTSASMOET] [varchar](50) NULL,
+	[HTTXTPRN] [varchar](50) NULL,
+	[HTTXTTCH] [varchar](50) NULL,
+	[HTTXTBOET] [varchar](50) NULL,
+	[HTTXTDOET] [varchar](50) NULL,
+	[HTTXTMOET] [varchar](50) NULL,
+	[HTCNTPRN] [varchar](50) NULL,
+	[HTCNTTCH] [varchar](50) NULL,
+	[HTCNTBOET] [varchar](50) NULL,
+	[HTCNTDOET] [varchar](50) NULL,
+	[HTCNTMOET] [varchar](50) NULL,
+	[HTOFRPRN] [varchar](50) NULL,
+	[HTOFRTCH] [varchar](50) NULL,
+	[HTOFRBOET] [varchar](50) NULL,
+	[HTOFRDOET] [varchar](50) NULL,
+	[HTOFRMOET] [varchar](50) NULL,
+	[HTSTPFGL] [varchar](50) NULL,
+	[HTTCPFGL] [varchar](50) NULL,
+	[HTTCWKGL] [varchar](50) NULL,
+	[HTDISCGL] [varchar](50) NULL,
+	[HTDYSTRN] [varchar](50) NULL,
+	[HTPMTCRS] [varchar](50) NULL,
+	[HTPRTCPT] [varchar](50) NULL,
+	[HTSTDVSK] [varchar](50) NULL,
+	[HTPRBDIS] [varchar](50) NULL,
+	[HTATTBEH] [varchar](50) NULL,
+	[HTSLVPRB] [varchar](50) NULL,
+	[HTPRTDEC] [varchar](50) NULL,
+	[HTREVMNG] [varchar](50) NULL,
+	[HTRSNABS] [varchar](50) NULL,
+	[HTSHRPER] [varchar](50) NULL,
+	[HTSTDENR] [varchar](50) NULL,
+	[HTTOKEXM] [varchar](50) NULL,
+	[HTLSPSEXM] [varchar](50) NULL,
+	[HTPRCUNI] [varchar](50) NULL,
+	[HTPRCVOC] [varchar](50) NULL,
+	[HTCNTLRN] [varchar](50) NULL,
+	[SAMEHEAD] [varchar](50) NULL,
+	[DATECMPL] [varchar](50) NULL,
+	[ENG_TCHID] [varchar](50) NULL,
+	[ENG_TCHSUBJ] [varchar](50) NULL,
+	[ENG_TCHDTJN] [varchar](50) NULL,
+	[ENG_TCHDYPRS] [varchar](50) NULL,
+	[ENG_TCSTLEMP] [varchar](50) NULL,
+	[ENG_TCWHYLFT] [varchar](50) NULL,
+	[ENG_TCDAYPRS] [varchar](50) NULL,
+	[ENG_TCHABSC] [varchar](50) NULL,
+	[ENG_TCHNTCMP] [varchar](50) NULL,
+	[ENG_TCHDINT] [varchar](50) NULL,
+	[ENG_TCAGE] [varchar](50) NULL,
+	[ENG_TCGNDR] [varchar](50) NULL,
+	[ENG_TCETHNC] [varchar](50) NULL,
+	[ENG_TCRELGN] [varchar](50) NULL,
+	[ENG_TCLNGHME] [varchar](50) NULL,
+	[ENG_TCPRVTCH] [varchar](50) NULL,
+	[ENG_TCMBLE] [varchar](50) NULL,
+	[ENG_TCRADIO] [varchar](50) NULL,
+	[ENG_TCTELE] [varchar](50) NULL,
+	[ENG_TCBIKE] [varchar](50) NULL,
+	[ENG_TCSCTR] [varchar](50) NULL,
+	[ENG_TCTBLE] [varchar](50) NULL,
+	[ENG_TCCHAIR] [varchar](50) NULL,
+	[ENG_TCLAMP] [varchar](50) NULL,
+	[ENG_TCELEC] [varchar](50) NULL,
+	[ENG_TCAIRCND] [varchar](50) NULL,
+	[ENG_TCCAR] [varchar](50) NULL,
+	[ENG_TCCOMP] [varchar](50) NULL,
+	[ENG_TCINTRT] [varchar](50) NULL,
+	[ENG_TCFRDG] [varchar](50) NULL,
+	[ENG_TCMICRO] [varchar](50) NULL,
+	[ENG_TCDVD] [varchar](50) NULL,
+	[ENG_TCTVBOX] [varchar](50) NULL,
+	[ENG_TCLVLEDC] [varchar](50) NULL,
+	[ENG_TCTCHQLF] [varchar](50) NULL,
+	[ENG_TCSPCMAT] [varchar](50) NULL,
+	[ENG_TCSPCENG] [varchar](50) NULL,
+	[ENG_TCSPCVNM] [varchar](50) NULL,
+	[ENG_TCSPCLNG] [varchar](50) NULL,
+	[ENG_TCSPCPSC] [varchar](50) NULL,
+	[ENG_TCSPCCHE] [varchar](50) NULL,
+	[ENG_TCSPCBIO] [varchar](50) NULL,
+	[ENG_TCSPCHIS] [varchar](50) NULL,
+	[ENG_TCSPCGEO] [varchar](50) NULL,
+	[ENG_TCSPCPHY] [varchar](50) NULL,
+	[ENG_TCSPCANT] [varchar](50) NULL,
+	[ENG_TCDYSTRN] [varchar](50) NULL,
+	[ENG_TCTTRNHLP] [varchar](50) NULL,
+	[ENG_TCAWDTTL] [varchar](50) NULL,
+	[ENG_TCYRTCH] [varchar](50) NULL,
+	[ENG_TCYRTCSCH] [varchar](50) NULL,
+	[ENG_TCSTDENG] [varchar](50) NULL,
+	[ENG_TCTCHENG] [varchar](50) NULL,
+	[ENG_TCEMPBAS] [varchar](50) NULL,
+	[ENG_TCFGRDE10] [varchar](50) NULL,
+	[ENG_TCFGRDE11] [varchar](50) NULL,
+	[ENG_TCFGRDE12] [varchar](50) NULL,
+	[ENG_TCMATHS] [varchar](50) NULL,
+	[ENG_TCENGL] [varchar](50) NULL,
+	[ENG_TCVNM] [varchar](50) NULL,
+	[ENG_TCANTLNG] [varchar](50) NULL,
+	[ENG_TCPHYSC] [varchar](50) NULL,
+	[ENG_TCCHEM] [varchar](50) NULL,
+	[ENG_TCBIOLG] [varchar](50) NULL,
+	[ENG_TCHISTRY] [varchar](50) NULL,
+	[ENG_TCGEOG] [varchar](50) NULL,
+	[ENG_TCPHYS] [varchar](50) NULL,
+	[ENG_TCOTHR] [varchar](50) NULL,
+	[ENG_TCPRDWK] [varchar](50) NULL,
+	[ENG_TCEXTCLS] [varchar](50) NULL,
+	[ENG_TCTCHG10] [varchar](50) NULL,
+	[ENG_TCEXTWRK] [varchar](50) NULL,
+	[ENG_TCOBSHT] [varchar](50) NULL,
+	[ENG_TCOBSVP] [varchar](50) NULL,
+	[ENG_TCOBSHSD] [varchar](50) NULL,
+	[ENG_TCOBSOTH] [varchar](50) NULL,
+	[ENG_TCOBSDOET] [varchar](50) NULL,
+	[ENG_TCPRATD] [varchar](50) NULL,
+	[ENG_TCLATENS] [varchar](50) NULL,
+	[ENG_TCDISCPL] [varchar](50) NULL,
+	[ENG_TCNOMAT] [varchar](50) NULL,
+	[ENG_TCLACKRS] [varchar](50) NULL,
+	[ENG_TCINTRRP] [varchar](50) NULL,
+	[ENG_TCRSNABS] [varchar](50) NULL,
+	[ENG_TCASGNSC] [varchar](50) NULL,
+	[ENG_TCPRTCNT] [varchar](50) NULL,
+	[ENG_TCTRVMIN] [varchar](50) NULL,
+	[ENG_TCPRDTCH] [varchar](50) NULL,
+	[ENG_TCPRDPLN] [varchar](50) NULL,
+	[ENG_TCPRDCRT] [varchar](50) NULL,
+	[ENG_TCPRDADM] [varchar](50) NULL,
+	[ENG_TCHREXTR] [varchar](50) NULL,
+	[ENG_TCHRHELP] [varchar](50) NULL,
+	[ENG_TCHRTUTR] [varchar](50) NULL,
+	[ENG_TCHRIDEA] [varchar](50) NULL,
+	[ENG_TCHRCOMM] [varchar](50) NULL,
+	[ENG_TCIMPCHR] [varchar](50) NULL,
+	[ENG_TCCMSCTC] [varchar](50) NULL,
+	[ENG_TCCMSCFC] [varchar](50) NULL,
+	[ENG_TCCMSCPR] [varchar](50) NULL,
+	[ENG_TCRSNTCH] [varchar](50) NULL,
+	[ENG_TCFRTCHC] [varchar](50) NULL,
+	[ENG_TCMOVTCH] [varchar](50) NULL,
+	[ENG_TCGLSEC] [varchar](50) NULL,
+	[ENG_TCCHSEC] [varchar](50) NULL,
+	[ENG_TCATD41A] [varchar](50) NULL,
+	[ENG_TCATD41B] [varchar](50) NULL,
+	[ENG_TCATD41C] [varchar](50) NULL,
+	[ENG_TCATD41D] [varchar](50) NULL,
+	[ENG_TCATD41E] [varchar](50) NULL,
+	[ENG_TCATD41F] [varchar](50) NULL,
+	[ENG_TCATD41G] [varchar](50) NULL,
+	[ENG_TCATD41H] [varchar](50) NULL,
+	[ENG_TCATD42A] [varchar](50) NULL,
+	[ENG_TCATD42B] [varchar](50) NULL,
+	[ENG_TCATD42C] [varchar](50) NULL,
+	[ENG_TCATD42D] [varchar](50) NULL,
+	[ENG_TCATD42E] [varchar](50) NULL,
+	[ENG_TCATD42F] [varchar](50) NULL,
+	[ENG_TCATD42G] [varchar](50) NULL,
+	[ENG_TCATD43A] [varchar](50) NULL,
+	[ENG_TCATD43B] [varchar](50) NULL,
+	[ENG_TCATD43C] [varchar](50) NULL,
+	[ENG_TCATD43D] [varchar](50) NULL,
+	[ENG_TCATD43E] [varchar](50) NULL,
+	[ENG_TCATD43F] [varchar](50) NULL,
+	[ENG_TCATD43G] [varchar](50) NULL,
+	[ENG_TCATD43H] [varchar](50) NULL,
+	[ENG_TCATD43I] [varchar](50) NULL,
+	[ENG_TCATD43J] [varchar](50) NULL,
+	[ENG_TCATD43K] [varchar](50) NULL,
+	[ENG_TCATD43L] [varchar](50) NULL,
+	[ENG_TCATD43M] [varchar](50) NULL,
+	[ENG_TCATD44A] [varchar](50) NULL,
+	[ENG_TCATD44B] [varchar](50) NULL,
+	[ENG_TCATD44C] [varchar](50) NULL,
+	[ENG_TCATD44D] [varchar](50) NULL,
+	[ENG_TCATD44E] [varchar](50) NULL,
+	[ENG_TCATD44F] [varchar](50) NULL,
+	[ENG_TCATD44G] [varchar](50) NULL,
+	[ENG_TCATD44H] [varchar](50) NULL,
+	[ENG_TCATD44I] [varchar](50) NULL,
+	[ENG_TCATD44J] [varchar](50) NULL,
+	[ENG_TCATD44K] [varchar](50) NULL,
+	[ENG_TCATD44L] [varchar](50) NULL,
+	[ENG_TCATD44M] [varchar](50) NULL,
+	[ENG_TCATD44N] [varchar](50) NULL,
+	[ENG_TCATD44O] [varchar](50) NULL,
+	[ENG_TCATD44P] [varchar](50) NULL,
+	[ENG_TCATD44Q] [varchar](50) NULL,
+	[ENG_TCATD44R] [varchar](50) NULL,
+	[ENG_TCATD44S] [varchar](50) NULL,
+	[ENG_TCATD44T] [varchar](50) NULL,
+	[MATH_TCHID] [varchar](50) NULL,
+	[MATH_TCHSUBJ] [varchar](50) NULL,
+	[MATH_TCHDTJN] [varchar](50) NULL,
+	[MATH_TCHDYPRS] [varchar](50) NULL,
+	[MATH_TCSTLEMP] [varchar](50) NULL,
+	[MATH_TCWHYLFT] [varchar](50) NULL,
+	[MATH_TCDAYPRS] [varchar](50) NULL,
+	[MATH_TCHABSC] [varchar](50) NULL,
+	[MATH_TCHNTCMP] [varchar](50) NULL,
+	[MATH_TCHDINT] [varchar](50) NULL,
+	[MATH_TCAGE] [varchar](50) NULL,
+	[MATH_TCGNDR] [varchar](50) NULL,
+	[MATH_TCETHNC] [varchar](50) NULL,
+	[MATH_TCRELGN] [varchar](50) NULL,
+	[MATH_TCLNGHME] [varchar](50) NULL,
+	[MATH_TCPRVTCH] [varchar](50) NULL,
+	[MATH_TCMBLE] [varchar](50) NULL,
+	[MATH_TCRADIO] [varchar](50) NULL,
+	[MATH_TCTELE] [varchar](50) NULL,
+	[MATH_TCBIKE] [varchar](50) NULL,
+	[MATH_TCSCTR] [varchar](50) NULL,
+	[MATH_TCTBLE] [varchar](50) NULL,
+	[MATH_TCCHAIR] [varchar](50) NULL,
+	[MATH_TCLAMP] [varchar](50) NULL,
+	[MATH_TCELEC] [varchar](50) NULL,
+	[MATH_TCAIRCND] [varchar](50) NULL,
+	[MATH_TCCAR] [varchar](50) NULL,
+	[MATH_TCCOMP] [varchar](50) NULL,
+	[MATH_TCINTRT] [varchar](50) NULL,
+	[MATH_TCFRDG] [varchar](50) NULL,
+	[MATH_TCMICRO] [varchar](50) NULL,
+	[MATH_TCDVD] [varchar](50) NULL,
+	[MATH_TCTVBOX] [varchar](50) NULL,
+	[MATH_TCLVLEDC] [varchar](50) NULL,
+	[MATH_TCTCHQLF] [varchar](50) NULL,
+	[MATH_TCSPCMAT] [varchar](50) NULL,
+	[MATH_TCSPCENG] [varchar](50) NULL,
+	[MATH_TCSPCVNM] [varchar](50) NULL,
+	[MATH_TCSPCLNG] [varchar](50) NULL,
+	[MATH_TCSPCPSC] [varchar](50) NULL,
+	[MATH_TCSPCCHE] [varchar](50) NULL,
+	[MATH_TCSPCBIO] [varchar](50) NULL,
+	[MATH_TCSPCHIS] [varchar](50) NULL,
+	[MATH_TCSPCGEO] [varchar](50) NULL,
+	[MATH_TCSPCPHY] [varchar](50) NULL,
+	[MATH_TCSPCANT] [varchar](50) NULL,
+	[MATH_TCDYSTRN] [varchar](50) NULL,
+	[MATH_TCTTRNHLP] [varchar](50) NULL,
+	[MATH_TCAWDTTL] [varchar](50) NULL,
+	[MATH_TCYRTCH] [varchar](50) NULL,
+	[MATH_TCYRTCSCH] [varchar](50) NULL,
+	[MATH_TCSTDENG] [varchar](50) NULL,
+	[MATH_TCTCHENG] [varchar](50) NULL,
+	[MATH_TCEMPBAS] [varchar](50) NULL,
+	[MATH_TCFGRDE10] [varchar](50) NULL,
+	[MATH_TCFGRDE11] [varchar](50) NULL,
+	[MATH_TCFGRDE12] [varchar](50) NULL,
+	[MATH_TCMATHS] [varchar](50) NULL,
+	[MATH_TCENGL] [varchar](50) NULL,
+	[MATH_TCVNM] [varchar](50) NULL,
+	[MATH_TCANTLNG] [varchar](50) NULL,
+	[MATH_TCPHYSC] [varchar](50) NULL,
+	[MATH_TCCHEM] [varchar](50) NULL,
+	[MATH_TCBIOLG] [varchar](50) NULL,
+	[MATH_TCHISTRY] [varchar](50) NULL,
+	[MATH_TCGEOG] [varchar](50) NULL,
+	[MATH_TCPHYS] [varchar](50) NULL,
+	[MATH_TCOTHR] [varchar](50) NULL,
+	[MATH_TCPRDWK] [varchar](50) NULL,
+	[MATH_TCEXTCLS] [varchar](50) NULL,
+	[MATH_TCTCHG10] [varchar](50) NULL,
+	[MATH_TCEXTWRK] [varchar](50) NULL,
+	[MATH_TCOBSHT] [varchar](50) NULL,
+	[MATH_TCOBSVP] [varchar](50) NULL,
+	[MATH_TCOBSHSD] [varchar](50) NULL,
+	[MATH_TCOBSOTH] [varchar](50) NULL,
+	[MATH_TCOBSDOET] [varchar](50) NULL,
+	[MATH_TCPRATD] [varchar](50) NULL,
+	[MATH_TCLATENS] [varchar](50) NULL,
+	[MATH_TCDISCPL] [varchar](50) NULL,
+	[MATH_TCNOMAT] [varchar](50) NULL,
+	[MATH_TCLACKRS] [varchar](50) NULL,
+	[MATH_TCINTRRP] [varchar](50) NULL,
+	[MATH_TCRSNABS] [varchar](50) NULL,
+	[MATH_TCASGNSC] [varchar](50) NULL,
+	[MATH_TCPRTCNT] [varchar](50) NULL,
+	[MATH_TCTRVMIN] [varchar](50) NULL,
+	[MATH_TCPRDTCH] [varchar](50) NULL,
+	[MATH_TCPRDPLN] [varchar](50) NULL,
+	[MATH_TCPRDCRT] [varchar](50) NULL,
+	[MATH_TCPRDADM] [varchar](50) NULL,
+	[MATH_TCHREXTR] [varchar](50) NULL,
+	[MATH_TCHRHELP] [varchar](50) NULL,
+	[MATH_TCHRTUTR] [varchar](50) NULL,
+	[MATH_TCHRIDEA] [varchar](50) NULL,
+	[MATH_TCHRCOMM] [varchar](50) NULL,
+	[MATH_TCIMPCHR] [varchar](50) NULL,
+	[MATH_TCCMSCTC] [varchar](50) NULL,
+	[MATH_TCCMSCFC] [varchar](50) NULL,
+	[MATH_TCCMSCPR] [varchar](50) NULL,
+	[MATH_TCRSNTCH] [varchar](50) NULL,
+	[MATH_TCFRTCHC] [varchar](50) NULL,
+	[MATH_TCMOVTCH] [varchar](50) NULL,
+	[MATH_TCGLSEC] [varchar](50) NULL,
+	[MATH_TCCHSEC] [varchar](50) NULL,
+	[MATH_TCATD41A] [varchar](50) NULL,
+	[MATH_TCATD41B] [varchar](50) NULL,
+	[MATH_TCATD41C] [varchar](50) NULL,
+	[MATH_TCATD41D] [varchar](50) NULL,
+	[MATH_TCATD41E] [varchar](50) NULL,
+	[MATH_TCATD41F] [varchar](50) NULL,
+	[MATH_TCATD41G] [varchar](50) NULL,
+	[MATH_TCATD41H] [varchar](50) NULL,
+	[MATH_TCATD42A] [varchar](50) NULL,
+	[MATH_TCATD42B] [varchar](50) NULL,
+	[MATH_TCATD42C] [varchar](50) NULL,
+	[MATH_TCATD42D] [varchar](50) NULL,
+	[MATH_TCATD42E] [varchar](50) NULL,
+	[MATH_TCATD42F] [varchar](50) NULL,
+	[MATH_TCATD42G] [varchar](50) NULL,
+	[MATH_TCATD43A] [varchar](50) NULL,
+	[MATH_TCATD43B] [varchar](50) NULL,
+	[MATH_TCATD43C] [varchar](50) NULL,
+	[MATH_TCATD43D] [varchar](50) NULL,
+	[MATH_TCATD43E] [varchar](50) NULL,
+	[MATH_TCATD43F] [varchar](50) NULL,
+	[MATH_TCATD43G] [varchar](50) NULL,
+	[MATH_TCATD43H] [varchar](50) NULL,
+	[MATH_TCATD43I] [varchar](50) NULL,
+	[MATH_TCATD43J] [varchar](50) NULL,
+	[MATH_TCATD43K] [varchar](50) NULL,
+	[MATH_TCATD43L] [varchar](50) NULL,
+	[MATH_TCATD43M] [varchar](50) NULL,
+	[MATH_TCATD44A] [varchar](50) NULL,
+	[MATH_TCATD44B] [varchar](50) NULL,
+	[MATH_TCATD44C] [varchar](50) NULL,
+	[MATH_TCATD44D] [varchar](50) NULL,
+	[MATH_TCATD44E] [varchar](50) NULL,
+	[MATH_TCATD44F] [varchar](50) NULL,
+	[MATH_TCATD44G] [varchar](50) NULL,
+	[MATH_TCATD44H] [varchar](50) NULL,
+	[MATH_TCATD44I] [varchar](50) NULL,
+	[MATH_TCATD44J] [varchar](50) NULL,
+	[MATH_TCATD44K] [varchar](50) NULL,
+	[MATH_TCATD44L] [varchar](50) NULL,
+	[MATH_TCATD44M] [varchar](50) NULL,
+	[MATH_TCATD44N] [varchar](50) NULL,
+	[MATH_TCATD44O] [varchar](50) NULL,
+	[MATH_TCATD44P] [varchar](50) NULL,
+	[MATH_TCATD44Q] [varchar](50) NULL,
+	[MATH_TCATD44R] [varchar](50) NULL,
+	[MATH_TCATD44S] [varchar](50) NULL,
+	[MATH_TCATD44T] [varchar](50) NULL,
+	[SCTMTID1] [varchar](50) NULL,
+	[W1MSMTC1] [varchar](50) NULL,
+	[W1MNWTC1] [varchar](50) NULL,
+	[SCTENID1] [varchar](50) NULL,
+	[W1ESMTC1] [varchar](50) NULL,
+	[W1ENWTC1] [varchar](50) NULL,
+	[REGTCH] [varchar](50) NULL,
+	[ATDGIRL] [varchar](50) NULL,
+	[ATDBOY] [varchar](50) NULL,
+	[ATDTTL] [varchar](50) NULL,
+	[SECSIZE] [varchar](50) NULL,
+	[NEWCHLD] [varchar](50) NULL,
+	[STDSTLENR] [varchar](50) NULL,
+	[STDNOENR] [varchar](50) NULL,
+	[STDNMABS] [varchar](50) NULL,
+	[B1LVLSUPP] [varchar](50) NULL,
+	[B1MTVSUC] [varchar](50) NULL,
+	[B2ACABMT] [varchar](50) NULL,
+	[B2PRCLMT] [varchar](50) NULL,
+	[B3ACABEN] [varchar](50) NULL,
+	[B3PRCLEN] [varchar](50) NULL
+) ON [PRIMARY]
+GO
+INSERT [dbo].[vietnamwave_2] ([UNIQUEID], [SCHOOLID], [CLASSID], [STUDENTID], [STNTCMP], [STDINT], [STMTHWRK], [STMWRKCH], [STMWRKCM], [STETHWRK], [STEWRKCH], [STEWRKCM], [STTMMWRK], [STTMEWRK], [STCMPHME], [STCMPSCH], [STCMPOTH], [STLTESCH], [STMSSDAY], [STMSSCLS], [STRSNMS1], [STRSNMS2], [STRSNMS3], [STRSNMS4], [STRSNMS5], [STRSNMS6], [STRSNMS7], [STRSNMS8], [STRSNMS9], [STRSNMS0], [STADDMT], [STADDEN], [STADDOT], [STEXSCMT], [STEXSCEN], [STEXSCOT], [STPRVMT], [STPRVEN], [STPRVOT], [STEXOTMT], [STEXOTEN], [STEXOTOT], [STFEEL18A], [STFEEL18B], [STFEEL18C], [STFEEL18D], [STFEEL18E], [STFEEL18F], [STFEEL18G], [STFEEL18H], [STFEEL18I], [STFEEL18J], [STFEEL18K], [STFEEL18L], [STFEEL19A], [STFEEL19B], [STFEEL19C], [STFEEL19D], [STFEEL19E], [STFEEL19F], [STFEEL19G], [STFEEL19H], [STFEEL19I], [STFEEL20A], [STFEEL20B], [STFEEL20C], [STFEEL20D], [STFEEL20E], [STFEEL20F], [STFEEL20G], [STFEEL20H], [STFEEL20I], [STFEEL20J], [STFEEL20K], [STFEEL20L], [STFEEL20M], [STFEEL20N], [STFEEL20O], [STFEEL21A], [STFEEL21B], [STFEEL21C], [STFEEL21D], [STFEEL21E], [STFEEL21F], [STFEEL21G], [STFEEL21H], [STFEEL21I], [STFEEL21J], [STFEEL22A], [STFEEL22B], [STFEEL22C], [STFEEL22D], [STFEEL22E], [STFEEL22F], [STFEEL22G], [STFEEL22H], [STFEEL23A], [STFEEL23B], [STFEEL23C], [STFEEL23D], [STFEEL23E], [STFEEL23F], [STFEEL23G], [STFEEL23H], [STFEEL24A], [STFEEL24B], [STFEEL24C], [STFEEL24D], [STFEEL24E], [STFEEL25A], [STFEEL25B], [STFEEL25C], [STFEEL25D], [STFEEL25E], [STFEEL26A], [STFEEL26B], [STFEEL26C], [STFEEL26D], [STFEEL26E], [STFEEL26F], [STFEEL26G], [STFEEL26H], [STFEEL26I], [STFEEL27], [STFEEL28], [STFEEL29], [STFEEL30], [STFEEL31], [STFEEL32], [STFEEL33], [STFEEL34], [STFEEL35], [STFEEL36], [STFEEL37], [STFEEL38], [STFEEL39], [STFEEL40], [STFEEL41], [STFEEL42], [STFEEL43], [STFEEL44], [STFEEL45], [STFEEL46], [STFEEL47], [STFEEL48], [STFEEL49], [STFEEL50], [STFEEL51], [STFEEL52], [STFEEL53], [STFEEL54], [STFEEL55], [STFEEL56], [STFEEL57], [STFEEL58], [STFEEL59], [STFEEL60], [STFEEL61], [STFEEL62], [STFEEL63], [STFEEL64], [STFEEL65], [STFEEL66], [STFEEL67], [STFEEL68], [STFEEL69], [STFEEL70], [STFEEL71], [STFEEL72], [STFEEL73], [STFEEL74], [STFEEL75], [STFEEL76], [STFEEL77], [STFEEL78], [STFEEL79], [STFEEL80], [STFEEL81], [STFEEL82], [STFEEL83], [STFEEL84], [STFEEL85], [STFEEL86], [STFEEL87], [STFEEL88], [STFEEL89], [STFEEL90], [STFEEL91], [STFEEL92], [ENG_TEST], [ENG_ITEM1], [ENG_ITEM2], [ENG_ITEM3], [ENG_ITEM4], [ENG_ITEM5], [ENG_ITEM6], [ENG_ITEM7], [ENG_ITEM8], [ENG_ITEM9], [ENG_ITEM10], [ENG_ITEM11], [ENG_ITEM12], [ENG_ITEM13], [ENG_ITEM14], [ENG_ITEM15], [ENG_ITEM16], [ENG_ITEM17], [ENG_ITEM18], [ENG_ITEM19], [ENG_ITEM20], [ENG_ITEM21], [ENG_ITEM22], [ENG_ITEM23], [ENG_ITEM24], [ENG_ITEM25], [ENG_ITEM26], [ENG_ITEM27], [ENG_ITEM28], [ENG_ITEM29], [ENG_ITEM30], [ENG_ITEM31], [ENG_ITEM32], [ENG_ITEM33], [ENG_ITEM34], [ENG_ITEM35], [ENG_ITEM36], [ENG_ITEM37], [ENG_ITEM38], [ENG_ITEM39], [ENG_ITEM40], [ENG_RAWSCORE], [MATH_TEST], [MATH_ITEM1], [MATH_ITEM2], [MATH_ITEM3], [MATH_ITEM4], [MATH_ITEM5], [MATH_ITEM6], [MATH_ITEM7], [MATH_ITEM8], [MATH_ITEM9], [MATH_ITEM10], [MATH_ITEM11], [MATH_ITEM12], [MATH_ITEM13], [MATH_ITEM14], [MATH_ITEM15], [MATH_ITEM16], [MATH_ITEM17], [MATH_ITEM18], [MATH_ITEM19], [MATH_ITEM20], [MATH_ITEM21], [MATH_ITEM22], [MATH_ITEM23], [MATH_ITEM24], [MATH_ITEM25], [MATH_ITEM26], [MATH_ITEM27], [MATH_ITEM28], [MATH_ITEM29], [MATH_ITEM30], [MATH_ITEM31], [MATH_ITEM32], [MATH_ITEM33], [MATH_ITEM34], [MATH_ITEM35], [MATH_ITEM36], [MATH_ITEM37], [MATH_ITEM38], [MATH_ITEM39], [MATH_ITEM40], [MATH_RAWSCORE], [TS_TEST], [TS_ITEM1], [TS_ITEM2], [TS_ITEM3A], [TS_ITEM3B], [TS_ITEM3C], [TS_ITEM3D], [TS_ITEM3E], [TS_ITEM3F], [TS_ITEM3], [TS_ITEM4], [TS_ITEM5], [TS_ITEM6], [TS_ITEM7], [TS_ITEM8A], [TS_ITEM8B], [TS_ITEM8C], [TS_ITEM8], [TS_ITEM9], [TS_ITEM10], [TS_ITEM11], [TS_ITEM12], [TS_ITEM11_12], [TS_ITEM13], [TS_ITEM14], [TS_ITEM15], [TS_ITEM16], [TS_ITEM17], [TS_ITEM18], [TS_ITEM19], [TS_ITEM20], [TS_ITEM21], [TS_ITEM22], [TS_ITEM23], [HTSTFCMP], [HTNTCMP], [HTDINT], [HTDEVPLN], [HTPTA], [HTPTAMT], [HTEDOVS], [HTSTDDRP], [HTCHDLBR], [HTFLSINF], [HTTCHRET], [HTRCHATT], [HTENVEVT], [HTHIRPRN], [HTHIRTCH], [HTHIRBOET], [HTHIRDOET], [HTHIRMOET], [HTHIRMOTH], [HTFIRPRN], [HTFIRTCH], [HTFIRBOET], [HTFIRDOET], [HTFIRMOET], [HTFIRMOTH], [HTESTPRN], [HTESTTCH], [HTESTBOET], [HTESTDOET], [HTESTMOET], [HTESTMOTH], [HTDETPRN], [HTDETTCH], [HTDETBOET], [HTDETDOET], [HTDETMOET], [HTDETMOTH], [HTBUGPRN], [HTBUGTCH], [HTBUGBOET], [HTBUGDOET], [HTBUGMOET], [HTBUGMOTH], [HTBALPRN], [HTBALTCH], [HTBALBOET], [HTBALDOET], [HTBALMOET], [HTBALMOTH], [HTSASPRN], [HTSASTCH], [HTSASBOET], [HTSASDOET], [HTSASMOET], [HTTXTPRN], [HTTXTTCH], [HTTXTBOET], [HTTXTDOET], [HTTXTMOET], [HTCNTPRN], [HTCNTTCH], [HTCNTBOET], [HTCNTDOET], [HTCNTMOET], [HTOFRPRN], [HTOFRTCH], [HTOFRBOET], [HTOFRDOET], [HTOFRMOET], [HTSTPFGL], [HTTCPFGL], [HTTCWKGL], [HTDISCGL], [HTDYSTRN], [HTPMTCRS], [HTPRTCPT], [HTSTDVSK], [HTPRBDIS], [HTATTBEH], [HTSLVPRB], [HTPRTDEC], [HTREVMNG], [HTRSNABS], [HTSHRPER], [HTSTDENR], [HTTOKEXM], [HTLSPSEXM], [HTPRCUNI], [HTPRCVOC], [HTCNTLRN], [SAMEHEAD], [DATECMPL], [ENG_TCHID], [ENG_TCHSUBJ], [ENG_TCHDTJN], [ENG_TCHDYPRS], [ENG_TCSTLEMP], [ENG_TCWHYLFT], [ENG_TCDAYPRS], [ENG_TCHABSC], [ENG_TCHNTCMP], [ENG_TCHDINT], [ENG_TCAGE], [ENG_TCGNDR], [ENG_TCETHNC], [ENG_TCRELGN], [ENG_TCLNGHME], [ENG_TCPRVTCH], [ENG_TCMBLE], [ENG_TCRADIO], [ENG_TCTELE], [ENG_TCBIKE], [ENG_TCSCTR], [ENG_TCTBLE], [ENG_TCCHAIR], [ENG_TCLAMP], [ENG_TCELEC], [ENG_TCAIRCND], [ENG_TCCAR], [ENG_TCCOMP], [ENG_TCINTRT], [ENG_TCFRDG], [ENG_TCMICRO], [ENG_TCDVD], [ENG_TCTVBOX], [ENG_TCLVLEDC], [ENG_TCTCHQLF], [ENG_TCSPCMAT], [ENG_TCSPCENG], [ENG_TCSPCVNM], [ENG_TCSPCLNG], [ENG_TCSPCPSC], [ENG_TCSPCCHE], [ENG_TCSPCBIO], [ENG_TCSPCHIS], [ENG_TCSPCGEO], [ENG_TCSPCPHY], [ENG_TCSPCANT], [ENG_TCDYSTRN], [ENG_TCTTRNHLP], [ENG_TCAWDTTL], [ENG_TCYRTCH], [ENG_TCYRTCSCH], [ENG_TCSTDENG], [ENG_TCTCHENG], [ENG_TCEMPBAS], [ENG_TCFGRDE10], [ENG_TCFGRDE11], [ENG_TCFGRDE12], [ENG_TCMATHS], [ENG_TCENGL], [ENG_TCVNM], [ENG_TCANTLNG], [ENG_TCPHYSC], [ENG_TCCHEM], [ENG_TCBIOLG], [ENG_TCHISTRY], [ENG_TCGEOG], [ENG_TCPHYS], [ENG_TCOTHR], [ENG_TCPRDWK], [ENG_TCEXTCLS], [ENG_TCTCHG10], [ENG_TCEXTWRK], [ENG_TCOBSHT], [ENG_TCOBSVP], [ENG_TCOBSHSD], [ENG_TCOBSOTH], [ENG_TCOBSDOET], [ENG_TCPRATD], [ENG_TCLATENS], [ENG_TCDISCPL], [ENG_TCNOMAT], [ENG_TCLACKRS], [ENG_TCINTRRP], [ENG_TCRSNABS], [ENG_TCASGNSC], [ENG_TCPRTCNT], [ENG_TCTRVMIN], [ENG_TCPRDTCH], [ENG_TCPRDPLN], [ENG_TCPRDCRT], [ENG_TCPRDADM], [ENG_TCHREXTR], [ENG_TCHRHELP], [ENG_TCHRTUTR], [ENG_TCHRIDEA], [ENG_TCHRCOMM], [ENG_TCIMPCHR], [ENG_TCCMSCTC], [ENG_TCCMSCFC], [ENG_TCCMSCPR], [ENG_TCRSNTCH], [ENG_TCFRTCHC], [ENG_TCMOVTCH], [ENG_TCGLSEC], [ENG_TCCHSEC], [ENG_TCATD41A], [ENG_TCATD41B], [ENG_TCATD41C], [ENG_TCATD41D], [ENG_TCATD41E], [ENG_TCATD41F], [ENG_TCATD41G], [ENG_TCATD41H], [ENG_TCATD42A], [ENG_TCATD42B], [ENG_TCATD42C], [ENG_TCATD42D], [ENG_TCATD42E], [ENG_TCATD42F], [ENG_TCATD42G], [ENG_TCATD43A], [ENG_TCATD43B], [ENG_TCATD43C], [ENG_TCATD43D], [ENG_TCATD43E], [ENG_TCATD43F], [ENG_TCATD43G], [ENG_TCATD43H], [ENG_TCATD43I], [ENG_TCATD43J], [ENG_TCATD43K], [ENG_TCATD43L], [ENG_TCATD43M], [ENG_TCATD44A], [ENG_TCATD44B], [ENG_TCATD44C], [ENG_TCATD44D], [ENG_TCATD44E], [ENG_TCATD44F], [ENG_TCATD44G], [ENG_TCATD44H], [ENG_TCATD44I], [ENG_TCATD44J], [ENG_TCATD44K], [ENG_TCATD44L], [ENG_TCATD44M], [ENG_TCATD44N], [ENG_TCATD44O], [ENG_TCATD44P], [ENG_TCATD44Q], [ENG_TCATD44R], [ENG_TCATD44S], [ENG_TCATD44T], [MATH_TCHID], [MATH_TCHSUBJ], [MATH_TCHDTJN], [MATH_TCHDYPRS], [MATH_TCSTLEMP], [MATH_TCWHYLFT], [MATH_TCDAYPRS], [MATH_TCHABSC], [MATH_TCHNTCMP], [MATH_TCHDINT], [MATH_TCAGE], [MATH_TCGNDR], [MATH_TCETHNC], [MATH_TCRELGN], [MATH_TCLNGHME], [MATH_TCPRVTCH], [MATH_TCMBLE], [MATH_TCRADIO], [MATH_TCTELE], [MATH_TCBIKE], [MATH_TCSCTR], [MATH_TCTBLE], [MATH_TCCHAIR], [MATH_TCLAMP], [MATH_TCELEC], [MATH_TCAIRCND], [MATH_TCCAR], [MATH_TCCOMP], [MATH_TCINTRT], [MATH_TCFRDG], [MATH_TCMICRO], [MATH_TCDVD], [MATH_TCTVBOX], [MATH_TCLVLEDC], [MATH_TCTCHQLF], [MATH_TCSPCMAT], [MATH_TCSPCENG], [MATH_TCSPCVNM], [MATH_TCSPCLNG], [MATH_TCSPCPSC], [MATH_TCSPCCHE], [MATH_TCSPCBIO], [MATH_TCSPCHIS], [MATH_TCSPCGEO], [MATH_TCSPCPHY], [MATH_TCSPCANT], [MATH_TCDYSTRN], [MATH_TCTTRNHLP], [MATH_TCAWDTTL], [MATH_TCYRTCH], [MATH_TCYRTCSCH], [MATH_TCSTDENG], [MATH_TCTCHENG], [MATH_TCEMPBAS], [MATH_TCFGRDE10], [MATH_TCFGRDE11], [MATH_TCFGRDE12], [MATH_TCMATHS], [MATH_TCENGL], [MATH_TCVNM], [MATH_TCANTLNG], [MATH_TCPHYSC], [MATH_TCCHEM], [MATH_TCBIOLG], [MATH_TCHISTRY], [MATH_TCGEOG], [MATH_TCPHYS], [MATH_TCOTHR], [MATH_TCPRDWK], [MATH_TCEXTCLS], [MATH_TCTCHG10], [MATH_TCEXTWRK], [MATH_TCOBSHT], [MATH_TCOBSVP], [MATH_TCOBSHSD], [MATH_TCOBSOTH], [MATH_TCOBSDOET], [MATH_TCPRATD], [MATH_TCLATENS], [MATH_TCDISCPL], [MATH_TCNOMAT], [MATH_TCLACKRS], [MATH_TCINTRRP], [MATH_TCRSNABS], [MATH_TCASGNSC], [MATH_TCPRTCNT], [MATH_TCTRVMIN], [MATH_TCPRDTCH], [MATH_TCPRDPLN], [MATH_TCPRDCRT], [MATH_TCPRDADM], [MATH_TCHREXTR], [MATH_TCHRHELP], [MATH_TCHRTUTR], [MATH_TCHRIDEA], [MATH_TCHRCOMM], [MATH_TCIMPCHR], [MATH_TCCMSCTC], [MATH_TCCMSCFC], [MATH_TCCMSCPR], [MATH_TCRSNTCH], [MATH_TCFRTCHC], [MATH_TCMOVTCH], [MATH_TCGLSEC], [MATH_TCCHSEC], [MATH_TCATD41A], [MATH_TCATD41B], [MATH_TCATD41C], [MATH_TCATD41D], [MATH_TCATD41E], [MATH_TCATD41F], [MATH_TCATD41G], [MATH_TCATD41H], [MATH_TCATD42A], [MATH_TCATD42B], [MATH_TCATD42C], [MATH_TCATD42D], [MATH_TCATD42E], [MATH_TCATD42F], [MATH_TCATD42G], [MATH_TCATD43A], [MATH_TCATD43B], [MATH_TCATD43C], [MATH_TCATD43D], [MATH_TCATD43E], [MATH_TCATD43F], [MATH_TCATD43G], [MATH_TCATD43H], [MATH_TCATD43I], [MATH_TCATD43J], [MATH_TCATD43K], [MATH_TCATD43L], [MATH_TCATD43M], [MATH_TCATD44A], [MATH_TCATD44B], [MATH_TCATD44C], [MATH_TCATD44D], [MATH_TCATD44E], [MATH_TCATD44F], [MATH_TCATD44G], [MATH_TCATD44H], [MATH_TCATD44I], [MATH_TCATD44J], [MATH_TCATD44K], [MATH_TCATD44L], [MATH_TCATD44M], [MATH_TCATD44N], [MATH_TCATD44O], [MATH_TCATD44P], [MATH_TCATD44Q], [MATH_TCATD44R], [MATH_TCATD44S], [MATH_TCATD44T], [SCTMTID1], [W1MSMTC1], [W1MNWTC1], [SCTENID1], [W1ESMTC1], [W1ENWTC1], [REGTCH], [ATDGIRL], [ATDBOY], [ATDTTL], [SECSIZE], [NEWCHLD], [STDSTLENR], [STDNOENR], [STDNMABS], [B1LVLSUPP], [B1MTVSUC], [B2ACABMT], [B2PRCLMT], [B3ACABEN], [B3PRCLEN]) VALUES (N'VN1203101', N'1203', N'1', N'1', N'88', N'10/3/2017', N'2', N'2', N'2', N'0', N'0', N'0', N'2', N'2', N'2', N'3', N'1', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'1', N'3', N'3', N'3', N'0', N'0', N'0', N'3', N'3', N'3', N'0', N'0', N'0', N'3', N'4', N'4', N'4', N'4', N'4', N'4', N'4', N'3', N'3', N'2', N'1', N'2', N'2', N'2', N'2', N'3', N'3', N'2', N'2', N'1', N'3', N'3', N'3', N'4', N'3', N'3', N'3', N'2', N'2', N'1', N'2', N'2', N'1', N'2', N'1', N'4', N'3', N'2', N'3', N'4', N'4', N'4', N'4', N'4', N'4', N'2', N'2', N'2', N'2', N'2', N'2', N'2', N'2', N'2', N'2', N'2', N'2', N'2', N'2', N'2', N'2', N'4', N'1', N'1', N'1', N'3', N'4', N'2', N'1', N'1', N'2', N'3', N'2', N'1', N'1', N'1', N'2', N'4', N'1', N'3', N'3', N'2', N'2', N'2', N'3', N'3', N'2', N'3', N'1', N'1', N'1', N'4', N'4', N'4', N'3', N'2', N'3', N'4', N'4', N'1', N'3', N'2', N'4', N'4', N'2', N'1', N'2', N'4', N'4', N'1', N'1', N'1', N'2', N'3', N'2', N'2', N'3', N'4', N'4', N'2', N'1', N'1', N'1', N'4', N'4', N'4', N'4', N'4', N'1', N'4', N'4', N'4', N'1', N'4', N'2', N'4', N'4', N'2', N'1', N'1', N'4', N'4', N'1', N'4', N'1', N'2', N'Yes', N'0', N'0', N'0', N'0', N'1', N'1', N'1', N'1', N'0', N'0', N'1', N'1', N'0', N'0', N'1', N'1', N'1', N'1', N'1', N'1', N'1', N'1', N'0', N'1', N'0', N'0', N'1', N'0', N'0', N'0', N'0', N'0', N'1', N'0', N'1', N'1', N'1', N'1', N'0', N'0', N'21', N'Yes', N'1', N'1', N'1', N'0', N'1', N'1', N'1', N'0', N'1', N'0', N'0', N'1', N'1', N'1', N'1', N'1', N'1', N'1', N'0', N'0', N'1', N'1', N'1', N'1', N'1', N'1', N'1', N'0', N'0', N'0', N'1', N'0', N'0', N'0', N'1', N'1', N'1', N'1', N'0', N'0', N'26', N'Yes', N'2', N'2', N'0', N'0', N'0', N'1', N'0', N'1', N'0', N'0', N'2', N'2', N'0', N'0', N'1', N'0', N'0', N'2', N'2', N'1', N'0', N'1', N'1', N'1', N'0', N'1', N'1', N'1', N'0', N'0', N'1', N'0', N'1', N'1', N'88', N'9/3/2017', N'1', N'1', N'4', N'2', N'2', N'1', N'2', N'2', N'1', N'2', N'0', N'0', N'0', N'1', N'0', N'0', N'0', N'0', N'0', N'1', N'0', N'0', N'0', N'0', N'0', N'1', N'0', N'0', N'0', N'0', N'0', N'1', N'0', N'0', N'1', N'0', N'0', N'0', N'0', N'0', N'1', N'0', N'0', N'0', N'0', N'0', N'1', N'0', N'0', N'0', N'0', N'0', N'1', N'0', N'0', N'0', N'0', N'0', N'0', N'1', N'0', N'0', N'0', N'0', N'1', N'0', N'4', N'4', N'3', N'3', N'5', N'3', N'3', N'3', N'2', N'1', N'2', N'3', N'4', N'3', N'3', N'20', N'0', N'0', N'0', N'0', N'0', N'1', N'9/3/2017', N'41', N'2', N'1/9/2016', N'0', N' ', N' ', N' ', N' ', N'88', N'9/3/2017', N'27', N'2', N'1', N'0', N'1', N'0', N'1', N'1', N'0', N'0', N'1', N'1', N'1', N'1', N'1', N'0', N'0', N'1', N'1', N'0', N'0', N'0', N'0', N'5', N'4', N'0', N'1', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'1', N'3', N'1', N'3', N'0', N'1', N'1', N'0', N'0', N'0', N'1', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'4', N'0', N'1', N'0', N'3', N'3', N'3', N'3', N'3', N'1', N'1', N'0', N'0', N'0', N'0', N'2', N'3', N'1', N'5', N'3', N'3', N'3', N'0', N'3', N'0', N'0', N'2', N'4', N'1', N'2', N'2', N'2', N'5', N'1', N'99', N'6', N'2', N'2', N'3', N'3', N'3', N'3', N'2', N'2', N'3', N'2', N'3', N'3', N'3', N'3', N'2', N'3', N'3', N'2', N'2', N'3', N'2', N'3', N'2', N'3', N'3', N'2', N'3', N'3', N'3', N'4', N'4', N'3', N'2', N'3', N'3', N'2', N'2', N'3', N'3', N'2', N'3', N'3', N'3', N'3', N'3', N'3', N'3', N'3', N'2', N'1', N'1', N' ', N' ', N'1', N'88', N'0', N'0', N'88', N'9/3/2017', N'31', N'2', N'1', N'0', N'1', N'1', N'1', N'0', N'1', N'0', N'1', N'1', N'1', N'1', N'1', N'1', N'0', N'1', N'1', N'1', N'1', N'1', N'1', N'5', N'4', N'1', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'1', N'3', N'7', N'3', N'4', N'0', N'1', N'1', N'0', N'1', N'1', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'10', N'0', N'0', N'0', N'1', N'1', N'4', N'2', N'0', N'2', N'2', N'2', N'2', N'2', N'1', N'6', N'1', N'0', N'60', N'3', N'3', N'3', N'4', N'1', N'3', N'0', N'2', N'1', N'9', N'1', N'3', N'3', N'2', N'1', N'50', N'1', N'3', N'4', N'4', N'4', N'2', N'4', N'2', N'2', N'4', N'3', N'4', N'4', N'4', N'4', N'2', N'4', N'4', N'2', N'1', N'4', N'4', N'3', N'3', N'4', N'4', N'1', N'3', N'3', N'2', N'3', N'3', N'2', N'3', N'3', N'2', N'2', N'1', N'3', N'3', N'3', N'4', N'4', N'4', N'2', N'4', N'3', N'2', N'2', N'1', N'1', N'1', N'88', N'2', N'0', N'41', N'1', N'13', N'17', N'30', N'35', N'0', N'1', N' ', N'0', N'10', N'10', N'8', N'10', N'8', N'5')
+GO
+INSERT [dbo].[vietnamwave_2] ([UNIQUEID], [SCHOOLID], [CLASSID], [STUDENTID], [STNTCMP], [STDINT], [STMTHWRK], [STMWRKCH], [STMWRKCM], [STETHWRK], [STEWRKCH], [STEWRKCM], [STTMMWRK], [STTMEWRK], [STCMPHME], [STCMPSCH], [STCMPOTH], [STLTESCH], [STMSSDAY], [STMSSCLS], [STRSNMS1], [STRSNMS2], [STRSNMS3], [STRSNMS4], [STRSNMS5], [STRSNMS6], [STRSNMS7], [STRSNMS8], [STRSNMS9], [STRSNMS0], [STADDMT], [STADDEN], [STADDOT], [STEXSCMT], [STEXSCEN], [STEXSCOT], [STPRVMT], [STPRVEN], [STPRVOT], [STEXOTMT], [STEXOTEN], [STEXOTOT], [STFEEL18A], [STFEEL18B], [STFEEL18C], [STFEEL18D], [STFEEL18E], [STFEEL18F], [STFEEL18G], [STFEEL18H], [STFEEL18I], [STFEEL18J], [STFEEL18K], [STFEEL18L], [STFEEL19A], [STFEEL19B], [STFEEL19C], [STFEEL19D], [STFEEL19E], [STFEEL19F], [STFEEL19G], [STFEEL19H], [STFEEL19I], [STFEEL20A], [STFEEL20B], [STFEEL20C], [STFEEL20D], [STFEEL20E], [STFEEL20F], [STFEEL20G], [STFEEL20H], [STFEEL20I], [STFEEL20J], [STFEEL20K], [STFEEL20L], [STFEEL20M], [STFEEL20N], [STFEEL20O], [STFEEL21A], [STFEEL21B], [STFEEL21C], [STFEEL21D], [STFEEL21E], [STFEEL21F], [STFEEL21G], [STFEEL21H], [STFEEL21I], [STFEEL21J], [STFEEL22A], [STFEEL22B], [STFEEL22C], [STFEEL22D], [STFEEL22E], [STFEEL22F], [STFEEL22G], [STFEEL22H], [STFEEL23A], [STFEEL23B], [STFEEL23C], [STFEEL23D], [STFEEL23E], [STFEEL23F], [STFEEL23G], [STFEEL23H], [STFEEL24A], [STFEEL24B], [STFEEL24C], [STFEEL24D], [STFEEL24E], [STFEEL25A], [STFEEL25B], [STFEEL25C], [STFEEL25D], [STFEEL25E], [STFEEL26A], [STFEEL26B], [STFEEL26C], [STFEEL26D], [STFEEL26E], [STFEEL26F], [STFEEL26G], [STFEEL26H], [STFEEL26I], [STFEEL27], [STFEEL28], [STFEEL29], [STFEEL30], [STFEEL31], [STFEEL32], [STFEEL33], [STFEEL34], [STFEEL35], [STFEEL36], [STFEEL37], [STFEEL38], [STFEEL39], [STFEEL40], [STFEEL41], [STFEEL42], [STFEEL43], [STFEEL44], [STFEEL45], [STFEEL46], [STFEEL47], [STFEEL48], [STFEEL49], [STFEEL50], [STFEEL51], [STFEEL52], [STFEEL53], [STFEEL54], [STFEEL55], [STFEEL56], [STFEEL57], [STFEEL58], [STFEEL59], [STFEEL60], [STFEEL61], [STFEEL62], [STFEEL63], [STFEEL64], [STFEEL65], [STFEEL66], [STFEEL67], [STFEEL68], [STFEEL69], [STFEEL70], [STFEEL71], [STFEEL72], [STFEEL73], [STFEEL74], [STFEEL75], [STFEEL76], [STFEEL77], [STFEEL78], [STFEEL79], [STFEEL80], [STFEEL81], [STFEEL82], [STFEEL83], [STFEEL84], [STFEEL85], [STFEEL86], [STFEEL87], [STFEEL88], [STFEEL89], [STFEEL90], [STFEEL91], [STFEEL92], [ENG_TEST], [ENG_ITEM1], [ENG_ITEM2], [ENG_ITEM3], [ENG_ITEM4], [ENG_ITEM5], [ENG_ITEM6], [ENG_ITEM7], [ENG_ITEM8], [ENG_ITEM9], [ENG_ITEM10], [ENG_ITEM11], [ENG_ITEM12], [ENG_ITEM13], [ENG_ITEM14], [ENG_ITEM15], [ENG_ITEM16], [ENG_ITEM17], [ENG_ITEM18], [ENG_ITEM19], [ENG_ITEM20], [ENG_ITEM21], [ENG_ITEM22], [ENG_ITEM23], [ENG_ITEM24], [ENG_ITEM25], [ENG_ITEM26], [ENG_ITEM27], [ENG_ITEM28], [ENG_ITEM29], [ENG_ITEM30], [ENG_ITEM31], [ENG_ITEM32], [ENG_ITEM33], [ENG_ITEM34], [ENG_ITEM35], [ENG_ITEM36], [ENG_ITEM37], [ENG_ITEM38], [ENG_ITEM39], [ENG_ITEM40], [ENG_RAWSCORE], [MATH_TEST], [MATH_ITEM1], [MATH_ITEM2], [MATH_ITEM3], [MATH_ITEM4], [MATH_ITEM5], [MATH_ITEM6], [MATH_ITEM7], [MATH_ITEM8], [MATH_ITEM9], [MATH_ITEM10], [MATH_ITEM11], [MATH_ITEM12], [MATH_ITEM13], [MATH_ITEM14], [MATH_ITEM15], [MATH_ITEM16], [MATH_ITEM17], [MATH_ITEM18], [MATH_ITEM19], [MATH_ITEM20], [MATH_ITEM21], [MATH_ITEM22], [MATH_ITEM23], [MATH_ITEM24], [MATH_ITEM25], [MATH_ITEM26], [MATH_ITEM27], [MATH_ITEM28], [MATH_ITEM29], [MATH_ITEM30], [MATH_ITEM31], [MATH_ITEM32], [MATH_ITEM33], [MATH_ITEM34], [MATH_ITEM35], [MATH_ITEM36], [MATH_ITEM37], [MATH_ITEM38], [MATH_ITEM39], [MATH_ITEM40], [MATH_RAWSCORE], [TS_TEST], [TS_ITEM1], [TS_ITEM2], [TS_ITEM3A], [TS_ITEM3B], [TS_ITEM3C], [TS_ITEM3D], [TS_ITEM3E], [TS_ITEM3F], [TS_ITEM3], [TS_ITEM4], [TS_ITEM5], [TS_ITEM6], [TS_ITEM7], [TS_ITEM8A], [TS_ITEM8B], [TS_ITEM8C], [TS_ITEM8], [TS_ITEM9], [TS_ITEM10], [TS_ITEM11], [TS_ITEM12], [TS_ITEM11_12], [TS_ITEM13], [TS_ITEM14], [TS_ITEM15], [TS_ITEM16], [TS_ITEM17], [TS_ITEM18], [TS_ITEM19], [TS_ITEM20], [TS_ITEM21], [TS_ITEM22], [TS_ITEM23], [HTSTFCMP], [HTNTCMP], [HTDINT], [HTDEVPLN], [HTPTA], [HTPTAMT], [HTEDOVS], [HTSTDDRP], [HTCHDLBR], [HTFLSINF], [HTTCHRET], [HTRCHATT], [HTENVEVT], [HTHIRPRN], [HTHIRTCH], [HTHIRBOET], [HTHIRDOET], [HTHIRMOET], [HTHIRMOTH], [HTFIRPRN], [HTFIRTCH], [HTFIRBOET], [HTFIRDOET], [HTFIRMOET], [HTFIRMOTH], [HTESTPRN], [HTESTTCH], [HTESTBOET], [HTESTDOET], [HTESTMOET], [HTESTMOTH], [HTDETPRN], [HTDETTCH], [HTDETBOET], [HTDETDOET], [HTDETMOET], [HTDETMOTH], [HTBUGPRN], [HTBUGTCH], [HTBUGBOET], [HTBUGDOET], [HTBUGMOET], [HTBUGMOTH], [HTBALPRN], [HTBALTCH], [HTBALBOET], [HTBALDOET], [HTBALMOET], [HTBALMOTH], [HTSASPRN], [HTSASTCH], [HTSASBOET], [HTSASDOET], [HTSASMOET], [HTTXTPRN], [HTTXTTCH], [HTTXTBOET], [HTTXTDOET], [HTTXTMOET], [HTCNTPRN], [HTCNTTCH], [HTCNTBOET], [HTCNTDOET], [HTCNTMOET], [HTOFRPRN], [HTOFRTCH], [HTOFRBOET], [HTOFRDOET], [HTOFRMOET], [HTSTPFGL], [HTTCPFGL], [HTTCWKGL], [HTDISCGL], [HTDYSTRN], [HTPMTCRS], [HTPRTCPT], [HTSTDVSK], [HTPRBDIS], [HTATTBEH], [HTSLVPRB], [HTPRTDEC], [HTREVMNG], [HTRSNABS], [HTSHRPER], [HTSTDENR], [HTTOKEXM], [HTLSPSEXM], [HTPRCUNI], [HTPRCVOC], [HTCNTLRN], [SAMEHEAD], [DATECMPL], [ENG_TCHID], [ENG_TCHSUBJ], [ENG_TCHDTJN], [ENG_TCHDYPRS], [ENG_TCSTLEMP], [ENG_TCWHYLFT], [ENG_TCDAYPRS], [ENG_TCHABSC], [ENG_TCHNTCMP], [ENG_TCHDINT], [ENG_TCAGE], [ENG_TCGNDR], [ENG_TCETHNC], [ENG_TCRELGN], [ENG_TCLNGHME], [ENG_TCPRVTCH], [ENG_TCMBLE], [ENG_TCRADIO], [ENG_TCTELE], [ENG_TCBIKE], [ENG_TCSCTR], [ENG_TCTBLE], [ENG_TCCHAIR], [ENG_TCLAMP], [ENG_TCELEC], [ENG_TCAIRCND], [ENG_TCCAR], [ENG_TCCOMP], [ENG_TCINTRT], [ENG_TCFRDG], [ENG_TCMICRO], [ENG_TCDVD], [ENG_TCTVBOX], [ENG_TCLVLEDC], [ENG_TCTCHQLF], [ENG_TCSPCMAT], [ENG_TCSPCENG], [ENG_TCSPCVNM], [ENG_TCSPCLNG], [ENG_TCSPCPSC], [ENG_TCSPCCHE], [ENG_TCSPCBIO], [ENG_TCSPCHIS], [ENG_TCSPCGEO], [ENG_TCSPCPHY], [ENG_TCSPCANT], [ENG_TCDYSTRN], [ENG_TCTTRNHLP], [ENG_TCAWDTTL], [ENG_TCYRTCH], [ENG_TCYRTCSCH], [ENG_TCSTDENG], [ENG_TCTCHENG], [ENG_TCEMPBAS], [ENG_TCFGRDE10], [ENG_TCFGRDE11], [ENG_TCFGRDE12], [ENG_TCMATHS], [ENG_TCENGL], [ENG_TCVNM], [ENG_TCANTLNG], [ENG_TCPHYSC], [ENG_TCCHEM], [ENG_TCBIOLG], [ENG_TCHISTRY], [ENG_TCGEOG], [ENG_TCPHYS], [ENG_TCOTHR], [ENG_TCPRDWK], [ENG_TCEXTCLS], [ENG_TCTCHG10], [ENG_TCEXTWRK], [ENG_TCOBSHT], [ENG_TCOBSVP], [ENG_TCOBSHSD], [ENG_TCOBSOTH], [ENG_TCOBSDOET], [ENG_TCPRATD], [ENG_TCLATENS], [ENG_TCDISCPL], [ENG_TCNOMAT], [ENG_TCLACKRS], [ENG_TCINTRRP], [ENG_TCRSNABS], [ENG_TCASGNSC], [ENG_TCPRTCNT], [ENG_TCTRVMIN], [ENG_TCPRDTCH], [ENG_TCPRDPLN], [ENG_TCPRDCRT], [ENG_TCPRDADM], [ENG_TCHREXTR], [ENG_TCHRHELP], [ENG_TCHRTUTR], [ENG_TCHRIDEA], [ENG_TCHRCOMM], [ENG_TCIMPCHR], [ENG_TCCMSCTC], [ENG_TCCMSCFC], [ENG_TCCMSCPR], [ENG_TCRSNTCH], [ENG_TCFRTCHC], [ENG_TCMOVTCH], [ENG_TCGLSEC], [ENG_TCCHSEC], [ENG_TCATD41A], [ENG_TCATD41B], [ENG_TCATD41C], [ENG_TCATD41D], [ENG_TCATD41E], [ENG_TCATD41F], [ENG_TCATD41G], [ENG_TCATD41H], [ENG_TCATD42A], [ENG_TCATD42B], [ENG_TCATD42C], [ENG_TCATD42D], [ENG_TCATD42E], [ENG_TCATD42F], [ENG_TCATD42G], [ENG_TCATD43A], [ENG_TCATD43B], [ENG_TCATD43C], [ENG_TCATD43D], [ENG_TCATD43E], [ENG_TCATD43F], [ENG_TCATD43G], [ENG_TCATD43H], [ENG_TCATD43I], [ENG_TCATD43J], [ENG_TCATD43K], [ENG_TCATD43L], [ENG_TCATD43M], [ENG_TCATD44A], [ENG_TCATD44B], [ENG_TCATD44C], [ENG_TCATD44D], [ENG_TCATD44E], [ENG_TCATD44F], [ENG_TCATD44G], [ENG_TCATD44H], [ENG_TCATD44I], [ENG_TCATD44J], [ENG_TCATD44K], [ENG_TCATD44L], [ENG_TCATD44M], [ENG_TCATD44N], [ENG_TCATD44O], [ENG_TCATD44P], [ENG_TCATD44Q], [ENG_TCATD44R], [ENG_TCATD44S], [ENG_TCATD44T], [MATH_TCHID], [MATH_TCHSUBJ], [MATH_TCHDTJN], [MATH_TCHDYPRS], [MATH_TCSTLEMP], [MATH_TCWHYLFT], [MATH_TCDAYPRS], [MATH_TCHABSC], [MATH_TCHNTCMP], [MATH_TCHDINT], [MATH_TCAGE], [MATH_TCGNDR], [MATH_TCETHNC], [MATH_TCRELGN], [MATH_TCLNGHME], [MATH_TCPRVTCH], [MATH_TCMBLE], [MATH_TCRADIO], [MATH_TCTELE], [MATH_TCBIKE], [MATH_TCSCTR], [MATH_TCTBLE], [MATH_TCCHAIR], [MATH_TCLAMP], [MATH_TCELEC], [MATH_TCAIRCND], [MATH_TCCAR], [MATH_TCCOMP], [MATH_TCINTRT], [MATH_TCFRDG], [MATH_TCMICRO], [MATH_TCDVD], [MATH_TCTVBOX], [MATH_TCLVLEDC], [MATH_TCTCHQLF], [MATH_TCSPCMAT], [MATH_TCSPCENG], [MATH_TCSPCVNM], [MATH_TCSPCLNG], [MATH_TCSPCPSC], [MATH_TCSPCCHE], [MATH_TCSPCBIO], [MATH_TCSPCHIS], [MATH_TCSPCGEO], [MATH_TCSPCPHY], [MATH_TCSPCANT], [MATH_TCDYSTRN], [MATH_TCTTRNHLP], [MATH_TCAWDTTL], [MATH_TCYRTCH], [MATH_TCYRTCSCH], [MATH_TCSTDENG], [MATH_TCTCHENG], [MATH_TCEMPBAS], [MATH_TCFGRDE10], [MATH_TCFGRDE11], [MATH_TCFGRDE12], [MATH_TCMATHS], [MATH_TCENGL], [MATH_TCVNM], [MATH_TCANTLNG], [MATH_TCPHYSC], [MATH_TCCHEM], [MATH_TCBIOLG], [MATH_TCHISTRY], [MATH_TCGEOG], [MATH_TCPHYS], [MATH_TCOTHR], [MATH_TCPRDWK], [MATH_TCEXTCLS], [MATH_TCTCHG10], [MATH_TCEXTWRK], [MATH_TCOBSHT], [MATH_TCOBSVP], [MATH_TCOBSHSD], [MATH_TCOBSOTH], [MATH_TCOBSDOET], [MATH_TCPRATD], [MATH_TCLATENS], [MATH_TCDISCPL], [MATH_TCNOMAT], [MATH_TCLACKRS], [MATH_TCINTRRP], [MATH_TCRSNABS], [MATH_TCASGNSC], [MATH_TCPRTCNT], [MATH_TCTRVMIN], [MATH_TCPRDTCH], [MATH_TCPRDPLN], [MATH_TCPRDCRT], [MATH_TCPRDADM], [MATH_TCHREXTR], [MATH_TCHRHELP], [MATH_TCHRTUTR], [MATH_TCHRIDEA], [MATH_TCHRCOMM], [MATH_TCIMPCHR], [MATH_TCCMSCTC], [MATH_TCCMSCFC], [MATH_TCCMSCPR], [MATH_TCRSNTCH], [MATH_TCFRTCHC], [MATH_TCMOVTCH], [MATH_TCGLSEC], [MATH_TCCHSEC], [MATH_TCATD41A], [MATH_TCATD41B], [MATH_TCATD41C], [MATH_TCATD41D], [MATH_TCATD41E], [MATH_TCATD41F], [MATH_TCATD41G], [MATH_TCATD41H], [MATH_TCATD42A], [MATH_TCATD42B], [MATH_TCATD42C], [MATH_TCATD42D], [MATH_TCATD42E], [MATH_TCATD42F], [MATH_TCATD42G], [MATH_TCATD43A], [MATH_TCATD43B], [MATH_TCATD43C], [MATH_TCATD43D], [MATH_TCATD43E], [MATH_TCATD43F], [MATH_TCATD43G], [MATH_TCATD43H], [MATH_TCATD43I], [MATH_TCATD43J], [MATH_TCATD43K], [MATH_TCATD43L], [MATH_TCATD43M], [MATH_TCATD44A], [MATH_TCATD44B], [MATH_TCATD44C], [MATH_TCATD44D], [MATH_TCATD44E], [MATH_TCATD44F], [MATH_TCATD44G], [MATH_TCATD44H], [MATH_TCATD44I], [MATH_TCATD44J], [MATH_TCATD44K], [MATH_TCATD44L], [MATH_TCATD44M], [MATH_TCATD44N], [MATH_TCATD44O], [MATH_TCATD44P], [MATH_TCATD44Q], [MATH_TCATD44R], [MATH_TCATD44S], [MATH_TCATD44T], [SCTMTID1], [W1MSMTC1], [W1MNWTC1], [SCTENID1], [W1ESMTC1], [W1ENWTC1], [REGTCH], [ATDGIRL], [ATDBOY], [ATDTTL], [SECSIZE], [NEWCHLD], [STDSTLENR], [STDNOENR], [STDNMABS], [B1LVLSUPP], [B1MTVSUC], [B2ACABMT], [B2PRCLMT], [B3ACABEN], [B3PRCLEN]) VALUES (N'VN1203102', N'1203', N'1', N'2', N'88', N'10/3/2017', N'3', N'3', N'3', N'2', N'3', N'3', N'2', N'2', N'3', N'4', N'2', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'1', N'1', N'2', N'1', N'4', N'4', N'4', N'3', N'3', N'3', N'0', N'0', N'0', N'3', N'3', N'4', N'4', N'4', N'4', N'4', N'4', N'3', N'3', N'3', N'1', N'1', N'2', N'1', N'2', N'2', N'1', N'2', N'2', N'1', N'3', N'4', N'4', N'3', N'4', N'3', N'3', N'3', N'3', N'4', N'3', N'2', N'2', N'1', N'2', N'3', N'3', N'3', N'3', N'3', N'4', N'4', N'3', N'3', N'4', N'3', N'1', N'4', N'2', N'3', N'1', N'3', N'2', N'3', N'2', N'3', N'2', N'3', N'2', N'3', N'1', N'3', N'2', N'2', N'2', N'4', N'3', N'2', N'2', N'2', N'4', N'3', N'2', N'2', N'2', N'3', N'2', N'3', N'2', N'3', N'3', N'2', N'3', N'3', N'3', N'3', N'2', N'3', N'2', N'2', N'2', N'3', N'3', N'3', N'3', N'2', N'3', N'4', N'3', N'2', N'3', N'3', N'3', N'3', N'2', N'2', N'2', N'3', N'3', N'2', N'3', N'2', N'2', N'3', N'2', N'3', N'3', N'3', N'3', N'2', N'3', N'2', N'2', N'2', N'3', N'4', N'2', N'3', N'2', N'3', N'4', N'3', N'2', N'3', N'3', N'3', N'3', N'2', N'2', N'2', N'3', N'3', N'2', N'3', N'2', N'2', N'Yes', N'0', N'0', N'1', N'1', N'0', N'0', N'1', N'1', N'1', N'0', N'0', N'1', N'0', N'1', N'0', N'1', N'0', N'1', N'0', N'1', N'1', N'1', N'1', N'1', N'1', N'1', N'1', N'1', N'1', N'0', N'0', N'1', N'1', N'1', N'1', N'1', N'0', N'1', N'1', N'1', N'27', N'Yes', N'1', N'0', N'1', N'1', N'1', N'1', N'0', N'1', N'1', N'0', N'0', N'1', N'1', N'1', N'1', N'1', N'1', N'1', N'0', N'0', N'1', N'1', N'1', N'1', N'1', N'0', N'1', N'1', N'1', N'1', N'0', N'0', N'1', N'1', N'1', N'1', N'0', N'0', N'1', N'1', N'29', N'Yes', N'2', N'2', N'0', N'0', N'1', N'1', N'0', N'0', N'0', N'2', N'2', N'2', N'0', N'0', N'0', N'0', N'0', N'2', N'0', N'1', N'0', N'1', N'0', N'0', N'1', N'0', N'1', N'1', N'0', N'0', N'0', N'0', N'1', N'1', N'88', N'9/3/2017', N'1', N'1', N'4', N'2', N'2', N'1', N'2', N'2', N'1', N'2', N'0', N'0', N'0', N'1', N'0', N'0', N'0', N'0', N'0', N'1', N'0', N'0', N'0', N'0', N'0', N'1', N'0', N'0', N'0', N'0', N'0', N'1', N'0', N'0', N'1', N'0', N'0', N'0', N'0', N'0', N'1', N'0', N'0', N'0', N'0', N'0', N'1', N'0', N'0', N'0', N'0', N'0', N'1', N'0', N'0', N'0', N'0', N'0', N'0', N'1', N'0', N'0', N'0', N'0', N'1', N'0', N'4', N'4', N'3', N'3', N'5', N'3', N'3', N'3', N'2', N'1', N'2', N'3', N'4', N'3', N'3', N'20', N'0', N'0', N'0', N'0', N'0', N'1', N'9/3/2017', N'41', N'2', N'1/9/2016', N'0', N' ', N' ', N' ', N' ', N'88', N'9/3/2017', N'27', N'2', N'1', N'0', N'1', N'0', N'1', N'1', N'0', N'0', N'1', N'1', N'1', N'1', N'1', N'0', N'0', N'1', N'1', N'0', N'0', N'0', N'0', N'5', N'4', N'0', N'1', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'1', N'3', N'1', N'3', N'0', N'1', N'1', N'0', N'0', N'0', N'1', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'4', N'0', N'1', N'0', N'3', N'3', N'3', N'3', N'3', N'1', N'1', N'0', N'0', N'0', N'0', N'2', N'3', N'1', N'5', N'3', N'3', N'3', N'0', N'3', N'0', N'0', N'2', N'4', N'1', N'2', N'2', N'2', N'5', N'1', N'99', N'6', N'2', N'2', N'3', N'3', N'3', N'3', N'2', N'2', N'3', N'2', N'3', N'3', N'3', N'3', N'2', N'3', N'3', N'2', N'2', N'3', N'2', N'3', N'2', N'3', N'3', N'2', N'3', N'3', N'3', N'4', N'4', N'3', N'2', N'3', N'3', N'2', N'2', N'3', N'3', N'2', N'3', N'3', N'3', N'3', N'3', N'3', N'3', N'3', N'2', N'1', N'1', N' ', N' ', N'1', N'88', N'0', N'0', N'88', N'9/3/2017', N'31', N'2', N'1', N'0', N'1', N'1', N'1', N'0', N'1', N'0', N'1', N'1', N'1', N'1', N'1', N'1', N'0', N'1', N'1', N'1', N'1', N'1', N'1', N'5', N'4', N'1', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'1', N'3', N'7', N'3', N'4', N'0', N'1', N'1', N'0', N'1', N'1', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'10', N'0', N'0', N'0', N'1', N'1', N'4', N'2', N'0', N'2', N'2', N'2', N'2', N'2', N'1', N'6', N'1', N'0', N'60', N'3', N'3', N'3', N'4', N'1', N'3', N'0', N'2', N'1', N'9', N'1', N'3', N'3', N'2', N'1', N'50', N'1', N'3', N'4', N'4', N'4', N'2', N'4', N'2', N'2', N'4', N'3', N'4', N'4', N'4', N'4', N'2', N'4', N'4', N'2', N'1', N'4', N'4', N'3', N'3', N'4', N'4', N'1', N'3', N'3', N'2', N'3', N'3', N'2', N'3', N'3', N'2', N'2', N'1', N'3', N'3', N'3', N'4', N'4', N'4', N'2', N'4', N'3', N'2', N'2', N'1', N'1', N'1', N'88', N'2', N'0', N'41', N'1', N'13', N'17', N'30', N'35', N'0', N'1', N' ', N'0', N'10', N'10', N'8', N'10', N'7', N'7')
+GO
+INSERT [dbo].[vietnamwave_2] ([UNIQUEID], [SCHOOLID], [CLASSID], [STUDENTID], [STNTCMP], [STDINT], [STMTHWRK], [STMWRKCH], [STMWRKCM], [STETHWRK], [STEWRKCH], [STEWRKCM], [STTMMWRK], [STTMEWRK], [STCMPHME], [STCMPSCH], [STCMPOTH], [STLTESCH], [STMSSDAY], [STMSSCLS], [STRSNMS1], [STRSNMS2], [STRSNMS3], [STRSNMS4], [STRSNMS5], [STRSNMS6], [STRSNMS7], [STRSNMS8], [STRSNMS9], [STRSNMS0], [STADDMT], [STADDEN], [STADDOT], [STEXSCMT], [STEXSCEN], [STEXSCOT], [STPRVMT], [STPRVEN], [STPRVOT], [STEXOTMT], [STEXOTEN], [STEXOTOT], [STFEEL18A], [STFEEL18B], [STFEEL18C], [STFEEL18D], [STFEEL18E], [STFEEL18F], [STFEEL18G], [STFEEL18H], [STFEEL18I], [STFEEL18J], [STFEEL18K], [STFEEL18L], [STFEEL19A], [STFEEL19B], [STFEEL19C], [STFEEL19D], [STFEEL19E], [STFEEL19F], [STFEEL19G], [STFEEL19H], [STFEEL19I], [STFEEL20A], [STFEEL20B], [STFEEL20C], [STFEEL20D], [STFEEL20E], [STFEEL20F], [STFEEL20G], [STFEEL20H], [STFEEL20I], [STFEEL20J], [STFEEL20K], [STFEEL20L], [STFEEL20M], [STFEEL20N], [STFEEL20O], [STFEEL21A], [STFEEL21B], [STFEEL21C], [STFEEL21D], [STFEEL21E], [STFEEL21F], [STFEEL21G], [STFEEL21H], [STFEEL21I], [STFEEL21J], [STFEEL22A], [STFEEL22B], [STFEEL22C], [STFEEL22D], [STFEEL22E], [STFEEL22F], [STFEEL22G], [STFEEL22H], [STFEEL23A], [STFEEL23B], [STFEEL23C], [STFEEL23D], [STFEEL23E], [STFEEL23F], [STFEEL23G], [STFEEL23H], [STFEEL24A], [STFEEL24B], [STFEEL24C], [STFEEL24D], [STFEEL24E], [STFEEL25A], [STFEEL25B], [STFEEL25C], [STFEEL25D], [STFEEL25E], [STFEEL26A], [STFEEL26B], [STFEEL26C], [STFEEL26D], [STFEEL26E], [STFEEL26F], [STFEEL26G], [STFEEL26H], [STFEEL26I], [STFEEL27], [STFEEL28], [STFEEL29], [STFEEL30], [STFEEL31], [STFEEL32], [STFEEL33], [STFEEL34], [STFEEL35], [STFEEL36], [STFEEL37], [STFEEL38], [STFEEL39], [STFEEL40], [STFEEL41], [STFEEL42], [STFEEL43], [STFEEL44], [STFEEL45], [STFEEL46], [STFEEL47], [STFEEL48], [STFEEL49], [STFEEL50], [STFEEL51], [STFEEL52], [STFEEL53], [STFEEL54], [STFEEL55], [STFEEL56], [STFEEL57], [STFEEL58], [STFEEL59], [STFEEL60], [STFEEL61], [STFEEL62], [STFEEL63], [STFEEL64], [STFEEL65], [STFEEL66], [STFEEL67], [STFEEL68], [STFEEL69], [STFEEL70], [STFEEL71], [STFEEL72], [STFEEL73], [STFEEL74], [STFEEL75], [STFEEL76], [STFEEL77], [STFEEL78], [STFEEL79], [STFEEL80], [STFEEL81], [STFEEL82], [STFEEL83], [STFEEL84], [STFEEL85], [STFEEL86], [STFEEL87], [STFEEL88], [STFEEL89], [STFEEL90], [STFEEL91], [STFEEL92], [ENG_TEST], [ENG_ITEM1], [ENG_ITEM2], [ENG_ITEM3], [ENG_ITEM4], [ENG_ITEM5], [ENG_ITEM6], [ENG_ITEM7], [ENG_ITEM8], [ENG_ITEM9], [ENG_ITEM10], [ENG_ITEM11], [ENG_ITEM12], [ENG_ITEM13], [ENG_ITEM14], [ENG_ITEM15], [ENG_ITEM16], [ENG_ITEM17], [ENG_ITEM18], [ENG_ITEM19], [ENG_ITEM20], [ENG_ITEM21], [ENG_ITEM22], [ENG_ITEM23], [ENG_ITEM24], [ENG_ITEM25], [ENG_ITEM26], [ENG_ITEM27], [ENG_ITEM28], [ENG_ITEM29], [ENG_ITEM30], [ENG_ITEM31], [ENG_ITEM32], [ENG_ITEM33], [ENG_ITEM34], [ENG_ITEM35], [ENG_ITEM36], [ENG_ITEM37], [ENG_ITEM38], [ENG_ITEM39], [ENG_ITEM40], [ENG_RAWSCORE], [MATH_TEST], [MATH_ITEM1], [MATH_ITEM2], [MATH_ITEM3], [MATH_ITEM4], [MATH_ITEM5], [MATH_ITEM6], [MATH_ITEM7], [MATH_ITEM8], [MATH_ITEM9], [MATH_ITEM10], [MATH_ITEM11], [MATH_ITEM12], [MATH_ITEM13], [MATH_ITEM14], [MATH_ITEM15], [MATH_ITEM16], [MATH_ITEM17], [MATH_ITEM18], [MATH_ITEM19], [MATH_ITEM20], [MATH_ITEM21], [MATH_ITEM22], [MATH_ITEM23], [MATH_ITEM24], [MATH_ITEM25], [MATH_ITEM26], [MATH_ITEM27], [MATH_ITEM28], [MATH_ITEM29], [MATH_ITEM30], [MATH_ITEM31], [MATH_ITEM32], [MATH_ITEM33], [MATH_ITEM34], [MATH_ITEM35], [MATH_ITEM36], [MATH_ITEM37], [MATH_ITEM38], [MATH_ITEM39], [MATH_ITEM40], [MATH_RAWSCORE], [TS_TEST], [TS_ITEM1], [TS_ITEM2], [TS_ITEM3A], [TS_ITEM3B], [TS_ITEM3C], [TS_ITEM3D], [TS_ITEM3E], [TS_ITEM3F], [TS_ITEM3], [TS_ITEM4], [TS_ITEM5], [TS_ITEM6], [TS_ITEM7], [TS_ITEM8A], [TS_ITEM8B], [TS_ITEM8C], [TS_ITEM8], [TS_ITEM9], [TS_ITEM10], [TS_ITEM11], [TS_ITEM12], [TS_ITEM11_12], [TS_ITEM13], [TS_ITEM14], [TS_ITEM15], [TS_ITEM16], [TS_ITEM17], [TS_ITEM18], [TS_ITEM19], [TS_ITEM20], [TS_ITEM21], [TS_ITEM22], [TS_ITEM23], [HTSTFCMP], [HTNTCMP], [HTDINT], [HTDEVPLN], [HTPTA], [HTPTAMT], [HTEDOVS], [HTSTDDRP], [HTCHDLBR], [HTFLSINF], [HTTCHRET], [HTRCHATT], [HTENVEVT], [HTHIRPRN], [HTHIRTCH], [HTHIRBOET], [HTHIRDOET], [HTHIRMOET], [HTHIRMOTH], [HTFIRPRN], [HTFIRTCH], [HTFIRBOET], [HTFIRDOET], [HTFIRMOET], [HTFIRMOTH], [HTESTPRN], [HTESTTCH], [HTESTBOET], [HTESTDOET], [HTESTMOET], [HTESTMOTH], [HTDETPRN], [HTDETTCH], [HTDETBOET], [HTDETDOET], [HTDETMOET], [HTDETMOTH], [HTBUGPRN], [HTBUGTCH], [HTBUGBOET], [HTBUGDOET], [HTBUGMOET], [HTBUGMOTH], [HTBALPRN], [HTBALTCH], [HTBALBOET], [HTBALDOET], [HTBALMOET], [HTBALMOTH], [HTSASPRN], [HTSASTCH], [HTSASBOET], [HTSASDOET], [HTSASMOET], [HTTXTPRN], [HTTXTTCH], [HTTXTBOET], [HTTXTDOET], [HTTXTMOET], [HTCNTPRN], [HTCNTTCH], [HTCNTBOET], [HTCNTDOET], [HTCNTMOET], [HTOFRPRN], [HTOFRTCH], [HTOFRBOET], [HTOFRDOET], [HTOFRMOET], [HTSTPFGL], [HTTCPFGL], [HTTCWKGL], [HTDISCGL], [HTDYSTRN], [HTPMTCRS], [HTPRTCPT], [HTSTDVSK], [HTPRBDIS], [HTATTBEH], [HTSLVPRB], [HTPRTDEC], [HTREVMNG], [HTRSNABS], [HTSHRPER], [HTSTDENR], [HTTOKEXM], [HTLSPSEXM], [HTPRCUNI], [HTPRCVOC], [HTCNTLRN], [SAMEHEAD], [DATECMPL], [ENG_TCHID], [ENG_TCHSUBJ], [ENG_TCHDTJN], [ENG_TCHDYPRS], [ENG_TCSTLEMP], [ENG_TCWHYLFT], [ENG_TCDAYPRS], [ENG_TCHABSC], [ENG_TCHNTCMP], [ENG_TCHDINT], [ENG_TCAGE], [ENG_TCGNDR], [ENG_TCETHNC], [ENG_TCRELGN], [ENG_TCLNGHME], [ENG_TCPRVTCH], [ENG_TCMBLE], [ENG_TCRADIO], [ENG_TCTELE], [ENG_TCBIKE], [ENG_TCSCTR], [ENG_TCTBLE], [ENG_TCCHAIR], [ENG_TCLAMP], [ENG_TCELEC], [ENG_TCAIRCND], [ENG_TCCAR], [ENG_TCCOMP], [ENG_TCINTRT], [ENG_TCFRDG], [ENG_TCMICRO], [ENG_TCDVD], [ENG_TCTVBOX], [ENG_TCLVLEDC], [ENG_TCTCHQLF], [ENG_TCSPCMAT], [ENG_TCSPCENG], [ENG_TCSPCVNM], [ENG_TCSPCLNG], [ENG_TCSPCPSC], [ENG_TCSPCCHE], [ENG_TCSPCBIO], [ENG_TCSPCHIS], [ENG_TCSPCGEO], [ENG_TCSPCPHY], [ENG_TCSPCANT], [ENG_TCDYSTRN], [ENG_TCTTRNHLP], [ENG_TCAWDTTL], [ENG_TCYRTCH], [ENG_TCYRTCSCH], [ENG_TCSTDENG], [ENG_TCTCHENG], [ENG_TCEMPBAS], [ENG_TCFGRDE10], [ENG_TCFGRDE11], [ENG_TCFGRDE12], [ENG_TCMATHS], [ENG_TCENGL], [ENG_TCVNM], [ENG_TCANTLNG], [ENG_TCPHYSC], [ENG_TCCHEM], [ENG_TCBIOLG], [ENG_TCHISTRY], [ENG_TCGEOG], [ENG_TCPHYS], [ENG_TCOTHR], [ENG_TCPRDWK], [ENG_TCEXTCLS], [ENG_TCTCHG10], [ENG_TCEXTWRK], [ENG_TCOBSHT], [ENG_TCOBSVP], [ENG_TCOBSHSD], [ENG_TCOBSOTH], [ENG_TCOBSDOET], [ENG_TCPRATD], [ENG_TCLATENS], [ENG_TCDISCPL], [ENG_TCNOMAT], [ENG_TCLACKRS], [ENG_TCINTRRP], [ENG_TCRSNABS], [ENG_TCASGNSC], [ENG_TCPRTCNT], [ENG_TCTRVMIN], [ENG_TCPRDTCH], [ENG_TCPRDPLN], [ENG_TCPRDCRT], [ENG_TCPRDADM], [ENG_TCHREXTR], [ENG_TCHRHELP], [ENG_TCHRTUTR], [ENG_TCHRIDEA], [ENG_TCHRCOMM], [ENG_TCIMPCHR], [ENG_TCCMSCTC], [ENG_TCCMSCFC], [ENG_TCCMSCPR], [ENG_TCRSNTCH], [ENG_TCFRTCHC], [ENG_TCMOVTCH], [ENG_TCGLSEC], [ENG_TCCHSEC], [ENG_TCATD41A], [ENG_TCATD41B], [ENG_TCATD41C], [ENG_TCATD41D], [ENG_TCATD41E], [ENG_TCATD41F], [ENG_TCATD41G], [ENG_TCATD41H], [ENG_TCATD42A], [ENG_TCATD42B], [ENG_TCATD42C], [ENG_TCATD42D], [ENG_TCATD42E], [ENG_TCATD42F], [ENG_TCATD42G], [ENG_TCATD43A], [ENG_TCATD43B], [ENG_TCATD43C], [ENG_TCATD43D], [ENG_TCATD43E], [ENG_TCATD43F], [ENG_TCATD43G], [ENG_TCATD43H], [ENG_TCATD43I], [ENG_TCATD43J], [ENG_TCATD43K], [ENG_TCATD43L], [ENG_TCATD43M], [ENG_TCATD44A], [ENG_TCATD44B], [ENG_TCATD44C], [ENG_TCATD44D], [ENG_TCATD44E], [ENG_TCATD44F], [ENG_TCATD44G], [ENG_TCATD44H], [ENG_TCATD44I], [ENG_TCATD44J], [ENG_TCATD44K], [ENG_TCATD44L], [ENG_TCATD44M], [ENG_TCATD44N], [ENG_TCATD44O], [ENG_TCATD44P], [ENG_TCATD44Q], [ENG_TCATD44R], [ENG_TCATD44S], [ENG_TCATD44T], [MATH_TCHID], [MATH_TCHSUBJ], [MATH_TCHDTJN], [MATH_TCHDYPRS], [MATH_TCSTLEMP], [MATH_TCWHYLFT], [MATH_TCDAYPRS], [MATH_TCHABSC], [MATH_TCHNTCMP], [MATH_TCHDINT], [MATH_TCAGE], [MATH_TCGNDR], [MATH_TCETHNC], [MATH_TCRELGN], [MATH_TCLNGHME], [MATH_TCPRVTCH], [MATH_TCMBLE], [MATH_TCRADIO], [MATH_TCTELE], [MATH_TCBIKE], [MATH_TCSCTR], [MATH_TCTBLE], [MATH_TCCHAIR], [MATH_TCLAMP], [MATH_TCELEC], [MATH_TCAIRCND], [MATH_TCCAR], [MATH_TCCOMP], [MATH_TCINTRT], [MATH_TCFRDG], [MATH_TCMICRO], [MATH_TCDVD], [MATH_TCTVBOX], [MATH_TCLVLEDC], [MATH_TCTCHQLF], [MATH_TCSPCMAT], [MATH_TCSPCENG], [MATH_TCSPCVNM], [MATH_TCSPCLNG], [MATH_TCSPCPSC], [MATH_TCSPCCHE], [MATH_TCSPCBIO], [MATH_TCSPCHIS], [MATH_TCSPCGEO], [MATH_TCSPCPHY], [MATH_TCSPCANT], [MATH_TCDYSTRN], [MATH_TCTTRNHLP], [MATH_TCAWDTTL], [MATH_TCYRTCH], [MATH_TCYRTCSCH], [MATH_TCSTDENG], [MATH_TCTCHENG], [MATH_TCEMPBAS], [MATH_TCFGRDE10], [MATH_TCFGRDE11], [MATH_TCFGRDE12], [MATH_TCMATHS], [MATH_TCENGL], [MATH_TCVNM], [MATH_TCANTLNG], [MATH_TCPHYSC], [MATH_TCCHEM], [MATH_TCBIOLG], [MATH_TCHISTRY], [MATH_TCGEOG], [MATH_TCPHYS], [MATH_TCOTHR], [MATH_TCPRDWK], [MATH_TCEXTCLS], [MATH_TCTCHG10], [MATH_TCEXTWRK], [MATH_TCOBSHT], [MATH_TCOBSVP], [MATH_TCOBSHSD], [MATH_TCOBSOTH], [MATH_TCOBSDOET], [MATH_TCPRATD], [MATH_TCLATENS], [MATH_TCDISCPL], [MATH_TCNOMAT], [MATH_TCLACKRS], [MATH_TCINTRRP], [MATH_TCRSNABS], [MATH_TCASGNSC], [MATH_TCPRTCNT], [MATH_TCTRVMIN], [MATH_TCPRDTCH], [MATH_TCPRDPLN], [MATH_TCPRDCRT], [MATH_TCPRDADM], [MATH_TCHREXTR], [MATH_TCHRHELP], [MATH_TCHRTUTR], [MATH_TCHRIDEA], [MATH_TCHRCOMM], [MATH_TCIMPCHR], [MATH_TCCMSCTC], [MATH_TCCMSCFC], [MATH_TCCMSCPR], [MATH_TCRSNTCH], [MATH_TCFRTCHC], [MATH_TCMOVTCH], [MATH_TCGLSEC], [MATH_TCCHSEC], [MATH_TCATD41A], [MATH_TCATD41B], [MATH_TCATD41C], [MATH_TCATD41D], [MATH_TCATD41E], [MATH_TCATD41F], [MATH_TCATD41G], [MATH_TCATD41H], [MATH_TCATD42A], [MATH_TCATD42B], [MATH_TCATD42C], [MATH_TCATD42D], [MATH_TCATD42E], [MATH_TCATD42F], [MATH_TCATD42G], [MATH_TCATD43A], [MATH_TCATD43B], [MATH_TCATD43C], [MATH_TCATD43D], [MATH_TCATD43E], [MATH_TCATD43F], [MATH_TCATD43G], [MATH_TCATD43H], [MATH_TCATD43I], [MATH_TCATD43J], [MATH_TCATD43K], [MATH_TCATD43L], [MATH_TCATD43M], [MATH_TCATD44A], [MATH_TCATD44B], [MATH_TCATD44C], [MATH_TCATD44D], [MATH_TCATD44E], [MATH_TCATD44F], [MATH_TCATD44G], [MATH_TCATD44H], [MATH_TCATD44I], [MATH_TCATD44J], [MATH_TCATD44K], [MATH_TCATD44L], [MATH_TCATD44M], [MATH_TCATD44N], [MATH_TCATD44O], [MATH_TCATD44P], [MATH_TCATD44Q], [MATH_TCATD44R], [MATH_TCATD44S], [MATH_TCATD44T], [SCTMTID1], [W1MSMTC1], [W1MNWTC1], [SCTENID1], [W1ESMTC1], [W1ENWTC1], [REGTCH], [ATDGIRL], [ATDBOY], [ATDTTL], [SECSIZE], [NEWCHLD], [STDSTLENR], [STDNOENR], [STDNMABS], [B1LVLSUPP], [B1MTVSUC], [B2ACABMT], [B2PRCLMT], [B3ACABEN], [B3PRCLEN]) VALUES (N'VN1203103', N'1203', N'1', N'3', N'88', N'10/3/2017', N'4', N'2', N'2', N'2', N'2', N'2', N'2', N'2', N'2', N'3', N'2', N'0', N'0', N'0', N'0', N'1', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'3', N'3', N'3', N'0', N'0', N'0', N'3', N'3', N'3', N'0', N'0', N'0', N'3', N'3', N'3', N'3', N'3', N'3', N'3', N'3', N'3', N'3', N'4', N'1', N'2', N'2', N'1', N'2', N'2', N'2', N'2', N'2', N'2', N'3', N'3', N'3', N'3', N'3', N'3', N'3', N'2', N'2', N'3', N'2', N'2', N'2', N'2', N'2', N'3', N'3', N'2', N'3', N'3', N'2', N'2', N'3', N'1', N'4', N'3', N'1', N'1', N'1', N'3', N'1', N'3', N'1', N'2', N'3', N'1', N'3', N'2', N'3', N'2', N'3', N'3', N'2', N'2', N'2', N'3', N'2', N'3', N'3', N'3', N'2', N'2', N'2', N'2', N'2', N'2', N'2', N'3', N'2', N'1', N'3', N'2', N'2', N'2', N'3', N'3', N'3', N'2', N'2', N'2', N'2', N'2', N'3', N'2', N'2', N'3', N'2', N'3', N'2', N'3', N'2', N'2', N'3', N'3', N'2', N'2', N'2', N'3', N'3', N'2', N'3', N'2', N'2', N'3', N'3', N'2', N'2', N'2', N'2', N'3', N'2', N'2', N'2', N'2', N'3', N'3', N'2', N'2', N'2', N'3', N'3', N'2', N'2', N'2', N'2', N'2', N'3', N'2', N'2', N'3', N'3', N'2', N'2', N'3', N'2', N'3', N'Yes', N'0', N'0', N'1', N'0', N'0', N'1', N'1', N'1', N'0', N'1', N'0', N'1', N'0', N'0', N'1', N'0', N'1', N'1', N'0', N'0', N'0', N'1', N'1', N'0', N'0', N'0', N'1', N'0', N'1', N'0', N'0', N'0', N'1', N'0', N'0', N'1', N'0', N'1', N'0', N'0', N'16', N'Yes', N'1', N'0', N'1', N'1', N'1', N'1', N'1', N'1', N'1', N'0', N'1', N'1', N'1', N'1', N'1', N'1', N'1', N'1', N'0', N'0', N'1', N'0', N'1', N'1', N'0', N'0', N'1', N'1', N'1', N'1', N'0', N'0', N'0', N'0', N'0', N'1', N'1', N'0', N'0', N'0', N'25', N'Yes', N'2', N'2', N'0', N'0', N'1', N'1', N'0', N'1', N'0', N'2', N'2', N'2', N'2', N'0', N'0', N'1', N'0', N'2', N'2', N'0', N'1', N'1', N'1', N'0', N'0', N'0', N'1', N'0', N'0', N'0', N'0', N'1', N'0', N'1', N'88', N'9/3/2017', N'1', N'1', N'4', N'2', N'2', N'1', N'2', N'2', N'1', N'2', N'0', N'0', N'0', N'1', N'0', N'0', N'0', N'0', N'0', N'1', N'0', N'0', N'0', N'0', N'0', N'1', N'0', N'0', N'0', N'0', N'0', N'1', N'0', N'0', N'1', N'0', N'0', N'0', N'0', N'0', N'1', N'0', N'0', N'0', N'0', N'0', N'1', N'0', N'0', N'0', N'0', N'0', N'1', N'0', N'0', N'0', N'0', N'0', N'0', N'1', N'0', N'0', N'0', N'0', N'1', N'0', N'4', N'4', N'3', N'3', N'5', N'3', N'3', N'3', N'2', N'1', N'2', N'3', N'4', N'3', N'3', N'20', N'0', N'0', N'0', N'0', N'0', N'1', N'9/3/2017', N'41', N'2', N'1/9/2016', N'0', N' ', N' ', N' ', N' ', N'88', N'9/3/2017', N'27', N'2', N'1', N'0', N'1', N'0', N'1', N'1', N'0', N'0', N'1', N'1', N'1', N'1', N'1', N'0', N'0', N'1', N'1', N'0', N'0', N'0', N'0', N'5', N'4', N'0', N'1', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'1', N'3', N'1', N'3', N'0', N'1', N'1', N'0', N'0', N'0', N'1', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'4', N'0', N'1', N'0', N'3', N'3', N'3', N'3', N'3', N'1', N'1', N'0', N'0', N'0', N'0', N'2', N'3', N'1', N'5', N'3', N'3', N'3', N'0', N'3', N'0', N'0', N'2', N'4', N'1', N'2', N'2', N'2', N'5', N'1', N'99', N'6', N'2', N'2', N'3', N'3', N'3', N'3', N'2', N'2', N'3', N'2', N'3', N'3', N'3', N'3', N'2', N'3', N'3', N'2', N'2', N'3', N'2', N'3', N'2', N'3', N'3', N'2', N'3', N'3', N'3', N'4', N'4', N'3', N'2', N'3', N'3', N'2', N'2', N'3', N'3', N'2', N'3', N'3', N'3', N'3', N'3', N'3', N'3', N'3', N'2', N'1', N'1', N' ', N' ', N'1', N'88', N'0', N'0', N'88', N'9/3/2017', N'31', N'2', N'1', N'0', N'1', N'1', N'1', N'0', N'1', N'0', N'1', N'1', N'1', N'1', N'1', N'1', N'0', N'1', N'1', N'1', N'1', N'1', N'1', N'5', N'4', N'1', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'1', N'3', N'7', N'3', N'4', N'0', N'1', N'1', N'0', N'1', N'1', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'10', N'0', N'0', N'0', N'1', N'1', N'4', N'2', N'0', N'2', N'2', N'2', N'2', N'2', N'1', N'6', N'1', N'0', N'60', N'3', N'3', N'3', N'4', N'1', N'3', N'0', N'2', N'1', N'9', N'1', N'3', N'3', N'2', N'1', N'50', N'1', N'3', N'4', N'4', N'4', N'2', N'4', N'2', N'2', N'4', N'3', N'4', N'4', N'4', N'4', N'2', N'4', N'4', N'2', N'1', N'4', N'4', N'3', N'3', N'4', N'4', N'1', N'3', N'3', N'2', N'3', N'3', N'2', N'3', N'3', N'2', N'2', N'1', N'3', N'3', N'3', N'4', N'4', N'4', N'2', N'4', N'3', N'2', N'2', N'1', N'1', N'1', N'88', N'2', N'0', N'41', N'1', N'13', N'17', N'30', N'35', N'0', N'1', N' ', N'1', N'10', N'10', N'9', N'10', N'7', N'8')
+GO
+INSERT [dbo].[vietnamwave_2] ([UNIQUEID], [SCHOOLID], [CLASSID], [STUDENTID], [STNTCMP], [STDINT], [STMTHWRK], [STMWRKCH], [STMWRKCM], [STETHWRK], [STEWRKCH], [STEWRKCM], [STTMMWRK], [STTMEWRK], [STCMPHME], [STCMPSCH], [STCMPOTH], [STLTESCH], [STMSSDAY], [STMSSCLS], [STRSNMS1], [STRSNMS2], [STRSNMS3], [STRSNMS4], [STRSNMS5], [STRSNMS6], [STRSNMS7], [STRSNMS8], [STRSNMS9], [STRSNMS0], [STADDMT], [STADDEN], [STADDOT], [STEXSCMT], [STEXSCEN], [STEXSCOT], [STPRVMT], [STPRVEN], [STPRVOT], [STEXOTMT], [STEXOTEN], [STEXOTOT], [STFEEL18A], [STFEEL18B], [STFEEL18C], [STFEEL18D], [STFEEL18E], [STFEEL18F], [STFEEL18G], [STFEEL18H], [STFEEL18I], [STFEEL18J], [STFEEL18K], [STFEEL18L], [STFEEL19A], [STFEEL19B], [STFEEL19C], [STFEEL19D], [STFEEL19E], [STFEEL19F], [STFEEL19G], [STFEEL19H], [STFEEL19I], [STFEEL20A], [STFEEL20B], [STFEEL20C], [STFEEL20D], [STFEEL20E], [STFEEL20F], [STFEEL20G], [STFEEL20H], [STFEEL20I], [STFEEL20J], [STFEEL20K], [STFEEL20L], [STFEEL20M], [STFEEL20N], [STFEEL20O], [STFEEL21A], [STFEEL21B], [STFEEL21C], [STFEEL21D], [STFEEL21E], [STFEEL21F], [STFEEL21G], [STFEEL21H], [STFEEL21I], [STFEEL21J], [STFEEL22A], [STFEEL22B], [STFEEL22C], [STFEEL22D], [STFEEL22E], [STFEEL22F], [STFEEL22G], [STFEEL22H], [STFEEL23A], [STFEEL23B], [STFEEL23C], [STFEEL23D], [STFEEL23E], [STFEEL23F], [STFEEL23G], [STFEEL23H], [STFEEL24A], [STFEEL24B], [STFEEL24C], [STFEEL24D], [STFEEL24E], [STFEEL25A], [STFEEL25B], [STFEEL25C], [STFEEL25D], [STFEEL25E], [STFEEL26A], [STFEEL26B], [STFEEL26C], [STFEEL26D], [STFEEL26E], [STFEEL26F], [STFEEL26G], [STFEEL26H], [STFEEL26I], [STFEEL27], [STFEEL28], [STFEEL29], [STFEEL30], [STFEEL31], [STFEEL32], [STFEEL33], [STFEEL34], [STFEEL35], [STFEEL36], [STFEEL37], [STFEEL38], [STFEEL39], [STFEEL40], [STFEEL41], [STFEEL42], [STFEEL43], [STFEEL44], [STFEEL45], [STFEEL46], [STFEEL47], [STFEEL48], [STFEEL49], [STFEEL50], [STFEEL51], [STFEEL52], [STFEEL53], [STFEEL54], [STFEEL55], [STFEEL56], [STFEEL57], [STFEEL58], [STFEEL59], [STFEEL60], [STFEEL61], [STFEEL62], [STFEEL63], [STFEEL64], [STFEEL65], [STFEEL66], [STFEEL67], [STFEEL68], [STFEEL69], [STFEEL70], [STFEEL71], [STFEEL72], [STFEEL73], [STFEEL74], [STFEEL75], [STFEEL76], [STFEEL77], [STFEEL78], [STFEEL79], [STFEEL80], [STFEEL81], [STFEEL82], [STFEEL83], [STFEEL84], [STFEEL85], [STFEEL86], [STFEEL87], [STFEEL88], [STFEEL89], [STFEEL90], [STFEEL91], [STFEEL92], [ENG_TEST], [ENG_ITEM1], [ENG_ITEM2], [ENG_ITEM3], [ENG_ITEM4], [ENG_ITEM5], [ENG_ITEM6], [ENG_ITEM7], [ENG_ITEM8], [ENG_ITEM9], [ENG_ITEM10], [ENG_ITEM11], [ENG_ITEM12], [ENG_ITEM13], [ENG_ITEM14], [ENG_ITEM15], [ENG_ITEM16], [ENG_ITEM17], [ENG_ITEM18], [ENG_ITEM19], [ENG_ITEM20], [ENG_ITEM21], [ENG_ITEM22], [ENG_ITEM23], [ENG_ITEM24], [ENG_ITEM25], [ENG_ITEM26], [ENG_ITEM27], [ENG_ITEM28], [ENG_ITEM29], [ENG_ITEM30], [ENG_ITEM31], [ENG_ITEM32], [ENG_ITEM33], [ENG_ITEM34], [ENG_ITEM35], [ENG_ITEM36], [ENG_ITEM37], [ENG_ITEM38], [ENG_ITEM39], [ENG_ITEM40], [ENG_RAWSCORE], [MATH_TEST], [MATH_ITEM1], [MATH_ITEM2], [MATH_ITEM3], [MATH_ITEM4], [MATH_ITEM5], [MATH_ITEM6], [MATH_ITEM7], [MATH_ITEM8], [MATH_ITEM9], [MATH_ITEM10], [MATH_ITEM11], [MATH_ITEM12], [MATH_ITEM13], [MATH_ITEM14], [MATH_ITEM15], [MATH_ITEM16], [MATH_ITEM17], [MATH_ITEM18], [MATH_ITEM19], [MATH_ITEM20], [MATH_ITEM21], [MATH_ITEM22], [MATH_ITEM23], [MATH_ITEM24], [MATH_ITEM25], [MATH_ITEM26], [MATH_ITEM27], [MATH_ITEM28], [MATH_ITEM29], [MATH_ITEM30], [MATH_ITEM31], [MATH_ITEM32], [MATH_ITEM33], [MATH_ITEM34], [MATH_ITEM35], [MATH_ITEM36], [MATH_ITEM37], [MATH_ITEM38], [MATH_ITEM39], [MATH_ITEM40], [MATH_RAWSCORE], [TS_TEST], [TS_ITEM1], [TS_ITEM2], [TS_ITEM3A], [TS_ITEM3B], [TS_ITEM3C], [TS_ITEM3D], [TS_ITEM3E], [TS_ITEM3F], [TS_ITEM3], [TS_ITEM4], [TS_ITEM5], [TS_ITEM6], [TS_ITEM7], [TS_ITEM8A], [TS_ITEM8B], [TS_ITEM8C], [TS_ITEM8], [TS_ITEM9], [TS_ITEM10], [TS_ITEM11], [TS_ITEM12], [TS_ITEM11_12], [TS_ITEM13], [TS_ITEM14], [TS_ITEM15], [TS_ITEM16], [TS_ITEM17], [TS_ITEM18], [TS_ITEM19], [TS_ITEM20], [TS_ITEM21], [TS_ITEM22], [TS_ITEM23], [HTSTFCMP], [HTNTCMP], [HTDINT], [HTDEVPLN], [HTPTA], [HTPTAMT], [HTEDOVS], [HTSTDDRP], [HTCHDLBR], [HTFLSINF], [HTTCHRET], [HTRCHATT], [HTENVEVT], [HTHIRPRN], [HTHIRTCH], [HTHIRBOET], [HTHIRDOET], [HTHIRMOET], [HTHIRMOTH], [HTFIRPRN], [HTFIRTCH], [HTFIRBOET], [HTFIRDOET], [HTFIRMOET], [HTFIRMOTH], [HTESTPRN], [HTESTTCH], [HTESTBOET], [HTESTDOET], [HTESTMOET], [HTESTMOTH], [HTDETPRN], [HTDETTCH], [HTDETBOET], [HTDETDOET], [HTDETMOET], [HTDETMOTH], [HTBUGPRN], [HTBUGTCH], [HTBUGBOET], [HTBUGDOET], [HTBUGMOET], [HTBUGMOTH], [HTBALPRN], [HTBALTCH], [HTBALBOET], [HTBALDOET], [HTBALMOET], [HTBALMOTH], [HTSASPRN], [HTSASTCH], [HTSASBOET], [HTSASDOET], [HTSASMOET], [HTTXTPRN], [HTTXTTCH], [HTTXTBOET], [HTTXTDOET], [HTTXTMOET], [HTCNTPRN], [HTCNTTCH], [HTCNTBOET], [HTCNTDOET], [HTCNTMOET], [HTOFRPRN], [HTOFRTCH], [HTOFRBOET], [HTOFRDOET], [HTOFRMOET], [HTSTPFGL], [HTTCPFGL], [HTTCWKGL], [HTDISCGL], [HTDYSTRN], [HTPMTCRS], [HTPRTCPT], [HTSTDVSK], [HTPRBDIS], [HTATTBEH], [HTSLVPRB], [HTPRTDEC], [HTREVMNG], [HTRSNABS], [HTSHRPER], [HTSTDENR], [HTTOKEXM], [HTLSPSEXM], [HTPRCUNI], [HTPRCVOC], [HTCNTLRN], [SAMEHEAD], [DATECMPL], [ENG_TCHID], [ENG_TCHSUBJ], [ENG_TCHDTJN], [ENG_TCHDYPRS], [ENG_TCSTLEMP], [ENG_TCWHYLFT], [ENG_TCDAYPRS], [ENG_TCHABSC], [ENG_TCHNTCMP], [ENG_TCHDINT], [ENG_TCAGE], [ENG_TCGNDR], [ENG_TCETHNC], [ENG_TCRELGN], [ENG_TCLNGHME], [ENG_TCPRVTCH], [ENG_TCMBLE], [ENG_TCRADIO], [ENG_TCTELE], [ENG_TCBIKE], [ENG_TCSCTR], [ENG_TCTBLE], [ENG_TCCHAIR], [ENG_TCLAMP], [ENG_TCELEC], [ENG_TCAIRCND], [ENG_TCCAR], [ENG_TCCOMP], [ENG_TCINTRT], [ENG_TCFRDG], [ENG_TCMICRO], [ENG_TCDVD], [ENG_TCTVBOX], [ENG_TCLVLEDC], [ENG_TCTCHQLF], [ENG_TCSPCMAT], [ENG_TCSPCENG], [ENG_TCSPCVNM], [ENG_TCSPCLNG], [ENG_TCSPCPSC], [ENG_TCSPCCHE], [ENG_TCSPCBIO], [ENG_TCSPCHIS], [ENG_TCSPCGEO], [ENG_TCSPCPHY], [ENG_TCSPCANT], [ENG_TCDYSTRN], [ENG_TCTTRNHLP], [ENG_TCAWDTTL], [ENG_TCYRTCH], [ENG_TCYRTCSCH], [ENG_TCSTDENG], [ENG_TCTCHENG], [ENG_TCEMPBAS], [ENG_TCFGRDE10], [ENG_TCFGRDE11], [ENG_TCFGRDE12], [ENG_TCMATHS], [ENG_TCENGL], [ENG_TCVNM], [ENG_TCANTLNG], [ENG_TCPHYSC], [ENG_TCCHEM], [ENG_TCBIOLG], [ENG_TCHISTRY], [ENG_TCGEOG], [ENG_TCPHYS], [ENG_TCOTHR], [ENG_TCPRDWK], [ENG_TCEXTCLS], [ENG_TCTCHG10], [ENG_TCEXTWRK], [ENG_TCOBSHT], [ENG_TCOBSVP], [ENG_TCOBSHSD], [ENG_TCOBSOTH], [ENG_TCOBSDOET], [ENG_TCPRATD], [ENG_TCLATENS], [ENG_TCDISCPL], [ENG_TCNOMAT], [ENG_TCLACKRS], [ENG_TCINTRRP], [ENG_TCRSNABS], [ENG_TCASGNSC], [ENG_TCPRTCNT], [ENG_TCTRVMIN], [ENG_TCPRDTCH], [ENG_TCPRDPLN], [ENG_TCPRDCRT], [ENG_TCPRDADM], [ENG_TCHREXTR], [ENG_TCHRHELP], [ENG_TCHRTUTR], [ENG_TCHRIDEA], [ENG_TCHRCOMM], [ENG_TCIMPCHR], [ENG_TCCMSCTC], [ENG_TCCMSCFC], [ENG_TCCMSCPR], [ENG_TCRSNTCH], [ENG_TCFRTCHC], [ENG_TCMOVTCH], [ENG_TCGLSEC], [ENG_TCCHSEC], [ENG_TCATD41A], [ENG_TCATD41B], [ENG_TCATD41C], [ENG_TCATD41D], [ENG_TCATD41E], [ENG_TCATD41F], [ENG_TCATD41G], [ENG_TCATD41H], [ENG_TCATD42A], [ENG_TCATD42B], [ENG_TCATD42C], [ENG_TCATD42D], [ENG_TCATD42E], [ENG_TCATD42F], [ENG_TCATD42G], [ENG_TCATD43A], [ENG_TCATD43B], [ENG_TCATD43C], [ENG_TCATD43D], [ENG_TCATD43E], [ENG_TCATD43F], [ENG_TCATD43G], [ENG_TCATD43H], [ENG_TCATD43I], [ENG_TCATD43J], [ENG_TCATD43K], [ENG_TCATD43L], [ENG_TCATD43M], [ENG_TCATD44A], [ENG_TCATD44B], [ENG_TCATD44C], [ENG_TCATD44D], [ENG_TCATD44E], [ENG_TCATD44F], [ENG_TCATD44G], [ENG_TCATD44H], [ENG_TCATD44I], [ENG_TCATD44J], [ENG_TCATD44K], [ENG_TCATD44L], [ENG_TCATD44M], [ENG_TCATD44N], [ENG_TCATD44O], [ENG_TCATD44P], [ENG_TCATD44Q], [ENG_TCATD44R], [ENG_TCATD44S], [ENG_TCATD44T], [MATH_TCHID], [MATH_TCHSUBJ], [MATH_TCHDTJN], [MATH_TCHDYPRS], [MATH_TCSTLEMP], [MATH_TCWHYLFT], [MATH_TCDAYPRS], [MATH_TCHABSC], [MATH_TCHNTCMP], [MATH_TCHDINT], [MATH_TCAGE], [MATH_TCGNDR], [MATH_TCETHNC], [MATH_TCRELGN], [MATH_TCLNGHME], [MATH_TCPRVTCH], [MATH_TCMBLE], [MATH_TCRADIO], [MATH_TCTELE], [MATH_TCBIKE], [MATH_TCSCTR], [MATH_TCTBLE], [MATH_TCCHAIR], [MATH_TCLAMP], [MATH_TCELEC], [MATH_TCAIRCND], [MATH_TCCAR], [MATH_TCCOMP], [MATH_TCINTRT], [MATH_TCFRDG], [MATH_TCMICRO], [MATH_TCDVD], [MATH_TCTVBOX], [MATH_TCLVLEDC], [MATH_TCTCHQLF], [MATH_TCSPCMAT], [MATH_TCSPCENG], [MATH_TCSPCVNM], [MATH_TCSPCLNG], [MATH_TCSPCPSC], [MATH_TCSPCCHE], [MATH_TCSPCBIO], [MATH_TCSPCHIS], [MATH_TCSPCGEO], [MATH_TCSPCPHY], [MATH_TCSPCANT], [MATH_TCDYSTRN], [MATH_TCTTRNHLP], [MATH_TCAWDTTL], [MATH_TCYRTCH], [MATH_TCYRTCSCH], [MATH_TCSTDENG], [MATH_TCTCHENG], [MATH_TCEMPBAS], [MATH_TCFGRDE10], [MATH_TCFGRDE11], [MATH_TCFGRDE12], [MATH_TCMATHS], [MATH_TCENGL], [MATH_TCVNM], [MATH_TCANTLNG], [MATH_TCPHYSC], [MATH_TCCHEM], [MATH_TCBIOLG], [MATH_TCHISTRY], [MATH_TCGEOG], [MATH_TCPHYS], [MATH_TCOTHR], [MATH_TCPRDWK], [MATH_TCEXTCLS], [MATH_TCTCHG10], [MATH_TCEXTWRK], [MATH_TCOBSHT], [MATH_TCOBSVP], [MATH_TCOBSHSD], [MATH_TCOBSOTH], [MATH_TCOBSDOET], [MATH_TCPRATD], [MATH_TCLATENS], [MATH_TCDISCPL], [MATH_TCNOMAT], [MATH_TCLACKRS], [MATH_TCINTRRP], [MATH_TCRSNABS], [MATH_TCASGNSC], [MATH_TCPRTCNT], [MATH_TCTRVMIN], [MATH_TCPRDTCH], [MATH_TCPRDPLN], [MATH_TCPRDCRT], [MATH_TCPRDADM], [MATH_TCHREXTR], [MATH_TCHRHELP], [MATH_TCHRTUTR], [MATH_TCHRIDEA], [MATH_TCHRCOMM], [MATH_TCIMPCHR], [MATH_TCCMSCTC], [MATH_TCCMSCFC], [MATH_TCCMSCPR], [MATH_TCRSNTCH], [MATH_TCFRTCHC], [MATH_TCMOVTCH], [MATH_TCGLSEC], [MATH_TCCHSEC], [MATH_TCATD41A], [MATH_TCATD41B], [MATH_TCATD41C], [MATH_TCATD41D], [MATH_TCATD41E], [MATH_TCATD41F], [MATH_TCATD41G], [MATH_TCATD41H], [MATH_TCATD42A], [MATH_TCATD42B], [MATH_TCATD42C], [MATH_TCATD42D], [MATH_TCATD42E], [MATH_TCATD42F], [MATH_TCATD42G], [MATH_TCATD43A], [MATH_TCATD43B], [MATH_TCATD43C], [MATH_TCATD43D], [MATH_TCATD43E], [MATH_TCATD43F], [MATH_TCATD43G], [MATH_TCATD43H], [MATH_TCATD43I], [MATH_TCATD43J], [MATH_TCATD43K], [MATH_TCATD43L], [MATH_TCATD43M], [MATH_TCATD44A], [MATH_TCATD44B], [MATH_TCATD44C], [MATH_TCATD44D], [MATH_TCATD44E], [MATH_TCATD44F], [MATH_TCATD44G], [MATH_TCATD44H], [MATH_TCATD44I], [MATH_TCATD44J], [MATH_TCATD44K], [MATH_TCATD44L], [MATH_TCATD44M], [MATH_TCATD44N], [MATH_TCATD44O], [MATH_TCATD44P], [MATH_TCATD44Q], [MATH_TCATD44R], [MATH_TCATD44S], [MATH_TCATD44T], [SCTMTID1], [W1MSMTC1], [W1MNWTC1], [SCTENID1], [W1ESMTC1], [W1ENWTC1], [REGTCH], [ATDGIRL], [ATDBOY], [ATDTTL], [SECSIZE], [NEWCHLD], [STDSTLENR], [STDNOENR], [STDNMABS], [B1LVLSUPP], [B1MTVSUC], [B2ACABMT], [B2PRCLMT], [B3ACABEN], [B3PRCLEN]) VALUES (N'VN1203104', N'1203', N'1', N'4', N'88', N'10/3/2017', N'3', N'3', N'3', N'1', N'3', N'3', N'2', N'2', N'4', N'4', N'1', N'0', N'1', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'1', N'0', N'0', N'3', N'3', N'3', N'0', N'0', N'0', N'3', N'3', N'3', N'0', N'0', N'0', N'3', N'4', N'4', N'3', N'3', N'3', N'4', N'3', N'4', N'4', N'3', N'2', N'2', N'1', N'2', N'3', N'2', N'2', N'3', N'2', N'2', N'3', N'3', N'3', N'3', N'3', N'3', N'3', N'3', N'3', N'3', N'3', N'2', N'2', N'2', N'2', N'3', N'3', N'2', N'3', N'3', N'3', N'3', N'3', N'3', N'3', N'2', N'2', N'2', N'3', N'3', N'2', N'2', N'2', N'2', N'2', N'2', N'3', N'3', N'2', N'2', N'2', N'3', N'2', N'3', N'2', N'3', N'3', N'2', N'2', N'2', N'3', N'3', N'2', N'2', N'2', N'2', N'2', N'4', N'2', N'4', N'3', N'3', N'3', N'3', N'3', N'3', N'2', N'3', N'2', N'2', N'2', N'3', N'3', N'2', N'3', N'2', N'3', N'3', N'3', N'2', N'3', N'3', N'3', N'3', N'2', N'3', N'2', N'3', N'2', N'2', N'3', N'2', N'2', N'3', N'3', N'3', N'3', N'3', N'3', N'2', N'3', N'2', N'2', N'2', N'3', N'3', N'2', N'3', N'2', N'3', N'3', N'3', N'2', N'3', N'3', N'3', N'3', N'2', N'3', N'2', N'3', N'3', N'2', N'3', N'2', N'2', N'Yes', N'0', N'0', N'1', N'0', N'0', N'0', N'1', N'1', N'0', N'0', N'0', N'1', N'0', N'1', N'1', N'1', N'1', N'1', N'0', N'1', N'1', N'1', N'1', N'0', N'1', N'1', N'1', N'1', N'1', N'0', N'0', N'1', N'1', N'1', N'1', N'1', N'0', N'1', N'1', N'1', N'26', N'Yes', N'1', N'0', N'1', N'0', N'0', N'1', N'1', N'0', N'1', N'0', N'0', N'1', N'1', N'0', N'1', N'0', N'1', N'0', N'0', N'0', N'1', N'1', N'1', N'1', N'1', N'1', N'1', N'0', N'1', N'1', N'0', N'0', N'0', N'1', N'1', N'1', N'0', N'1', N'1', N'1', N'24', N'Yes', N'2', N'2', N'1', N'0', N'1', N'1', N'1', N'1', N'1', N'2', N'2', N'2', N'0', N'0', N'0', N'1', N'0', N'2', N'0', N'1', N'0', N'1', N'0', N'0', N'1', N'0', N'1', N'1', N'0', N'0', N'0', N'0', N'1', N'1', N'88', N'9/3/2017', N'1', N'1', N'4', N'2', N'2', N'1', N'2', N'2', N'1', N'2', N'0', N'0', N'0', N'1', N'0', N'0', N'0', N'0', N'0', N'1', N'0', N'0', N'0', N'0', N'0', N'1', N'0', N'0', N'0', N'0', N'0', N'1', N'0', N'0', N'1', N'0', N'0', N'0', N'0', N'0', N'1', N'0', N'0', N'0', N'0', N'0', N'1', N'0', N'0', N'0', N'0', N'0', N'1', N'0', N'0', N'0', N'0', N'0', N'0', N'1', N'0', N'0', N'0', N'0', N'1', N'0', N'4', N'4', N'3', N'3', N'5', N'3', N'3', N'3', N'2', N'1', N'2', N'3', N'4', N'3', N'3', N'20', N'0', N'0', N'0', N'0', N'0', N'1', N'9/3/2017', N'41', N'2', N'1/9/2016', N'0', N' ', N' ', N' ', N' ', N'88', N'9/3/2017', N'27', N'2', N'1', N'0', N'1', N'0', N'1', N'1', N'0', N'0', N'1', N'1', N'1', N'1', N'1', N'0', N'0', N'1', N'1', N'0', N'0', N'0', N'0', N'5', N'4', N'0', N'1', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'1', N'3', N'1', N'3', N'0', N'1', N'1', N'0', N'0', N'0', N'1', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'4', N'0', N'1', N'0', N'3', N'3', N'3', N'3', N'3', N'1', N'1', N'0', N'0', N'0', N'0', N'2', N'3', N'1', N'5', N'3', N'3', N'3', N'0', N'3', N'0', N'0', N'2', N'4', N'1', N'2', N'2', N'2', N'5', N'1', N'99', N'6', N'2', N'2', N'3', N'3', N'3', N'3', N'2', N'2', N'3', N'2', N'3', N'3', N'3', N'3', N'2', N'3', N'3', N'2', N'2', N'3', N'2', N'3', N'2', N'3', N'3', N'2', N'3', N'3', N'3', N'4', N'4', N'3', N'2', N'3', N'3', N'2', N'2', N'3', N'3', N'2', N'3', N'3', N'3', N'3', N'3', N'3', N'3', N'3', N'2', N'1', N'1', N' ', N' ', N'1', N'88', N'0', N'0', N'88', N'9/3/2017', N'31', N'2', N'1', N'0', N'1', N'1', N'1', N'0', N'1', N'0', N'1', N'1', N'1', N'1', N'1', N'1', N'0', N'1', N'1', N'1', N'1', N'1', N'1', N'5', N'4', N'1', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'1', N'3', N'7', N'3', N'4', N'0', N'1', N'1', N'0', N'1', N'1', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'10', N'0', N'0', N'0', N'1', N'1', N'4', N'2', N'0', N'2', N'2', N'2', N'2', N'2', N'1', N'6', N'1', N'0', N'60', N'3', N'3', N'3', N'4', N'1', N'3', N'0', N'2', N'1', N'9', N'1', N'3', N'3', N'2', N'1', N'50', N'1', N'3', N'4', N'4', N'4', N'2', N'4', N'2', N'2', N'4', N'3', N'4', N'4', N'4', N'4', N'2', N'4', N'4', N'2', N'1', N'4', N'4', N'3', N'3', N'4', N'4', N'1', N'3', N'3', N'2', N'3', N'3', N'2', N'3', N'3', N'2', N'2', N'1', N'3', N'3', N'3', N'4', N'4', N'4', N'2', N'4', N'3', N'2', N'2', N'1', N'1', N'1', N'88', N'2', N'0', N'41', N'1', N'13', N'17', N'30', N'35', N'0', N'1', N' ', N'1', N'10', N'10', N'7', N'10', N'7', N'9')
+GO
+INSERT [dbo].[vietnamwave_2] ([UNIQUEID], [SCHOOLID], [CLASSID], [STUDENTID], [STNTCMP], [STDINT], [STMTHWRK], [STMWRKCH], [STMWRKCM], [STETHWRK], [STEWRKCH], [STEWRKCM], [STTMMWRK], [STTMEWRK], [STCMPHME], [STCMPSCH], [STCMPOTH], [STLTESCH], [STMSSDAY], [STMSSCLS], [STRSNMS1], [STRSNMS2], [STRSNMS3], [STRSNMS4], [STRSNMS5], [STRSNMS6], [STRSNMS7], [STRSNMS8], [STRSNMS9], [STRSNMS0], [STADDMT], [STADDEN], [STADDOT], [STEXSCMT], [STEXSCEN], [STEXSCOT], [STPRVMT], [STPRVEN], [STPRVOT], [STEXOTMT], [STEXOTEN], [STEXOTOT], [STFEEL18A], [STFEEL18B], [STFEEL18C], [STFEEL18D], [STFEEL18E], [STFEEL18F], [STFEEL18G], [STFEEL18H], [STFEEL18I], [STFEEL18J], [STFEEL18K], [STFEEL18L], [STFEEL19A], [STFEEL19B], [STFEEL19C], [STFEEL19D], [STFEEL19E], [STFEEL19F], [STFEEL19G], [STFEEL19H], [STFEEL19I], [STFEEL20A], [STFEEL20B], [STFEEL20C], [STFEEL20D], [STFEEL20E], [STFEEL20F], [STFEEL20G], [STFEEL20H], [STFEEL20I], [STFEEL20J], [STFEEL20K], [STFEEL20L], [STFEEL20M], [STFEEL20N], [STFEEL20O], [STFEEL21A], [STFEEL21B], [STFEEL21C], [STFEEL21D], [STFEEL21E], [STFEEL21F], [STFEEL21G], [STFEEL21H], [STFEEL21I], [STFEEL21J], [STFEEL22A], [STFEEL22B], [STFEEL22C], [STFEEL22D], [STFEEL22E], [STFEEL22F], [STFEEL22G], [STFEEL22H], [STFEEL23A], [STFEEL23B], [STFEEL23C], [STFEEL23D], [STFEEL23E], [STFEEL23F], [STFEEL23G], [STFEEL23H], [STFEEL24A], [STFEEL24B], [STFEEL24C], [STFEEL24D], [STFEEL24E], [STFEEL25A], [STFEEL25B], [STFEEL25C], [STFEEL25D], [STFEEL25E], [STFEEL26A], [STFEEL26B], [STFEEL26C], [STFEEL26D], [STFEEL26E], [STFEEL26F], [STFEEL26G], [STFEEL26H], [STFEEL26I], [STFEEL27], [STFEEL28], [STFEEL29], [STFEEL30], [STFEEL31], [STFEEL32], [STFEEL33], [STFEEL34], [STFEEL35], [STFEEL36], [STFEEL37], [STFEEL38], [STFEEL39], [STFEEL40], [STFEEL41], [STFEEL42], [STFEEL43], [STFEEL44], [STFEEL45], [STFEEL46], [STFEEL47], [STFEEL48], [STFEEL49], [STFEEL50], [STFEEL51], [STFEEL52], [STFEEL53], [STFEEL54], [STFEEL55], [STFEEL56], [STFEEL57], [STFEEL58], [STFEEL59], [STFEEL60], [STFEEL61], [STFEEL62], [STFEEL63], [STFEEL64], [STFEEL65], [STFEEL66], [STFEEL67], [STFEEL68], [STFEEL69], [STFEEL70], [STFEEL71], [STFEEL72], [STFEEL73], [STFEEL74], [STFEEL75], [STFEEL76], [STFEEL77], [STFEEL78], [STFEEL79], [STFEEL80], [STFEEL81], [STFEEL82], [STFEEL83], [STFEEL84], [STFEEL85], [STFEEL86], [STFEEL87], [STFEEL88], [STFEEL89], [STFEEL90], [STFEEL91], [STFEEL92], [ENG_TEST], [ENG_ITEM1], [ENG_ITEM2], [ENG_ITEM3], [ENG_ITEM4], [ENG_ITEM5], [ENG_ITEM6], [ENG_ITEM7], [ENG_ITEM8], [ENG_ITEM9], [ENG_ITEM10], [ENG_ITEM11], [ENG_ITEM12], [ENG_ITEM13], [ENG_ITEM14], [ENG_ITEM15], [ENG_ITEM16], [ENG_ITEM17], [ENG_ITEM18], [ENG_ITEM19], [ENG_ITEM20], [ENG_ITEM21], [ENG_ITEM22], [ENG_ITEM23], [ENG_ITEM24], [ENG_ITEM25], [ENG_ITEM26], [ENG_ITEM27], [ENG_ITEM28], [ENG_ITEM29], [ENG_ITEM30], [ENG_ITEM31], [ENG_ITEM32], [ENG_ITEM33], [ENG_ITEM34], [ENG_ITEM35], [ENG_ITEM36], [ENG_ITEM37], [ENG_ITEM38], [ENG_ITEM39], [ENG_ITEM40], [ENG_RAWSCORE], [MATH_TEST], [MATH_ITEM1], [MATH_ITEM2], [MATH_ITEM3], [MATH_ITEM4], [MATH_ITEM5], [MATH_ITEM6], [MATH_ITEM7], [MATH_ITEM8], [MATH_ITEM9], [MATH_ITEM10], [MATH_ITEM11], [MATH_ITEM12], [MATH_ITEM13], [MATH_ITEM14], [MATH_ITEM15], [MATH_ITEM16], [MATH_ITEM17], [MATH_ITEM18], [MATH_ITEM19], [MATH_ITEM20], [MATH_ITEM21], [MATH_ITEM22], [MATH_ITEM23], [MATH_ITEM24], [MATH_ITEM25], [MATH_ITEM26], [MATH_ITEM27], [MATH_ITEM28], [MATH_ITEM29], [MATH_ITEM30], [MATH_ITEM31], [MATH_ITEM32], [MATH_ITEM33], [MATH_ITEM34], [MATH_ITEM35], [MATH_ITEM36], [MATH_ITEM37], [MATH_ITEM38], [MATH_ITEM39], [MATH_ITEM40], [MATH_RAWSCORE], [TS_TEST], [TS_ITEM1], [TS_ITEM2], [TS_ITEM3A], [TS_ITEM3B], [TS_ITEM3C], [TS_ITEM3D], [TS_ITEM3E], [TS_ITEM3F], [TS_ITEM3], [TS_ITEM4], [TS_ITEM5], [TS_ITEM6], [TS_ITEM7], [TS_ITEM8A], [TS_ITEM8B], [TS_ITEM8C], [TS_ITEM8], [TS_ITEM9], [TS_ITEM10], [TS_ITEM11], [TS_ITEM12], [TS_ITEM11_12], [TS_ITEM13], [TS_ITEM14], [TS_ITEM15], [TS_ITEM16], [TS_ITEM17], [TS_ITEM18], [TS_ITEM19], [TS_ITEM20], [TS_ITEM21], [TS_ITEM22], [TS_ITEM23], [HTSTFCMP], [HTNTCMP], [HTDINT], [HTDEVPLN], [HTPTA], [HTPTAMT], [HTEDOVS], [HTSTDDRP], [HTCHDLBR], [HTFLSINF], [HTTCHRET], [HTRCHATT], [HTENVEVT], [HTHIRPRN], [HTHIRTCH], [HTHIRBOET], [HTHIRDOET], [HTHIRMOET], [HTHIRMOTH], [HTFIRPRN], [HTFIRTCH], [HTFIRBOET], [HTFIRDOET], [HTFIRMOET], [HTFIRMOTH], [HTESTPRN], [HTESTTCH], [HTESTBOET], [HTESTDOET], [HTESTMOET], [HTESTMOTH], [HTDETPRN], [HTDETTCH], [HTDETBOET], [HTDETDOET], [HTDETMOET], [HTDETMOTH], [HTBUGPRN], [HTBUGTCH], [HTBUGBOET], [HTBUGDOET], [HTBUGMOET], [HTBUGMOTH], [HTBALPRN], [HTBALTCH], [HTBALBOET], [HTBALDOET], [HTBALMOET], [HTBALMOTH], [HTSASPRN], [HTSASTCH], [HTSASBOET], [HTSASDOET], [HTSASMOET], [HTTXTPRN], [HTTXTTCH], [HTTXTBOET], [HTTXTDOET], [HTTXTMOET], [HTCNTPRN], [HTCNTTCH], [HTCNTBOET], [HTCNTDOET], [HTCNTMOET], [HTOFRPRN], [HTOFRTCH], [HTOFRBOET], [HTOFRDOET], [HTOFRMOET], [HTSTPFGL], [HTTCPFGL], [HTTCWKGL], [HTDISCGL], [HTDYSTRN], [HTPMTCRS], [HTPRTCPT], [HTSTDVSK], [HTPRBDIS], [HTATTBEH], [HTSLVPRB], [HTPRTDEC], [HTREVMNG], [HTRSNABS], [HTSHRPER], [HTSTDENR], [HTTOKEXM], [HTLSPSEXM], [HTPRCUNI], [HTPRCVOC], [HTCNTLRN], [SAMEHEAD], [DATECMPL], [ENG_TCHID], [ENG_TCHSUBJ], [ENG_TCHDTJN], [ENG_TCHDYPRS], [ENG_TCSTLEMP], [ENG_TCWHYLFT], [ENG_TCDAYPRS], [ENG_TCHABSC], [ENG_TCHNTCMP], [ENG_TCHDINT], [ENG_TCAGE], [ENG_TCGNDR], [ENG_TCETHNC], [ENG_TCRELGN], [ENG_TCLNGHME], [ENG_TCPRVTCH], [ENG_TCMBLE], [ENG_TCRADIO], [ENG_TCTELE], [ENG_TCBIKE], [ENG_TCSCTR], [ENG_TCTBLE], [ENG_TCCHAIR], [ENG_TCLAMP], [ENG_TCELEC], [ENG_TCAIRCND], [ENG_TCCAR], [ENG_TCCOMP], [ENG_TCINTRT], [ENG_TCFRDG], [ENG_TCMICRO], [ENG_TCDVD], [ENG_TCTVBOX], [ENG_TCLVLEDC], [ENG_TCTCHQLF], [ENG_TCSPCMAT], [ENG_TCSPCENG], [ENG_TCSPCVNM], [ENG_TCSPCLNG], [ENG_TCSPCPSC], [ENG_TCSPCCHE], [ENG_TCSPCBIO], [ENG_TCSPCHIS], [ENG_TCSPCGEO], [ENG_TCSPCPHY], [ENG_TCSPCANT], [ENG_TCDYSTRN], [ENG_TCTTRNHLP], [ENG_TCAWDTTL], [ENG_TCYRTCH], [ENG_TCYRTCSCH], [ENG_TCSTDENG], [ENG_TCTCHENG], [ENG_TCEMPBAS], [ENG_TCFGRDE10], [ENG_TCFGRDE11], [ENG_TCFGRDE12], [ENG_TCMATHS], [ENG_TCENGL], [ENG_TCVNM], [ENG_TCANTLNG], [ENG_TCPHYSC], [ENG_TCCHEM], [ENG_TCBIOLG], [ENG_TCHISTRY], [ENG_TCGEOG], [ENG_TCPHYS], [ENG_TCOTHR], [ENG_TCPRDWK], [ENG_TCEXTCLS], [ENG_TCTCHG10], [ENG_TCEXTWRK], [ENG_TCOBSHT], [ENG_TCOBSVP], [ENG_TCOBSHSD], [ENG_TCOBSOTH], [ENG_TCOBSDOET], [ENG_TCPRATD], [ENG_TCLATENS], [ENG_TCDISCPL], [ENG_TCNOMAT], [ENG_TCLACKRS], [ENG_TCINTRRP], [ENG_TCRSNABS], [ENG_TCASGNSC], [ENG_TCPRTCNT], [ENG_TCTRVMIN], [ENG_TCPRDTCH], [ENG_TCPRDPLN], [ENG_TCPRDCRT], [ENG_TCPRDADM], [ENG_TCHREXTR], [ENG_TCHRHELP], [ENG_TCHRTUTR], [ENG_TCHRIDEA], [ENG_TCHRCOMM], [ENG_TCIMPCHR], [ENG_TCCMSCTC], [ENG_TCCMSCFC], [ENG_TCCMSCPR], [ENG_TCRSNTCH], [ENG_TCFRTCHC], [ENG_TCMOVTCH], [ENG_TCGLSEC], [ENG_TCCHSEC], [ENG_TCATD41A], [ENG_TCATD41B], [ENG_TCATD41C], [ENG_TCATD41D], [ENG_TCATD41E], [ENG_TCATD41F], [ENG_TCATD41G], [ENG_TCATD41H], [ENG_TCATD42A], [ENG_TCATD42B], [ENG_TCATD42C], [ENG_TCATD42D], [ENG_TCATD42E], [ENG_TCATD42F], [ENG_TCATD42G], [ENG_TCATD43A], [ENG_TCATD43B], [ENG_TCATD43C], [ENG_TCATD43D], [ENG_TCATD43E], [ENG_TCATD43F], [ENG_TCATD43G], [ENG_TCATD43H], [ENG_TCATD43I], [ENG_TCATD43J], [ENG_TCATD43K], [ENG_TCATD43L], [ENG_TCATD43M], [ENG_TCATD44A], [ENG_TCATD44B], [ENG_TCATD44C], [ENG_TCATD44D], [ENG_TCATD44E], [ENG_TCATD44F], [ENG_TCATD44G], [ENG_TCATD44H], [ENG_TCATD44I], [ENG_TCATD44J], [ENG_TCATD44K], [ENG_TCATD44L], [ENG_TCATD44M], [ENG_TCATD44N], [ENG_TCATD44O], [ENG_TCATD44P], [ENG_TCATD44Q], [ENG_TCATD44R], [ENG_TCATD44S], [ENG_TCATD44T], [MATH_TCHID], [MATH_TCHSUBJ], [MATH_TCHDTJN], [MATH_TCHDYPRS], [MATH_TCSTLEMP], [MATH_TCWHYLFT], [MATH_TCDAYPRS], [MATH_TCHABSC], [MATH_TCHNTCMP], [MATH_TCHDINT], [MATH_TCAGE], [MATH_TCGNDR], [MATH_TCETHNC], [MATH_TCRELGN], [MATH_TCLNGHME], [MATH_TCPRVTCH], [MATH_TCMBLE], [MATH_TCRADIO], [MATH_TCTELE], [MATH_TCBIKE], [MATH_TCSCTR], [MATH_TCTBLE], [MATH_TCCHAIR], [MATH_TCLAMP], [MATH_TCELEC], [MATH_TCAIRCND], [MATH_TCCAR], [MATH_TCCOMP], [MATH_TCINTRT], [MATH_TCFRDG], [MATH_TCMICRO], [MATH_TCDVD], [MATH_TCTVBOX], [MATH_TCLVLEDC], [MATH_TCTCHQLF], [MATH_TCSPCMAT], [MATH_TCSPCENG], [MATH_TCSPCVNM], [MATH_TCSPCLNG], [MATH_TCSPCPSC], [MATH_TCSPCCHE], [MATH_TCSPCBIO], [MATH_TCSPCHIS], [MATH_TCSPCGEO], [MATH_TCSPCPHY], [MATH_TCSPCANT], [MATH_TCDYSTRN], [MATH_TCTTRNHLP], [MATH_TCAWDTTL], [MATH_TCYRTCH], [MATH_TCYRTCSCH], [MATH_TCSTDENG], [MATH_TCTCHENG], [MATH_TCEMPBAS], [MATH_TCFGRDE10], [MATH_TCFGRDE11], [MATH_TCFGRDE12], [MATH_TCMATHS], [MATH_TCENGL], [MATH_TCVNM], [MATH_TCANTLNG], [MATH_TCPHYSC], [MATH_TCCHEM], [MATH_TCBIOLG], [MATH_TCHISTRY], [MATH_TCGEOG], [MATH_TCPHYS], [MATH_TCOTHR], [MATH_TCPRDWK], [MATH_TCEXTCLS], [MATH_TCTCHG10], [MATH_TCEXTWRK], [MATH_TCOBSHT], [MATH_TCOBSVP], [MATH_TCOBSHSD], [MATH_TCOBSOTH], [MATH_TCOBSDOET], [MATH_TCPRATD], [MATH_TCLATENS], [MATH_TCDISCPL], [MATH_TCNOMAT], [MATH_TCLACKRS], [MATH_TCINTRRP], [MATH_TCRSNABS], [MATH_TCASGNSC], [MATH_TCPRTCNT], [MATH_TCTRVMIN], [MATH_TCPRDTCH], [MATH_TCPRDPLN], [MATH_TCPRDCRT], [MATH_TCPRDADM], [MATH_TCHREXTR], [MATH_TCHRHELP], [MATH_TCHRTUTR], [MATH_TCHRIDEA], [MATH_TCHRCOMM], [MATH_TCIMPCHR], [MATH_TCCMSCTC], [MATH_TCCMSCFC], [MATH_TCCMSCPR], [MATH_TCRSNTCH], [MATH_TCFRTCHC], [MATH_TCMOVTCH], [MATH_TCGLSEC], [MATH_TCCHSEC], [MATH_TCATD41A], [MATH_TCATD41B], [MATH_TCATD41C], [MATH_TCATD41D], [MATH_TCATD41E], [MATH_TCATD41F], [MATH_TCATD41G], [MATH_TCATD41H], [MATH_TCATD42A], [MATH_TCATD42B], [MATH_TCATD42C], [MATH_TCATD42D], [MATH_TCATD42E], [MATH_TCATD42F], [MATH_TCATD42G], [MATH_TCATD43A], [MATH_TCATD43B], [MATH_TCATD43C], [MATH_TCATD43D], [MATH_TCATD43E], [MATH_TCATD43F], [MATH_TCATD43G], [MATH_TCATD43H], [MATH_TCATD43I], [MATH_TCATD43J], [MATH_TCATD43K], [MATH_TCATD43L], [MATH_TCATD43M], [MATH_TCATD44A], [MATH_TCATD44B], [MATH_TCATD44C], [MATH_TCATD44D], [MATH_TCATD44E], [MATH_TCATD44F], [MATH_TCATD44G], [MATH_TCATD44H], [MATH_TCATD44I], [MATH_TCATD44J], [MATH_TCATD44K], [MATH_TCATD44L], [MATH_TCATD44M], [MATH_TCATD44N], [MATH_TCATD44O], [MATH_TCATD44P], [MATH_TCATD44Q], [MATH_TCATD44R], [MATH_TCATD44S], [MATH_TCATD44T], [SCTMTID1], [W1MSMTC1], [W1MNWTC1], [SCTENID1], [W1ESMTC1], [W1ENWTC1], [REGTCH], [ATDGIRL], [ATDBOY], [ATDTTL], [SECSIZE], [NEWCHLD], [STDSTLENR], [STDNOENR], [STDNMABS], [B1LVLSUPP], [B1MTVSUC], [B2ACABMT], [B2PRCLMT], [B3ACABEN], [B3PRCLEN]) VALUES (N'VN1203105', N'1203', N'1', N'5', N'88', N'10/3/2017', N'4', N'2', N'2', N'2', N'2', N'2', N'2', N'2', N'3', N'3', N'2', N'0', N'0', N'0', N'0', N'1', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'3', N'3', N'3', N'0', N'0', N'0', N'3', N'3', N'3', N'0', N'0', N'0', N'4', N'4', N'3', N'4', N'4', N'4', N'4', N'4', N'4', N'3', N'3', N'1', N'2', N'2', N'2', N'2', N'2', N'2', N'2', N'2', N'2', N'3', N'3', N'3', N'3', N'3', N'3', N'3', N'3', N'3', N'3', N'2', N'2', N'2', N'2', N'2', N'3', N'3', N'3', N'3', N'3', N'3', N'3', N'3', N'3', N'3', N'3', N'2', N'3', N'2', N'3', N'2', N'3', N'2', N'2', N'2', N'2', N'3', N'2', N'3', N'2', N'3', N'3', N'2', N'3', N'3', N'2', N'2', N'2', N'3', N'3', N'3', N'3', N'2', N'2', N'2', N'2', N'2', N'3', N'2', N'3', N'3', N'2', N'2', N'3', N'3', N'3', N'2', N'3', N'2', N'2', N'2', N'3', N'3', N'3', N'3', N'2', N'3', N'3', N'3', N'3', N'3', N'3', N'3', N'3', N'2', N'2', N'2', N'3', N'3', N'2', N'3', N'2', N'2', N'3', N'3', N'2', N'3', N'2', N'3', N'2', N'3', N'2', N'2', N'2', N'3', N'3', N'3', N'3', N'2', N'2', N'3', N'2', N'3', N'2', N'2', N'2', N'2', N'2', N'2', N'2', N'3', N'3', N'3', N'3', N'3', N'3', N'Yes', N'0', N'0', N'1', N'1', N'1', N'1', N'1', N'1', N'0', N'0', N'0', N'1', N'0', N'0', N'1', N'0', N'1', N'1', N'0', N'0', N'1', N'1', N'1', N'0', N'1', N'1', N'1', N'0', N'1', N'0', N'0', N'0', N'1', N'1', N'1', N'0', N'0', N'1', N'0', N'0', N'21', N'Yes', N'1', N'0', N'1', N'0', N'1', N'1', N'1', N'1', N'1', N'0', N'1', N'1', N'1', N'1', N'1', N'0', N'1', N'1', N'0', N'0', N'0', N'1', N'1', N'1', N'1', N'0', N'1', N'1', N'1', N'1', N'0', N'0', N'0', N'0', N'1', N'1', N'1', N'1', N'1', N'1', N'28', N'Yes', N'2', N'2', N'0', N'0', N'1', N'1', N'0', N'1', N'0', N'2', N'2', N'2', N'2', N'1', N'1', N'1', N'2', N'2', N'2', N'1', N'0', N'1', N'0', N'0', N'1', N'0', N'1', N'1', N'0', N'1', N'1', N'0', N'0', N'1', N'88', N'9/3/2017', N'1', N'1', N'4', N'2', N'2', N'1', N'2', N'2', N'1', N'2', N'0', N'0', N'0', N'1', N'0', N'0', N'0', N'0', N'0', N'1', N'0', N'0', N'0', N'0', N'0', N'1', N'0', N'0', N'0', N'0', N'0', N'1', N'0', N'0', N'1', N'0', N'0', N'0', N'0', N'0', N'1', N'0', N'0', N'0', N'0', N'0', N'1', N'0', N'0', N'0', N'0', N'0', N'1', N'0', N'0', N'0', N'0', N'0', N'0', N'1', N'0', N'0', N'0', N'0', N'1', N'0', N'4', N'4', N'3', N'3', N'5', N'3', N'3', N'3', N'2', N'1', N'2', N'3', N'4', N'3', N'3', N'20', N'0', N'0', N'0', N'0', N'0', N'1', N'9/3/2017', N'41', N'2', N'1/9/2016', N'0', N' ', N' ', N' ', N' ', N'88', N'9/3/2017', N'27', N'2', N'1', N'0', N'1', N'0', N'1', N'1', N'0', N'0', N'1', N'1', N'1', N'1', N'1', N'0', N'0', N'1', N'1', N'0', N'0', N'0', N'0', N'5', N'4', N'0', N'1', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'1', N'3', N'1', N'3', N'0', N'1', N'1', N'0', N'0', N'0', N'1', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'4', N'0', N'1', N'0', N'3', N'3', N'3', N'3', N'3', N'1', N'1', N'0', N'0', N'0', N'0', N'2', N'3', N'1', N'5', N'3', N'3', N'3', N'0', N'3', N'0', N'0', N'2', N'4', N'1', N'2', N'2', N'2', N'5', N'1', N'99', N'6', N'2', N'2', N'3', N'3', N'3', N'3', N'2', N'2', N'3', N'2', N'3', N'3', N'3', N'3', N'2', N'3', N'3', N'2', N'2', N'3', N'2', N'3', N'2', N'3', N'3', N'2', N'3', N'3', N'3', N'4', N'4', N'3', N'2', N'3', N'3', N'2', N'2', N'3', N'3', N'2', N'3', N'3', N'3', N'3', N'3', N'3', N'3', N'3', N'2', N'1', N'1', N' ', N' ', N'1', N'88', N'0', N'0', N'88', N'9/3/2017', N'31', N'2', N'1', N'0', N'1', N'1', N'1', N'0', N'1', N'0', N'1', N'1', N'1', N'1', N'1', N'1', N'0', N'1', N'1', N'1', N'1', N'1', N'1', N'5', N'4', N'1', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'1', N'3', N'7', N'3', N'4', N'0', N'1', N'1', N'0', N'1', N'1', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'0', N'10', N'0', N'0', N'0', N'1', N'1', N'4', N'2', N'0', N'2', N'2', N'2', N'2', N'2', N'1', N'6', N'1', N'0', N'60', N'3', N'3', N'3', N'4', N'1', N'3', N'0', N'2', N'1', N'9', N'1', N'3', N'3', N'2', N'1', N'50', N'1', N'3', N'4', N'4', N'4', N'2', N'4', N'2', N'2', N'4', N'3', N'4', N'4', N'4', N'4', N'2', N'4', N'4', N'2', N'1', N'4', N'4', N'3', N'3', N'4', N'4', N'1', N'3', N'3', N'2', N'3', N'3', N'2', N'3', N'3', N'2', N'2', N'1', N'3', N'3', N'3', N'4', N'4', N'4', N'2', N'4', N'3', N'2', N'2', N'1', N'1', N'1', N'88', N'2', N'0', N'41', N'1', N'13', N'17', N'30', N'35', N'0', N'1', N' ', N'1', N'10', N'10', N'7', N'10', N'5', N'7')
+
+	T-SQL STATEMENT FOR VIEWS IN TASK 2
+
+--- Creating views to query and get chart from various views considering gender column,Ethnicity coulmn
+---- filtering with gender to know the maths score of childern in this ethnic group---
+
+create view math_score
+as(
+select case gender
+when 1 then 'male'
+when 2 then 'female' end as 'Gender',
+case Ethnicity 
+when 3 then 'Cham-HRoi'
+when 4 then ' Ede'
+when 6 then ' Nung'end as 'Ethinicity',
+ROUND(avg(math_rawscore),2) as 'Average maths score'
+from dbo.vietnamwave_1
+where gender in (1,2)
+group by Ethnicity,gender)
+
+
+
+--- Creating views to query and get chart from various views considering gender column,province column,
+---- Ethnicity column,filtering with gender to know the maths score of childern in this ethnic group---
+
+create view maths_rawscore
+as(
+select case gender
+when 1 then 'male'
+when 2 then 'female' end as 'Gender',
+case Ethnicity 
+when 3 then 'Cham-HRoi'
+when 4 then ' Ede'
+when 6 then ' Nung'end as 'Ethinicity',
+case Province
+when 1 then 'Ben Tre'
+when 2 then ' Da Nang' end as 'Province',
+ROUND(avg(math_rawscore),2) as 'Average maths score'
+from dbo.vietnamwave_1
+where gender in (1,2) 
+group by Ethnicity,gender,Province)
+
+
+--- Creating view to combine vietnam wave 1 and vietnam wave 2 together and generate a report picking column 
+---  names from both wave to create a view and summarized report using join to know the education rate of both mother
+--- and father, also the rate at which student use computer in school----
+
+create view vietnamwave_combined
+as(
+select a.uniqueid ,
+case a.gender
+when 1 then 'male'
+when 2 then 'female' end as 'gender',
+case a.province
+when 4 then 'Lao Cai'
+when 5 then 'Phu Yen'
+when 3 then ' Hung Yen' end as 'Province',
+case a.MOM_EDUC
+when 0 then 'Never been to school'
+when 1 then ' Primary school (Grades 1-5)'
+when 3 then ' Intermediate vocational training ' end as 'Mothers Education',
+case a.DAD_EDUC
+when 0 then 'Never been to school'
+when 1 then ' Primary school (Grades 1-5)'
+when 3 then ' Intermediate vocational training ' end as 'Fathers Education',
+case b.STMTHWRK
+when 0 then'Rarely/Never '
+when 1 then ' Once a week '
+when 2 then ' 2 times per week'
+when 3 then '3 times per week'
+when 4 then ' More than 3 times per week' end as 'frequency of maths homework',
+case b.STCMPSCH
+when 1 then ' Never or almost never'
+when 2 then 'Once or twice a month'
+when 3 then 'Once or twice a week '
+when 4 then 'Every day or almost every day ' end as 'Use of computer for schoolwork at school'
+from dbo.vietnamwave_1 a join dbo.vietnamwave_2 b
+on a.UNIQUEID = b.UNIQUEID
+where gender in (1,2))
+
+
+
+TASK 3 T-SQLS STATEMENTS
+
+--- Creating a view to union tne population table 2017 and population table 2018 together using
+--- the union clause statement---
+
+create view dbo.population_total as (
+select * from dbo.population_2017 union all select * from dbo.population_2018)
+
+
+--- Creating a table called manchester_crime_table to union all the tables in crime from 2017 january to 2018 december
+--- using the union clause statement and select into statement---
+
+select * into dbo.manchester_crime_table
+from
+dbo.Crime012017 union all select *from dbo.Crime022017
+union all select * from dbo.Crime032017
+union all select * from dbo.Crime042017
+union all select * from dbo.Crime052017
+union all select * from dbo.Crime062017
+union all select * from dbo.Crime072017
+union all select * from dbo.Crime082017
+union all select * from dbo.Crime092017
+union all select * from dbo.Crime102017
+union all select * from dbo.Crime112017
+union all select * from dbo.Crime122017
+union all select * from dbo.Crime012018
+union all select * from dbo.Crime022018
+union all select * from dbo.Crime032018
+union all select * from dbo.Crime042018
+union all select * from dbo.Crime052018
+union all select * from dbo.Crime062018
+union all select * from dbo.Crime072018
+union all select * from dbo.Crime082018
+union all select * from dbo.Crime092018
+union all select * from dbo.Crime102018
+union all select * from dbo.Crime112018
+union all select * from dbo.Crime122018
+
+select * from manchester_crime_table
+select * from population_total
+
+select * from dbo.manchester_crime_table
+where [Crime type] = 'vehicle crime'
+and [LSOA name] like 'Man%'
+
+select * from dbo.manchester_crime_table
+where [Crime type] = 'Anti-social behaviour'
+and [LSOA name] like 'sal%'
+
+--- creating a table with the join clause statement combining manchester_crime_table to population_total table----
+---reporting crime type in Traford area---
+
+select  sum(a.[All_Ages]) as 'Total people',b.[Month],b.[LSOA name],b.[Crime type],
+count(*) as 'number of committed crime'
+from dbo.manchester_crime_table as b join dbo.population_total as a
+on a.[Output_Area] = b.[LSOA name]
+where b.[LSOA name] like 'Tra%'
+group by b.[Month], b.[Crime type],b.[LSOA name]
+order by b.[Month] ASC
+
+---Creating a table to view and report all crime type committed in Bolton grouping by Month,Crime type,
+---LSOA name also ordering by Month Ascending---
+
+select  sum(a.[All_Ages]) as 'Total people',b.[Month],b.[LSOA name],b.[Crime type],
+count(*) as 'number of committed crime'
+from dbo.manchester_crime_table as b join dbo.population_total as a
+on a.[Output_Area] = b.[LSOA name]
+where b.[LSOA name] like 'Bol%'
+group by b.[Month], b.[Crime type],b.[LSOA name]
+order by b.[Month] ASC
+
+--- creating a table to view and report Robbery crime in salford from population_total table
+--- and manchester_crime_table with where clause and oder by clause,group by LSOA name and Month---
+
+select  sum(a.[All_Ages]) as 'Total people',b.[Month],b.[LSOA name],b.[Crime type],
+count(*) as 'number of committed crime'
+from dbo.manchester_crime_table as b join dbo.population_total as a
+on a.[Output_Area] = b.[LSOA name]
+where b.[LSOA name] like 'sal%' 
+and b.[Crime type] = 'Robbery'
+group by b.[Month], b.[Crime type],b.[LSOA name]
+order by b.[Month] ASC
+
+
+
+---create stored procedure  called child_height to show child height from child_anthro_info table, this stored--
+----  procedure will extract height quickly from large table by assigning value of height to show---
+
+create procedure
+dbo.child_height
+@chheight decimal
+as select * from dbo.child_anthro_info
+where chheight = @chheight
+ 
+ execute dbo.child_height 79
